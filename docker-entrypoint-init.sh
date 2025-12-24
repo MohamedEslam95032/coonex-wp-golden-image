@@ -9,15 +9,10 @@ echo "DB is up."
 
 cd /var/www/html
 
-# Ensure WordPress core exists
-if [ ! -f index.php ]; then
-  echo "WordPress core not found. Downloading..."
-  wp core download --allow-root --path=/var/www/html
-fi
-
-# Create wp-config.php if not exists
+# WordPress core موجود بالفعل في الإيميج
 if [ ! -f wp-config.php ]; then
   echo "Creating wp-config.php..."
+
   wp config create \
     --dbname="${WORDPRESS_DB_NAME}" \
     --dbuser="${WORDPRESS_DB_USER}" \
@@ -31,9 +26,9 @@ if [ ! -f wp-config.php ]; then
   wp config set AUTOMATIC_UPDATER_DISABLED true --raw --allow-root
 fi
 
-# Install WordPress if not installed
 if ! wp core is-installed --allow-root; then
   echo "Installing WordPress..."
+
   wp core install \
     --url="${WP_URL}" \
     --title="${WP_TITLE}" \
@@ -43,10 +38,8 @@ if ! wp core is-installed --allow-root; then
     --skip-email \
     --allow-root
 
-  echo "Activating Coonex theme..."
   wp theme activate "${COONEX_THEME_SLUG}" --allow-root || true
 
-  echo "Activating allowed plugins..."
   for p in ${COONEX_PLUGINS}; do
     wp plugin activate "$p" --allow-root || true
   done
