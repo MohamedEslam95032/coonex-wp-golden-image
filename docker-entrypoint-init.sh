@@ -10,7 +10,7 @@ echo "DB is up."
 cd /var/www/html
 
 # Ensure WordPress core exists
-if [ ! -f wp-load.php ]; then
+if [ ! -f index.php ]; then
   echo "WordPress core not found. Downloading..."
   wp core download --allow-root
 fi
