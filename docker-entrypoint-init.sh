@@ -44,11 +44,11 @@ mariadb \
       COLLATE utf8mb4_unicode_ci;"
 
 #######################################
-# 3) Copy WordPress core (from image)
+# 3) Copy WordPress core (NO rsync)
 #######################################
 if [ ! -f /var/www/html/wp-load.php ]; then
   echo "▶ Copying WordPress core to /var/www/html"
-  rsync -a /usr/src/wordpress/ /var/www/html/
+  cp -a /usr/src/wordpress/. /var/www/html/
   chown -R www-data:www-data /var/www/html
 else
   echo "ℹ WordPress core already exists"
@@ -77,7 +77,7 @@ else
 fi
 
 #######################################
-# 5) Install WordPress (once)
+# 5) Install WordPress (once only)
 #######################################
 if ! wp core is-installed --allow-root --path=/var/www/html; then
   echo "▶ Installing WordPress"
