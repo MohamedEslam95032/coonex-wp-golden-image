@@ -7,9 +7,15 @@ until mariadb -h"${WORDPRESS_DB_HOST}" -u"${WORDPRESS_DB_USER}" -p"${WORDPRESS_D
 done
 echo "DB is up."
 
+# 👇👇👇 الحل الذهبي هنا
+if [ ! -f /var/www/html/index.php ]; then
+  echo "Copying WordPress core to /var/www/html..."
+  cp -R /usr/src/wordpress/* /var/www/html/
+  chown -R www-data:www-data /var/www/html
+fi
+
 cd /var/www/html
 
-# WordPress core موجود بالفعل في الإيميج
 if [ ! -f wp-config.php ]; then
   echo "Creating wp-config.php..."
 
@@ -47,4 +53,5 @@ else
   echo "WordPress already installed. Skipping install."
 fi
 
+# 👇 مهم جدًا: نكمّل Apache
 exec docker-entrypoint.sh "$@"
