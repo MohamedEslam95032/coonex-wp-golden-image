@@ -15,18 +15,22 @@ RUN curl -o /usr/local/bin/wp https://raw.githubusercontent.com/wp-cli/builds/gh
 
 # --------------------------------------------------
 # Inject Coonex config into wp-config-sample.php
-# (URL + HTTPS proxy fix)
+# (Dual HTTP/HTTPS – NO FORCE)
 # --------------------------------------------------
 RUN sed -i "/require_once ABSPATH . 'wp-settings.php';/i \
 /** ==============================\\n\
- * Coonex URL & Reverse Proxy Fix\\n\
+ * Coonex URL & Proxy Detection (NO FORCE HTTPS)\\n\
  * ============================== */\\n\
 if (getenv('WP_URL')) {\\n\
     define('WP_HOME', getenv('WP_URL'));\\n\
     define('WP_SITEURL', getenv('WP_URL'));\\n\
 }\\n\\n\
-if (isset(\$_SERVER['HTTP_X_FORWARDED_PROTO']) && \$_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {\\n\
-    \$_SERVER['HTTPS'] = 'on';\\n\
+/**\\n\
+ * Detect protocol correctly behind proxy (Cloudflare / Traefik)\\n\
+ * Allow BOTH HTTP and HTTPS without redirect loop\\n\
+ */\\n\
+if (!empty(\$_SERVER['HTTP_X_FORWARDED_PROTO'])) {\\n\
+    \$_SERVER['HTTPS'] = \$_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https' ? 'on' : 'off';\\n\
 }\\n" /usr/src/wordpress/wp-config-sample.php
 
 # --------------------------------------------------
