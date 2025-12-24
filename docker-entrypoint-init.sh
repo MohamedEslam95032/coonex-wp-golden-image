@@ -1,37 +1,64 @@
-echo "Waiting for database (max 60s)..."
+#!/bin/bash
+set -e
+
+echo "▶ Starting Coonex WordPress Init Script"
+
+#######################################
+# 1️⃣ Wait for Database (with timeout)
+#######################################
+echo "⏳ Waiting for database (max 60s)..."
 
 ATTEMPTS=0
 MAX_ATTEMPTS=30
 
-until mariadb -h"${WORDPRESS_DB_HOST}" \
+until mariadb \
+  -h"${WORDPRESS_DB_HOST}" \
   -u"${WORDPRESS_DB_USER}" \
   -p"${WORDPRESS_DB_PASSWORD}" \
   -e "SELECT 1" >/dev/null 2>&1; do
 
   ATTEMPTS=$((ATTEMPTS+1))
+  echo "⏳ DB not ready yet ($ATTEMPTS/$MAX_ATTEMPTS)"
+
   if [ "$ATTEMPTS" -ge "$MAX_ATTEMPTS" ]; then
-    echo "❌ Database not reachable after 60 seconds"
+    echo "❌ ERROR: Database not reachable after 60 seconds"
     exit 1
   fi
 
-  echo "⏳ Waiting for DB... ($ATTEMPTS)"
   sleep 2
 done
 
-echo "✅ DB is up."
+echo "✅ Database is reachable"
 
+#######################################
+# 2️⃣ Ensure database exists
+#######################################
+echo "▶ Ensuring database exists..."
 
-# 👇👇👇 الحل الذهبي هنا
-if [ ! -f /var/www/html/index.php ]; then
-  echo "Copying WordPress core to /var/www/html..."
-  cp -R /usr/src/wordpress/* /var/www/html/
+mariadb \
+  -h"${WORDPRESS_DB_HOST}" \
+  -u"${WORDPRESS_DB_USER}" \
+  -p"${WORDPRESS_DB_PASSWORD}" \
+  -e "CREATE DATABASE IF NOT EXISTS \`${WORDPRESS_DB_NAME}\`
+      DEFAULT CHARACTER SET utf8mb4
+      COLLATE utf8mb4_unicode_ci;"
+
+#######################################
+# 3️⃣ Copy WordPress core (IMPORTANT)
+#######################################
+if [ ! -f /var/www/html/wp-load.php ]; then
+  echo "▶ Copying WordPress core to /var/www/html"
+  rsync -a /usr/src/wordpress/ /var/www/html/
   chown -R www-data:www-data /var/www/html
+else
+  echo "ℹ WordPress core already exists"
 fi
 
-cd /var/www/html
-
-if [ ! -f wp-config.php ]; then
-  echo "Creating wp-config.php..."
+#######################################
+# 4️⃣ Create wp-config.php if missing
+#######################################
+if [ ! -f /var/www/html/wp-config.php ]; then
+  echo "▶ Creating wp-config.php"
 
   wp config create \
     --dbname="${WORDPRESS_DB_NAME}" \
@@ -39,15 +66,21 @@ if [ ! -f wp-config.php ]; then
     --dbpass="${WORDPRESS_DB_PASSWORD}" \
     --dbhost="${WORDPRESS_DB_HOST}" \
     --skip-check \
-    --allow-root
+    --allow-root \
+    --path=/var/www/html
 
-  wp config set DISALLOW_FILE_EDIT true --raw --allow-root
-  wp config set DISALLOW_FILE_MODS true --raw --allow-root
-  wp config set AUTOMATIC_UPDATER_DISABLED true --raw --allow-root
+  wp config set DISALLOW_FILE_EDIT true --raw --allow-root --path=/var/www/html
+  wp config set DISALLOW_FILE_MODS true --raw --allow-root --path=/var/www/html
+  wp config set AUTOMATIC_UPDATER_DISABLED true --raw --allow-root --path=/var/www/html
+else
+  echo "ℹ wp-config.php already exists"
 fi
 
-if ! wp core is-installed --allow-root; then
-  echo "Installing WordPress..."
+#######################################
+# 5️⃣ Install WordPress (once only)
+#######################################
+if ! wp core is-installed --allow-root --path=/var/www/html; then
+  echo "▶ Installing WordPress"
 
   wp core install \
     --url="${WP_URL}" \
@@ -56,16 +89,22 @@ if ! wp core is-installed --allow-root; then
     --admin_password="${WP_ADMIN_PASS}" \
     --admin_email="${WP_ADMIN_EMAIL}" \
     --skip-email \
-    --allow-root
+    --allow-root \
+    --path=/var/www/html
 
-  wp theme activate "${COONEX_THEME_SLUG}" --allow-root || true
+  echo "▶ Activating Coonex theme"
+  wp theme activate "${COONEX_THEME_SLUG}" --allow-root --path=/var/www/html || true
 
-  for p in ${COONEX_PLUGINS}; do
-    wp plugin activate "$p" --allow-root || true
+  echo "▶ Activating allowed plugins"
+  for plugin in ${COONEX_PLUGINS}; do
+    wp plugin activate "$plugin" --allow-root --path=/var/www/html || true
   done
 else
-  echo "WordPress already installed. Skipping install."
+  echo "ℹ WordPress already installed – skipping install"
 fi
 
-# 👇 مهم جدًا: نكمّل Apache
+#######################################
+# 6️⃣ Start Apache (IMPORTANT)
+#######################################
+echo "🚀 Starting Apache"
 exec docker-entrypoint.sh "$@"
