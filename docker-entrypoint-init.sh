@@ -4,7 +4,7 @@ set -e
 echo "▶ Starting Coonex WordPress Init Script"
 
 #######################################
-# 1️⃣ Wait for Database (with timeout)
+# 1) Wait for Database (with timeout)
 #######################################
 echo "⏳ Waiting for database (max 60s)..."
 
@@ -31,7 +31,7 @@ done
 echo "✅ Database is reachable"
 
 #######################################
-# 2️⃣ Ensure database exists
+# 2) Ensure database exists
 #######################################
 echo "▶ Ensuring database exists..."
 
@@ -44,7 +44,7 @@ mariadb \
       COLLATE utf8mb4_unicode_ci;"
 
 #######################################
-# 3️⃣ Copy WordPress core (IMPORTANT)
+# 3) Copy WordPress core (from image)
 #######################################
 if [ ! -f /var/www/html/wp-load.php ]; then
   echo "▶ Copying WordPress core to /var/www/html"
@@ -55,7 +55,7 @@ else
 fi
 
 #######################################
-# 4️⃣ Create wp-config.php if missing
+# 4) Create wp-config.php
 #######################################
 if [ ! -f /var/www/html/wp-config.php ]; then
   echo "▶ Creating wp-config.php"
@@ -77,7 +77,7 @@ else
 fi
 
 #######################################
-# 5️⃣ Install WordPress (once only)
+# 5) Install WordPress (once)
 #######################################
 if ! wp core is-installed --allow-root --path=/var/www/html; then
   echo "▶ Installing WordPress"
@@ -104,7 +104,7 @@ else
 fi
 
 #######################################
-# 6️⃣ Start Apache (IMPORTANT)
+# 6) Start Apache (IMPORTANT)
 #######################################
 echo "🚀 Starting Apache"
 exec docker-entrypoint.sh "$@"
