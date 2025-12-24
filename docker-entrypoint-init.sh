@@ -12,7 +12,7 @@ cd /var/www/html
 # Ensure WordPress core exists
 if [ ! -f index.php ]; then
   echo "WordPress core not found. Downloading..."
-  wp core download --allow-root
+  wp core download --allow-root --path=/var/www/html
 fi
 
 # Create wp-config.php if not exists
