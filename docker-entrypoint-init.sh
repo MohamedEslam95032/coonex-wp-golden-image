@@ -1,11 +1,25 @@
-#!/bin/bash
-set -e
+echo "Waiting for database (max 60s)..."
 
-echo "Waiting for database..."
-until mariadb -h"${WORDPRESS_DB_HOST}" -u"${WORDPRESS_DB_USER}" -p"${WORDPRESS_DB_PASSWORD}" -e "SELECT 1" >/dev/null 2>&1; do
+ATTEMPTS=0
+MAX_ATTEMPTS=30
+
+until mariadb -h"${WORDPRESS_DB_HOST}" \
+  -u"${WORDPRESS_DB_USER}" \
+  -p"${WORDPRESS_DB_PASSWORD}" \
+  -e "SELECT 1" >/dev/null 2>&1; do
+
+  ATTEMPTS=$((ATTEMPTS+1))
+  if [ "$ATTEMPTS" -ge "$MAX_ATTEMPTS" ]; then
+    echo "❌ Database not reachable after 60 seconds"
+    exit 1
+  fi
+
+  echo "⏳ Waiting for DB... ($ATTEMPTS)"
   sleep 2
 done
-echo "DB is up."
+
+echo "✅ DB is up."
+
 
 # 👇👇👇 الحل الذهبي هنا
 if [ ! -f /var/www/html/index.php ]; then
