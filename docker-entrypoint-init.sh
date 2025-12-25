@@ -124,7 +124,30 @@ else
 fi
 
 # --------------------------------------------------
-# 8) Fix siteurl/home in DB (final guard)
+# 8) Ensure admin user from ENV exists (Bootstrap User)
+# --------------------------------------------------
+if [ -n "$WP_ADMIN_USER" ] && [ -n "$WP_ADMIN_PASS" ] && [ -n "$WP_ADMIN_EMAIL" ]; then
+  echo "▶ Ensuring admin user from ENV exists"
+
+  if ! wp user get "$WP_ADMIN_USER" --allow-root --path="$WP_PATH" >/dev/null 2>&1; then
+    wp user create \
+      "$WP_ADMIN_USER" \
+      "$WP_ADMIN_EMAIL" \
+      --user_pass="$WP_ADMIN_PASS" \
+      --role="${WP_ADMIN_ROLE:-administrator}" \
+      --allow-root \
+      --path="$WP_PATH"
+
+    echo "✅ Admin user created from ENV"
+  else
+    echo "ℹ Admin user already exists"
+  fi
+else
+  echo "ℹ Admin ENV vars not fully set, skipping admin creation"
+fi
+
+# --------------------------------------------------
+# 9) Fix siteurl/home in DB (final guard)
 # --------------------------------------------------
 echo "▶ Enforcing siteurl/home in database"
 
@@ -132,12 +155,12 @@ wp option update siteurl "$WP_URL" --allow-root --path="$WP_PATH"
 wp option update home "$WP_URL" --allow-root --path="$WP_PATH"
 
 # --------------------------------------------------
-# 9) Permissions
+# 10) Permissions
 # --------------------------------------------------
 chown -R www-data:www-data "$WP_PATH"
 
 # --------------------------------------------------
-# 10) Start Apache
+# 11) Start Apache
 # --------------------------------------------------
 echo "🚀 Starting Apache"
 exec apache2-foreground
