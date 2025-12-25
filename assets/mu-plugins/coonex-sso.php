@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: Coonex JWT SSO
- * Description: JWT-based Single Sign-On for Coonex (SSO only – no UI restrictions)
- * Version: 1.1.0
+ * Description: JWT-based Single Sign-On for Coonex (SSO only – safe for wp-login.php)
+ * Version: 1.2.0
  * Author: Coonex
  */
 
@@ -18,20 +18,19 @@ if (!defined('ABSPATH')) {
 function coonex_handle_sso() {
 
     /**
-     * 0) لو اليوزر already logged in
-     * سيب ووردبريس يكمل طبيعي
+     * 1) اشتغل فقط لو token موجود
+     * مهم جدًا عشان ما نكسرش wp-login.php
      */
-    if (is_user_logged_in()) {
+    if (!isset($_GET['token'])) {
         return;
     }
 
     /**
-     * 1) لازم token
+     * 2) لو المستخدم already logged in
+     * سيب ووردبريس يكمل طبيعي
      */
-    if (!isset($_GET['token'])) {
-        wp_die(
-            'This website is managed through the Coonex platform. Please log in via your Coonex dashboard.'
-        );
+    if (is_user_logged_in()) {
+        return;
     }
 
     $jwt    = trim($_GET['token']);
@@ -42,7 +41,7 @@ function coonex_handle_sso() {
     }
 
     /**
-     * 2) Validate JWT structure
+     * 3) Validate JWT structure
      */
     $parts = explode('.', $jwt);
     if (count($parts) !== 3) {
@@ -52,7 +51,7 @@ function coonex_handle_sso() {
     [$header, $payload, $signature] = $parts;
 
     /**
-     * 3) Verify signature (HS256)
+     * 4) Verify signature (HS256)
      */
     $expected_signature = rtrim(strtr(
         base64_encode(
@@ -67,7 +66,7 @@ function coonex_handle_sso() {
     }
 
     /**
-     * 4) Decode payload
+     * 5) Decode payload
      */
     $data = json_decode(
         base64_decode(strtr($payload, '-_', '+/')),
@@ -83,7 +82,7 @@ function coonex_handle_sso() {
     }
 
     /**
-     * 5) Extract user data
+     * 6) Extract user data
      */
     $email = sanitize_email($data['email']);
     $name  = sanitize_text_field($data['name'] ?? '');
@@ -93,7 +92,7 @@ function coonex_handle_sso() {
     }
 
     /**
-     * 6) Resolve role (ENV > JWT > fallback)
+     * 7) Resolve role (ENV > JWT > fallback)
      */
     $allowed_roles = ['administrator', 'editor', 'author', 'subscriber'];
 
@@ -109,7 +108,7 @@ function coonex_handle_sso() {
     }
 
     /**
-     * 7) Find or create WordPress user
+     * 8) Find or create WordPress user
      */
     $user = get_user_by('email', $email);
 
@@ -138,7 +137,7 @@ function coonex_handle_sso() {
 
         $user = get_user_by('id', $user_id);
     } else {
-        // enforce role every SSO login
+        // Enforce role every SSO login
         if (!in_array($role, (array) $user->roles, true)) {
             wp_update_user([
                 'ID'   => $user->ID,
@@ -149,7 +148,7 @@ function coonex_handle_sso() {
 
     /**
      * =====================================================
-     * 8) AUTHENTICATE USER (FULL WORDPRESS SESSION)
+     * 9) AUTHENTICATE USER (FULL WORDPRESS SESSION)
      * =====================================================
      */
     wp_set_current_user($user->ID);
@@ -165,13 +164,15 @@ function coonex_handle_sso() {
     do_action('wp_login', $user->user_login, $user);
 
     /**
-     * 9) Redirect
+     * 10) Redirect to admin
      */
     wp_safe_redirect(admin_url());
     exit;
 }
 
 /**
- * Run SSO only on wp-login.php
+ * =====================================================
+ * HOOK SSO SAFELY INTO wp-login.php
+ * =====================================================
  */
 add_action('login_init', 'coonex_handle_sso');
