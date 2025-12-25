@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: Coonex JWT SSO
- * Description: JWT-based Single Sign-On for Coonex (SSO only, safe & production-ready)
- * Version: 1.3.0
+ * Description: JWT-based Single Sign-On for Coonex (SSO only – stable & WordPress-native)
+ * Version: 2.0.0
  * Author: Coonex
  */
 
@@ -17,18 +17,12 @@ if (!defined('ABSPATH')) {
  */
 function coonex_handle_sso() {
 
-    /**
-     * 1) اشتغل فقط لو token موجود
-     * مهم جدًا عشان ما نكسرش wp-login.php
-     */
+    // 1) اشتغل فقط لو token موجود
     if (!isset($_GET['token'])) {
         return;
     }
 
-    /**
-     * 2) لو المستخدم already logged in
-     * سيب ووردبريس يكمل طبيعي
-     */
+    // 2) لو المستخدم logged in خلاص
     if (is_user_logged_in()) {
         return;
     }
@@ -40,9 +34,7 @@ function coonex_handle_sso() {
         wp_die('SSO secret not configured');
     }
 
-    /**
-     * 3) Validate JWT structure
-     */
+    // 3) Validate JWT structure
     $parts = explode('.', $jwt);
     if (count($parts) !== 3) {
         wp_die('Invalid token structure');
@@ -50,9 +42,7 @@ function coonex_handle_sso() {
 
     [$header, $payload, $signature] = $parts;
 
-    /**
-     * 4) Verify signature (HS256)
-     */
+    // 4) Verify signature (HS256)
     $expected_signature = rtrim(strtr(
         base64_encode(
             hash_hmac('sha256', "$header.$payload", $secret, true)
@@ -65,9 +55,7 @@ function coonex_handle_sso() {
         wp_die('Invalid SSO signature');
     }
 
-    /**
-     * 5) Decode payload
-     */
+    // 5) Decode payload
     $data = json_decode(
         base64_decode(strtr($payload, '-_', '+/')),
         true
@@ -81,9 +69,7 @@ function coonex_handle_sso() {
         wp_die('Expired or invalid token');
     }
 
-    /**
-     * 6) Extract user data
-     */
+    // 6) User data
     $email = sanitize_email($data['email']);
     $name  = sanitize_text_field($data['name'] ?? '');
 
@@ -91,30 +77,16 @@ function coonex_handle_sso() {
         wp_die('Invalid email in token');
     }
 
-    /**
-     * 7) Resolve role (ENV > JWT > fallback)
-     */
+    // 7) Resolve role
     $allowed_roles = ['administrator', 'editor', 'author', 'subscriber'];
-
-    $env_role = sanitize_key(getenv('COONEX_DEFAULT_ROLE') ?: '');
     $jwt_role = sanitize_key($data['role'] ?? '');
+    $role = in_array($jwt_role, $allowed_roles, true) ? $jwt_role : 'subscriber';
 
-    if (in_array($env_role, $allowed_roles, true)) {
-        $role = $env_role;
-    } elseif (in_array($jwt_role, $allowed_roles, true)) {
-        $role = $jwt_role;
-    } else {
-        $role = 'subscriber';
-    }
-
-    /**
-     * 8) Find or create WordPress user
-     */
+    // 8) Find or create user
     $user = get_user_by('email', $email);
 
     if (!$user) {
         $username = sanitize_user(strstr($email, '@', true));
-
         if (username_exists($username)) {
             $username .= '_' . wp_generate_password(4, false);
         }
@@ -136,50 +108,31 @@ function coonex_handle_sso() {
         ]);
 
         $user = get_user_by('id', $user_id);
-    } else {
-        // Enforce role every SSO login
-        if (!in_array($role, (array) $user->roles, true)) {
-            wp_update_user([
-                'ID'   => $user->ID,
-                'role' => $role
-            ]);
-        }
     }
 
     /**
      * =====================================================
-     * 9) AUTHENTICATE USER (FULL WORDPRESS SESSION)
+     * 9) LOGIN THE WORDPRESS WAY (CRITICAL FIX)
      * =====================================================
      */
-    wp_set_current_user($user->ID);
-    wp_set_auth_cookie($user->ID, true, is_ssl());
+    $signon = wp_signon([
+        'user_login'    => $user->user_login,
+        'user_password' => null,
+        'remember'      => true,
+    ], is_ssl());
 
-    // 🔑 Regenerate session tokens (fix nonce / link expired)
-    if (class_exists('WP_Session_Tokens')) {
-        $manager = WP_Session_Tokens::get_instance($user->ID);
-        $manager->destroy_all();
-        $manager->create(time() + DAY_IN_SECONDS);
+    if (is_wp_error($signon)) {
+        wp_die('SSO login failed');
     }
 
-    do_action('wp_login', $user->user_login, $user);
-
-    // ❗ لا تعمل redirect هنا
-    // WordPress هيعمل redirect طبيعي بعد login
+    // 10) Redirect
+    wp_safe_redirect(admin_url());
+    exit;
 }
 
 /**
  * =====================================================
- * SAFE HOOK INTO wp-login.php
+ * RUN SSO SAFELY
  * =====================================================
  */
 add_action('login_init', 'coonex_handle_sso');
-
-
-/**
- * =====================================================
- * FORCE REDIRECT AFTER SUCCESSFUL LOGIN
- * =====================================================
- */
-add_filter('login_redirect', function ($redirect_to, $requested, $user) {
-    return admin_url();
-}, 10, 3);
