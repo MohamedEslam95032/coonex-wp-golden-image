@@ -8,19 +8,15 @@ RUN apt-get update && apt-get install -y \
  && rm -rf /var/lib/apt/lists/*
 
 # --------------------------------------------------
-# PHP DEFAULTS (REAL override)
+# PHP DEFAULTS (official & safe way)
 # --------------------------------------------------
-RUN set -eux; \
-    PHP_INI="$(php -r 'echo php_ini_loaded_file();')"; \
-    { \
-      echo ""; \
-      echo "; ===== Coonex PHP Defaults ====="; \
+RUN { \
       echo "upload_max_filesize = 20M"; \
       echo "post_max_size = 25M"; \
       echo "memory_limit = 256M"; \
       echo "max_execution_time = 300"; \
       echo "max_input_time = 300"; \
-    } >> "$PHP_INI"
+    } > /usr/local/etc/php/conf.d/99-coonex-defaults.ini
 
 # --------------------------------------------------
 # WP-CLI
