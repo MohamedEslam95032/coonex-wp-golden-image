@@ -19,7 +19,7 @@ function xpress_auto_install_and_activate()
     }
 
     // Plugin main file
-    $plugin = 'xpress/xpress.php';
+    $plugin = 'xpress/uixpress.php';
 
     // Make sure plugin functions are available
     if (!function_exists('activate_plugin')) {
