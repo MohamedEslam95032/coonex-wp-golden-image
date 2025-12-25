@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: Coonex JWT SSO
- * Description: JWT-based Single Sign-On for Coonex (SSO only – stable & WordPress-native)
- * Version: 2.0.0
+ * Description: JWT-based SSO for Coonex (passwordless, stable, no login loop)
+ * Version: 2.1.0
  * Author: Coonex
  */
 
@@ -10,19 +10,14 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-/**
- * =====================================================
- * MAIN SSO HANDLER
- * =====================================================
- */
-function coonex_handle_sso() {
+function coonex_jwt_sso() {
 
-    // 1) اشتغل فقط لو token موجود
+    // شغّل SSO فقط لو token موجود
     if (!isset($_GET['token'])) {
         return;
     }
 
-    // 2) لو المستخدم logged in خلاص
+    // لو المستخدم داخل خلاص
     if (is_user_logged_in()) {
         return;
     }
@@ -34,7 +29,7 @@ function coonex_handle_sso() {
         wp_die('SSO secret not configured');
     }
 
-    // 3) Validate JWT structure
+    // Validate JWT
     $parts = explode('.', $jwt);
     if (count($parts) !== 3) {
         wp_die('Invalid token structure');
@@ -42,8 +37,7 @@ function coonex_handle_sso() {
 
     [$header, $payload, $signature] = $parts;
 
-    // 4) Verify signature (HS256)
-    $expected_signature = rtrim(strtr(
+    $expected = rtrim(strtr(
         base64_encode(
             hash_hmac('sha256', "$header.$payload", $secret, true)
         ),
@@ -51,11 +45,10 @@ function coonex_handle_sso() {
         '-_'
     ), '=');
 
-    if (!hash_equals($expected_signature, $signature)) {
+    if (!hash_equals($expected, $signature)) {
         wp_die('Invalid SSO signature');
     }
 
-    // 5) Decode payload
     $data = json_decode(
         base64_decode(strtr($payload, '-_', '+/')),
         true
@@ -69,7 +62,6 @@ function coonex_handle_sso() {
         wp_die('Expired or invalid token');
     }
 
-    // 6) User data
     $email = sanitize_email($data['email']);
     $name  = sanitize_text_field($data['name'] ?? '');
 
@@ -77,16 +69,18 @@ function coonex_handle_sso() {
         wp_die('Invalid email in token');
     }
 
-    // 7) Resolve role
+    // Resolve role
     $allowed_roles = ['administrator', 'editor', 'author', 'subscriber'];
-    $jwt_role = sanitize_key($data['role'] ?? '');
-    $role = in_array($jwt_role, $allowed_roles, true) ? $jwt_role : 'subscriber';
+    $role = in_array($data['role'] ?? '', $allowed_roles, true)
+        ? $data['role']
+        : 'subscriber';
 
-    // 8) Find or create user
+    // Find or create user
     $user = get_user_by('email', $email);
 
     if (!$user) {
         $username = sanitize_user(strstr($email, '@', true));
+
         if (username_exists($username)) {
             $username .= '_' . wp_generate_password(4, false);
         }
@@ -96,10 +90,6 @@ function coonex_handle_sso() {
             wp_generate_password(32),
             $email
         );
-
-        if (is_wp_error($user_id)) {
-            wp_die('Failed to create user');
-        }
 
         wp_update_user([
             'ID'           => $user_id,
@@ -111,28 +101,22 @@ function coonex_handle_sso() {
     }
 
     /**
-     * =====================================================
-     * 9) LOGIN THE WORDPRESS WAY (CRITICAL FIX)
-     * =====================================================
+     * ✅ LOGIN (الطريقة الصح للـ SSO)
      */
-    $signon = wp_signon([
-        'user_login'    => $user->user_login,
-        'user_password' => null,
-        'remember'      => true,
-    ], is_ssl());
+    wp_clear_auth_cookie();
+    wp_set_current_user($user->ID);
+    wp_set_auth_cookie($user->ID, true, is_ssl());
 
-    if (is_wp_error($signon)) {
-        wp_die('SSO login failed');
-    }
+    do_action('wp_login', $user->user_login, $user);
 
-    // 10) Redirect
+    /**
+     * Redirect يدوي
+     */
     wp_safe_redirect(admin_url());
     exit;
 }
 
 /**
- * =====================================================
- * RUN SSO SAFELY
- * =====================================================
+ * شغّل SSO بدري قبل wp-login
  */
-add_action('login_init', 'coonex_handle_sso');
+add_action('init', 'coonex_jwt_sso', 1);
