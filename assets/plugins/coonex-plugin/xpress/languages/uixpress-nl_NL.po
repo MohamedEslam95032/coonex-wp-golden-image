@@ -1,0 +1,2306 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: uiXpress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-23 14:07+0800\n"
+"PO-Revision-Date: 2025-11-23 14:09+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+"X-Domain: uixpress\n"
+
+#: admin/src/Activity/ActivityLogger.php:53
+msgid "Every 30 Seconds"
+msgstr "Elke 30 seconden"
+
+#: admin/src/Analytics/AnalyticsCron.php:64
+msgid "Every 30 Minutes"
+msgstr "Om de 30 minuten"
+
+#: admin/src/Options/MediaOptions.php:193
+msgid "Unable to read SVG file for sanitization."
+msgstr "Kan SVG-bestand niet lezen voor opschoning."
+
+#: admin/src/Options/MediaOptions.php:207
+msgid ""
+"SVG file could not be sanitized. The file may be corrupted or contain "
+"invalid content."
+msgstr ""
+"Het SVG-bestand kon niet worden opgeschoond. Het bestand is mogelijk "
+"beschadigd of bevat ongeldige inhoud."
+
+#: admin/src/Options/MediaOptions.php:217
+msgid "Unable to write sanitized SVG file."
+msgstr "Kan geen opgeschoond SVG-bestand schrijven."
+
+#: admin/src/Options/MediaOptions.php:228
+msgid "Error sanitizing SVG file: %s"
+msgstr "Fout bij het opschonen van SVG-bestand: %s"
+
+#: admin/src/Pages/CustomActivityLogPage.php:45
+#: admin/src/Pages/CustomActivityLogPage.php:46
+msgid "Activity Log"
+msgstr "Activiteitlog"
+
+#: admin/src/Pages/CustomDashboardPage.php:93
+msgid "Welcome to WordPress"
+msgstr "Welkom bij Wordpress"
+
+#: admin/src/Pages/CustomDashboardPage.php:94
+msgid "Welcome to your WordPress dashboard! This is your site management hub."
+msgstr ""
+"Welkom bij uw WordPress-dashboard! Dit is uw centrum voor het beheer van uw "
+"website."
+
+#: admin/src/Pages/CustomDashboardPage.php:99
+msgid "Quick Draft"
+msgstr "Snel Concept"
+
+#: admin/src/Pages/CustomDashboardPage.php:100
+msgid "Create a new post quickly from here."
+msgstr "Maak hier snel een nieuw bericht aan."
+
+#: admin/src/Pages/CustomDashboardPage.php:105
+msgid "Activity"
+msgstr "Activiteit"
+
+#: admin/src/Pages/CustomDashboardPage.php:106
+msgid "Recent activity on your site."
+msgstr "Recente activiteit op uw site."
+
+#: admin/src/Pages/CustomPluginsPage.php:58
+#: app/src/pages/settings/index.vue:147
+msgid "Plugins"
+msgstr "Plugins"
+
+#: admin/src/Pages/DatabaseExplorerPage.php:47
+#: admin/src/Pages/DatabaseExplorerPage.php:48
+msgid "Database Explorer"
+msgstr "Database-verkenner"
+
+#: admin/src/Pages/DummyDataPage.php:55
+msgid "Generate Dummy Analytics Data"
+msgstr "Dummy-analysegegevens genereren"
+
+#: admin/src/Pages/DummyDataPage.php:59
+msgid "Warning:"
+msgstr "Waarschuwing:"
+
+#: admin/src/Pages/DummyDataPage.php:60
+msgid ""
+"This will delete all existing analytics data and replace it with dummy data "
+"for testing purposes."
+msgstr ""
+"Hierdoor worden alle bestaande analysegegevens verwijderd en vervangen door "
+"dummygegevens voor testdoeleinden."
+
+#: admin/src/Pages/DummyDataPage.php:65
+msgid "Generate Test Data"
+msgstr "Testgegevens genereren"
+
+#: admin/src/Pages/DummyDataPage.php:66
+msgid ""
+"This tool will generate realistic dummy analytics data for the last 2 months "
+"to help you test the analytics features."
+msgstr ""
+"Deze tool genereert realistische dummy-analysegegevens voor de afgelopen 2 "
+"maanden, zodat u de analysefuncties kunt testen."
+
+#: admin/src/Pages/DummyDataPage.php:75
+msgid "Number of Months"
+msgstr "Aantal maanden"
+
+#: admin/src/Pages/DummyDataPage.php:84
+msgid "Select how many months of dummy data to generate."
+msgstr "Selecteer hoeveel maanden dummygegevens u wilt genereren."
+
+#: admin/src/Pages/DummyDataPage.php:90
+msgid "Generate Dummy Data"
+msgstr "Dummygegevens genereren"
+
+#: admin/src/Pages/DummyDataPage.php:91
+msgid "Are you sure? This will delete all existing analytics data."
+msgstr ""
+"Weet u het zeker? Hiermee worden alle bestaande analysegegevens verwijderd."
+
+#: admin/src/Pages/DummyDataPage.php:97
+msgid "What This Generates"
+msgstr "Wat dit oplevert"
+
+#: admin/src/Pages/DummyDataPage.php:99
+msgid "Page views from various devices (desktop, mobile, tablet)"
+msgstr ""
+"Paginaweergaven vanaf verschillende apparaten (desktop, mobiel, tablet)"
+
+#: admin/src/Pages/DummyDataPage.php:100
+msgid "Realistic browser and operating system data"
+msgstr "Realistische browser- en besturingssysteemgegevens"
+
+#: admin/src/Pages/DummyDataPage.php:101
+msgid "Geographic data from different countries and cities"
+msgstr "Geografische gegevens van verschillende landen en steden"
+
+#: admin/src/Pages/DummyDataPage.php:102
+msgid "Referrer data from search engines and social media"
+msgstr "Verwijzingsgegevens van zoekmachines en sociale media"
+
+#: admin/src/Pages/DummyDataPage.php:103
+msgid "Session tracking and unique visitor data"
+msgstr "Sessietracking en unieke bezoekersgegevens"
+
+#: admin/src/Pages/DummyDataPage.php:104
+msgid "Aggregated daily statistics"
+msgstr "Geaggregeerde dagelijkse statistieken"
+
+#: admin/src/Pages/DummyDataPage.php:109
+msgid "Current Analytics Status"
+msgstr "Huidige analysestatus"
+
+#: admin/src/Pages/DummyDataPage.php:111
+msgid "Analytics Enabled:"
+msgstr "Analytics ingeschakeld:"
+
+#: admin/src/Pages/DummyDataPage.php:117
+msgid "Tables Created:"
+msgstr "Gemaakte tabellen:"
+
+#: admin/src/Pages/DummyDataPage.php:122
+msgid ""
+"Analytics must be enabled in the UiXpress settings before generating dummy "
+"data."
+msgstr ""
+"Analytics moet worden ingeschakeld in de UiXpress-instellingen voordat "
+"dummygegevens kunnen worden gegenereerd."
+
+#: admin/src/Pages/DummyDataPage.php:140
+msgid "Security check failed."
+msgstr "Beveiligingscontrole is mislukt."
+
+#: admin/src/Pages/DummyDataPage.php:145
+#: admin/src/Pages/CustomPluginsPage.php:171
+#: admin/src/Pages/RoleEditorPage.php:119 admin/src/Rest/PostsTables.php:108
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Je hebt niet voldoende rechten om deze pagina te bekijken."
+
+#: admin/src/Pages/DummyDataPage.php:150
+msgid "Analytics is not enabled. Please enable analytics in settings first."
+msgstr ""
+"Analytics is niet ingeschakeld. Schakel analytics eerst in via de "
+"instellingen."
+
+#: admin/src/Pages/DummyDataPage.php:156
+msgid "Invalid number of months. Please select between 1 and 12 months."
+msgstr "Ongeldig aantal maanden. Selecteer een waarde tussen 1 en 12 maanden."
+
+#: admin/src/Pages/DummyDataPage.php:171
+msgid "Error generating dummy data: "
+msgstr "Fout bij het genereren van dummygegevens: "
+
+#: admin/src/Pages/MenuBuilder.php:63
+msgid "Menu Creator"
+msgstr "Menu Creator"
+
+#: admin/src/Pages/MenuBuilder.php:294
+msgid "Add New Admin Menu"
+msgstr "Nieuw beheerdersmenu toevoegen"
+
+#: admin/src/Pages/MenuBuilder.php:295
+msgid "New Admin Menu"
+msgstr "Nieuw beheerdersmenu"
+
+#: admin/src/Pages/MenuBuilder.php:296
+msgid "Edit Admin Menu"
+msgstr "Beheermenu bewerken"
+
+#: admin/src/Pages/MenuBuilder.php:297
+msgid "View Admin Menu"
+msgstr "Beheermenu bekijken"
+
+#: admin/src/Pages/MenuBuilder.php:298
+msgid "All Admin Menus"
+msgstr "Alle beheerdersmenu's"
+
+#: admin/src/Pages/MenuBuilder.php:299
+msgid "Search Admin Menus"
+msgstr "Zoek in beheerdersmenu's"
+
+#: admin/src/Pages/MenuBuilder.php:300
+msgid "No Admin Menus found."
+msgstr "Geen beheerdersmenu's gevonden."
+
+#: admin/src/Pages/MenuBuilder.php:301
+msgid "No Admin Menus found in Trash."
+msgstr "Geen beheerdersmenu's gevonden in de prullenbak."
+
+#: admin/src/Pages/MenuBuilder.php:305
+msgid "Post type used for the uixpresss menus"
+msgstr "Posttype gebruikt voor de uixpresss-menu's"
+
+#: admin/src/Pages/RoleEditorPage.php:44
+msgid "Role Editor"
+msgstr "Rol Editor"
+
+#: admin/src/Pages/Settings.php:46 app/src/pages/settings/index.vue:613
+#: app/src/pages/posts/src/table-filters.vue:163
+msgid "Settings"
+msgstr "Instellingen"
+
+#: admin/src/Rest/ActivityLog.php:154 admin/src/Rest/MediaBulk.php:104
+msgid "You do not have permission to access this endpoint."
+msgstr "Je hebt geen toestemming om toegang te krijgen tot dit eindpunt."
+
+#: admin/src/Rest/ActivityLog.php:159
+msgid "Activity logger is not enabled."
+msgstr "Activiteitenlogboek is niet ingeschakeld."
+
+#: admin/src/Rest/ActivityLog.php:165 admin/src/Rest/DatabaseExplorer.php:209
+#: admin/src/Rest/MediaBulk.php:113 admin/src/Rest/MediaReplace.php:55
+#: admin/src/Rest/PluginManager.php:215 admin/src/Rest/RoleEditor.php:99
+#: admin/src/Rest/UserCapabilities.php:64 admin/src/Rest/UserRoles.php:63
+msgid "Invalid nonce"
+msgstr "Ongeldige nonce"
+
+#: admin/src/Rest/ActivityLog.php:202 admin/src/Rest/ActivityLog.php:236
+#: admin/src/Rest/ActivityLog.php:266
+msgid "Unknown"
+msgstr "Onbekend"
+
+#: admin/src/Rest/ActivityLog.php:228
+msgid "Log entry not found."
+msgstr "Logboekvermelding niet gevonden."
+
+#: admin/src/Rest/ActivityLog.php:288
+msgid "Cleaned up %d old log entries."
+msgstr "Oude logboekvermeldingen opgeschoond %d."
+
+#: admin/src/Rest/AdminNotices.php:43
+msgid "Add New Admin Notice"
+msgstr "Nieuwe beheerdersmelding toevoegen"
+
+#: admin/src/Rest/AdminNotices.php:44
+msgid "Edit Admin Notice"
+msgstr "Beheermededeling bewerken"
+
+#: admin/src/Rest/AdminNotices.php:45
+msgid "View Admin Notice"
+msgstr "Bekijk beheerdersbericht"
+
+#: admin/src/Rest/AdminNotices.php:46
+msgid "All Admin Notices"
+msgstr "Alle administratieve mededelingen"
+
+#: admin/src/Rest/AdminNotices.php:47
+msgid "Search Admin Notices"
+msgstr "Zoeken in beheerdersberichten"
+
+#: admin/src/Rest/AdminNotices.php:48
+msgid "No Admin Notices found."
+msgstr "Geen beheerdersberichten gevonden."
+
+#: admin/src/Rest/AdminNotices.php:52
+msgid "Persistent admin notices for uiXpress."
+msgstr "Aanhoudende beheerdersmeldingen voor uiXpress."
+
+#: admin/src/Rest/AdminNotices.php:183
+msgid "Admin Notices"
+msgstr "Admin mededelingen"
+
+#: admin/src/Rest/DatabaseExplorer.php:122
+#: admin/src/Rest/DatabaseExplorer.php:559
+msgid "Only SELECT queries are allowed for safety."
+msgstr "Om veiligheidsredenen zijn alleen SELECT-query's toegestaan."
+
+#: admin/src/Rest/DatabaseExplorer.php:203
+msgid "You do not have permission to access the database explorer."
+msgstr ""
+"U hebt geen toestemming om toegang te krijgen tot de database-explorer."
+
+#: admin/src/Rest/DatabaseExplorer.php:383
+#: admin/src/Rest/DatabaseExplorer.php:447
+#: admin/src/Rest/DatabaseExplorer.php:628
+#: admin/src/Rest/DatabaseExplorer.php:720
+msgid "Invalid table name."
+msgstr "Ongeldige tabelnaam."
+
+#: admin/src/Rest/DatabaseExplorer.php:388
+#: admin/src/Rest/DatabaseExplorer.php:452
+#: admin/src/Rest/DatabaseExplorer.php:633
+#: admin/src/Rest/DatabaseExplorer.php:743
+msgid "Table not found."
+msgstr "Tabel niet gevonden."
+
+#: admin/src/Rest/DatabaseExplorer.php:461
+msgid "Unable to retrieve table structure."
+msgstr "Kan tabelstructuur niet ophalen."
+
+#: admin/src/Rest/DatabaseExplorer.php:566
+msgid "Query contains prohibited SQL keywords."
+msgstr "Query bevat verboden SQL-sleutelwoorden."
+
+#: admin/src/Rest/DatabaseExplorer.php:577
+msgid "Multiple statements are not allowed."
+msgstr "Meerdere verklaringen zijn niet toegestaan."
+
+#: admin/src/Rest/DatabaseExplorer.php:601
+msgid "Query execution failed. Please check your SQL syntax."
+msgstr "Query-uitvoering mislukt. Controleer uw SQL-syntaxis."
+
+#: admin/src/Rest/DatabaseExplorer.php:655
+msgid "Password is required."
+msgstr "Wachtwoord is verplicht."
+
+#: admin/src/Rest/DatabaseExplorer.php:662
+#: admin/src/Rest/DatabaseExplorer.php:732
+msgid "Invalid password."
+msgstr "Ongeldig wachtwoord."
+
+#: admin/src/Rest/DatabaseExplorer.php:667
+msgid "Password verification failed."
+msgstr "Wachtwoordverificatie mislukt."
+
+#: admin/src/Rest/DatabaseExplorer.php:686
+msgid "WordPress core tables cannot be deleted."
+msgstr "WordPress-kern tabellen kunnen niet worden verwijderd."
+
+#: admin/src/Rest/DatabaseExplorer.php:696
+msgid "System tables cannot be deleted."
+msgstr "Systeemtabellen kunnen niet worden verwijderd."
+
+#: admin/src/Rest/DatabaseExplorer.php:725
+msgid "Password is required for this operation."
+msgstr "Voor deze handeling is een wachtwoord vereist."
+
+#: admin/src/Rest/DatabaseExplorer.php:761
+msgid "Failed to delete table."
+msgstr "Kan tabel niet verwijderen."
+
+#: admin/src/Rest/DatabaseExplorer.php:767
+msgid "Table '%s' has been deleted."
+msgstr "Table '%s' is verwijderd."
+
+#: admin/src/Rest/Media.php:42
+msgid ""
+"Return only unused media items (unattached and not used as featured image)."
+msgstr ""
+"Retourneer alleen ongebruikte media-items (niet gekoppeld en niet gebruikt "
+"als uitgelichte afbeelding)."
+
+#: admin/src/Rest/Media.php:48
+msgid "Unused detection mode: shallow (default) or deep (scans post_content)."
+msgstr ""
+"Ongebruikte detectiemodus: oppervlakkig (standaard) of diepgaand (scant "
+"post_content)."
+
+#: admin/src/Rest/MediaBulk.php:133
+msgid "Invalid media IDs provided."
+msgstr "Ongeldige media-ID's opgegeven."
+
+#: admin/src/Rest/MediaBulk.php:142
+msgid "Maximum 100 items can be downloaded at once."
+msgstr "Er kunnen maximaal 100 items tegelijk worden gedownload."
+
+#: admin/src/Rest/MediaBulk.php:151
+msgid "ZIP functionality is not available on this server."
+msgstr "ZIP-functionaliteit is niet beschikbaar op deze server."
+
+#: admin/src/Rest/MediaBulk.php:164
+msgid "Failed to create ZIP file."
+msgstr "Het maken van het ZIP-bestand is mislukt."
+
+#: admin/src/Rest/MediaBulk.php:191
+msgid "No valid files found to download."
+msgstr "Er zijn geen geldige bestanden gevonden om te downloaden."
+
+#: admin/src/Rest/MediaBulk.php:331 admin/src/Rest/MediaBulk.php:451
+#: admin/src/Rest/MediaBulk.php:468
+msgid "(Untitled)"
+msgstr "(Zonder titel)"
+
+#: admin/src/Rest/MediaReplace.php:46
+msgid "You do not have permission to upload files."
+msgstr "Je hebt geen rechten om bestanden te uploaden."
+
+#: admin/src/Rest/MediaReplace.php:79
+msgid "Media ID is required."
+msgstr "Media-ID is vereist."
+
+#: admin/src/Rest/MediaReplace.php:89
+msgid "Media item not found."
+msgstr "Media-item niet gevonden."
+
+#: admin/src/Rest/MediaReplace.php:98
+msgid "You do not have permission to edit this media item."
+msgstr "Je hebt geen toestemming om dit media-item te bewerken."
+
+#: admin/src/Rest/MediaReplace.php:108
+msgid "No file was uploaded."
+msgstr "Er is geen bestand geüploadet."
+
+#: admin/src/Rest/MediaReplace.php:121
+msgid "File upload failed. Please try again."
+msgstr "Het uploaden van het bestand is mislukt. Probeer het opnieuw."
+
+#: admin/src/Rest/MediaReplace.php:154
+msgid "File type not allowed."
+msgstr "Bestandstype niet toegestaan."
+
+#: admin/src/Rest/MediaReplace.php:174
+msgid "File content does not match file type."
+msgstr "De inhoud van het bestand komt niet overeen met het bestandstype."
+
+#: admin/src/Rest/MediaReplace.php:186
+msgid "File name contains invalid characters."
+msgstr "Bestandsnaam bevat ongeldige tekens."
+
+#: admin/src/Rest/MediaReplace.php:196
+msgid "Original file not found."
+msgstr "Origineel bestand niet gevonden."
+
+#: admin/src/Rest/MediaReplace.php:216
+msgid "Invalid file path."
+msgstr "Ongeldig bestandspad."
+
+#: admin/src/Rest/MediaReplace.php:233
+msgid "Failed to move uploaded file."
+msgstr "Het geüploade bestand kan niet worden verplaatst."
+
+#: admin/src/Rest/MediaReplace.php:296
+msgid "File replaced successfully."
+msgstr "Bestand succesvol vervangen."
+
+#: admin/src/Rest/MediaTags.php:66
+msgid "Filter media items by tag IDs."
+msgstr "Filter media-items op tag-ID's."
+
+#: admin/src/Rest/MediaTags.php:138
+msgid "Media Tags"
+msgstr "Mediatags"
+
+#: admin/src/Rest/MediaTags.php:139
+msgid "Media Tag"
+msgstr "Media-tag"
+
+#: admin/src/Rest/MediaTags.php:140 app/src/pages/posts/src/batch-edit.vue:147
+#: app/src/pages/posts/src/post-preview.vue:428
+#: app/src/pages/posts/src/tag-select.vue:362
+msgid "Tags"
+msgstr "Tags"
+
+#: admin/src/Rest/MediaTags.php:141
+msgid "All Tags"
+msgstr "Alle tags"
+
+#: admin/src/Rest/MediaTags.php:142
+msgid "Edit Tag"
+msgstr "Tag bewerken"
+
+#: admin/src/Rest/MediaTags.php:143
+msgid "View Tag"
+msgstr "Bekijk trefwoord"
+
+#: admin/src/Rest/MediaTags.php:144
+msgid "Update Tag"
+msgstr "Tag bijwerken"
+
+#: admin/src/Rest/MediaTags.php:145
+msgid "Add New Tag"
+msgstr "Voeg nieuwe tag toe"
+
+#: admin/src/Rest/MediaTags.php:146
+msgid "New Tag Name"
+msgstr "Nieuwe Tag Naam"
+
+#: admin/src/Rest/MediaTags.php:147
+msgid "Search Tags"
+msgstr "Zoek tags"
+
+#: admin/src/Rest/MediaTags.php:148
+msgid "Popular Tags"
+msgstr "Populaire tags"
+
+#: admin/src/Rest/MediaTags.php:149
+msgid "Separate tags with commas"
+msgstr "Labels scheiden met comma’s"
+
+#: admin/src/Rest/MediaTags.php:150
+msgid "Add or remove tags"
+msgstr "Toevoegen of verwijderen van tags"
+
+#: admin/src/Rest/MediaTags.php:151
+msgid "Choose from the most used tags"
+msgstr "Kies uit de meest gebruikte tags"
+
+#: admin/src/Rest/MediaTags.php:152
+msgid "No tags found"
+msgstr "Geen trefwoorden gevonden"
+
+#: admin/src/Rest/MediaTags.php:324
+msgid "Tag name is required"
+msgstr "Tagnaam is vereist"
+
+#: admin/src/Rest/MediaTags.php:372
+msgid "Invalid media item"
+msgstr "Ongeldig media-item"
+
+#: admin/src/Rest/MediaTags.php:468 admin/src/Rest/UserCapabilities.php:58
+msgid "You must be logged in to access this endpoint."
+msgstr "Je moet ingelogd zijn om toegang te krijgen tot dit eindpunt."
+
+#: admin/src/Rest/MediaTags.php:477
+msgid "You do not have permission to manage media tags."
+msgstr "Je hebt geen toestemming om mediatags te beheren."
+
+#: admin/src/Rest/PluginManager.php:208
+msgid "You do not have permission to perform this action."
+msgstr "Je hebt geen toestemming om deze actie uit te voeren."
+
+#: admin/src/Rest/PostsTables.php:354
+#: app/src/pages/posts/src/batch-edit.vue:158
+#: app/src/pages/posts/src/post-preview.vue:391
+msgid "Status"
+msgstr "Status"
+
+#: admin/src/Rest/PostsTables.php:373
+#: app/src/components/app/search/index.vue:548
+msgid "Published"
+msgstr "Gepubliceerd"
+
+#: admin/src/Rest/PostsTables.php:374 app/src/pages/settings/index.vue:180
+msgid "Comments"
+msgstr "Reacties"
+
+#: admin/src/Rest/PostsTables.php:584
+msgid "(No title)"
+msgstr "(Geen titel)"
+
+#: admin/src/Rest/PostsTables.php:602
+msgid "Scheduled for %s from now"
+msgstr "Gepland voor %s vanaf nu"
+
+#: admin/src/Rest/PostsTables.php:605
+msgid "%s ago"
+msgstr "%s geleden"
+
+#: admin/src/Rest/RoleEditor.php:93 admin/src/Rest/ServerHealth.php:57
+#: admin/src/Rest/UserRoles.php:57
+msgid "You do not have permissions to view this data."
+msgstr "U hebt geen toestemming om deze gegevens te bekijken."
+
+#: admin/src/Rest/RoleEditor.php:117 admin/src/Rest/RoleEditor.php:163
+#: admin/src/Rest/RoleEditor.php:241 admin/src/Rest/RoleEditor.php:449
+msgid "Invalid role format."
+msgstr "Ongeldig rolformaat."
+
+#: admin/src/Rest/RoleEditor.php:123 admin/src/Rest/RoleEditor.php:169
+#: admin/src/Rest/RoleEditor.php:247 admin/src/Rest/RoleEditor.php:455
+msgid "Invalid role."
+msgstr "Ongeldige rol."
+
+#: admin/src/Rest/RoleEditor.php:176
+msgid "Capabilities must be an array."
+msgstr "Capabilities moet een array zijn."
+
+#: admin/src/Rest/RoleEditor.php:181
+msgid "Role not found."
+msgstr "Rol niet gevonden."
+
+#: admin/src/Rest/RoleEditor.php:225
+msgid "Role capabilities updated successfully."
+msgstr "Rolcapaciteiten succesvol bijgewerkt."
+
+#: admin/src/Rest/RoleEditor.php:258 admin/src/Rest/RoleEditor.php:368
+msgid "Role name cannot be empty."
+msgstr "De naam van de rol mag niet leeg zijn."
+
+#: admin/src/Rest/RoleEditor.php:263 admin/src/Rest/RoleEditor.php:373
+msgid "Role name is too long."
+msgstr "De naam van de rol is te lang."
+
+#: admin/src/Rest/RoleEditor.php:275
+msgid "Role name updated successfully."
+msgstr "Rolnaam succesvol bijgewerkt."
+
+#: admin/src/Rest/RoleEditor.php:383
+msgid ""
+"Role slug can only contain lowercase letters, numbers, hyphens, and "
+"underscores."
+msgstr ""
+"De rol-slug mag alleen kleine letters, cijfers, koppeltekens en "
+"onderstrepingstekens bevatten."
+
+#: admin/src/Rest/RoleEditor.php:388
+msgid "Role slug is too long."
+msgstr "De rol-slug is te lang."
+
+#: admin/src/Rest/RoleEditor.php:395
+msgid "A role with this slug already exists."
+msgstr "Er bestaat al een rol met deze slug."
+
+#: admin/src/Rest/RoleEditor.php:418
+msgid "Failed to create role."
+msgstr "Kan rol niet aanmaken."
+
+#: admin/src/Rest/RoleEditor.php:433
+msgid "Role created successfully."
+msgstr "Rol succesvol aangemaakt."
+
+#: admin/src/Rest/RoleEditor.php:461
+msgid "Cannot delete default WordPress roles."
+msgstr "Standaard WordPress-rollen kunnen niet worden verwijderd."
+
+#: admin/src/Rest/RoleEditor.php:469
+msgid ""
+"Cannot delete role. There are %d user(s) with this role. Please reassign "
+"users to another role first."
+msgstr ""
+"De rol kan niet worden verwijderd. Er zijn %d gebruikers met deze rol. Wijs "
+"gebruikers eerst een andere rol toe."
+
+#: admin/src/Rest/RoleEditor.php:477
+msgid "Role deleted successfully."
+msgstr "Rol succesvol verwijderd."
+
+#: admin/src/Rest/UserAnalytics.php:211
+msgid "New Users"
+msgstr "Nieuwe gebruikers"
+
+#: app/src/pages/posts/index.vue:642 app/src/pages/posts/index.vue:812
+#: app/src/pages/settings/index.vue:141
+msgid "Posts"
+msgstr "Berichten"
+
+#: app/src/pages/posts/index.vue:650 app/src/pages/posts/index.vue:834
+msgid "Table View"
+msgstr "Tabelweergave"
+
+#: app/src/pages/posts/index.vue:659 app/src/pages/posts/index.vue:773
+#: app/src/pages/posts/index.vue:873 app/src/pages/posts/index.vue:901
+msgid "New post"
+msgstr "Nieuw bericht"
+
+#: app/src/pages/posts/index.vue:692
+msgid "Search posts..."
+msgstr "Zoek berichten..."
+
+#: app/src/pages/posts/index.vue:718
+msgid "item"
+msgstr "item"
+
+#: app/src/pages/posts/index.vue:719
+msgid "items"
+msgstr "items"
+
+#: app/src/pages/posts/index.vue:722
+msgid "Page"
+msgstr "Pagina"
+
+#: app/src/pages/posts/index.vue:731
+msgid "Previous"
+msgstr "Vorige"
+
+#: app/src/pages/posts/index.vue:742
+msgid "Next"
+msgstr "Volgende"
+
+#: app/src/pages/posts/index.vue:760
+msgid "Loading posts..."
+msgstr "Nieuwe berichten laden."
+
+#: app/src/pages/posts/index.vue:770
+msgid "No posts found"
+msgstr "Geen berichten gevonden"
+
+#: app/src/pages/posts/index.vue:781 app/src/pages/posts/index.vue:881
+#: app/src/pages/posts/index.vue:909
+#: app/src/pages/settings/src/custom-renders/external-stylesheets.vue:91
+msgid "Add new"
+msgstr "Nieuwe toevoegen"
+
+#: app/src/pages/posts/index.vue:833
+msgid "Sidebar View"
+msgstr "Zijbalkweergave"
+
+#: app/src/pages/posts/index.vue:851
+#: app/src/components/app/search/index.vue:1011
+msgid "Search posts"
+msgstr "Zoek in Berichten"
+
+#: app/src/pages/posts/index.vue:894
+msgid "Nothing found"
+msgstr "Niets gevonden"
+
+#: app/src/pages/posts/index.vue:895
+msgid "When you create new items they will show up here."
+msgstr "Wanneer u nieuwe items aanmaakt, worden deze hier weergegeven."
+
+#: app/src/pages/posts/index.vue:1003
+msgid "%s child items"
+msgstr "%s onderliggende items"
+
+#: app/src/pages/posts/index.vue:1009
+msgid "%s child item"
+msgstr "%s onderliggend item"
+
+#: app/src/pages/posts/index.vue:1067
+msgid "item selected"
+msgstr "geselecteerd item"
+
+#: app/src/pages/posts/index.vue:1068
+msgid "items selected"
+msgstr "objecten geselecteerd"
+
+#: app/src/pages/posts/index.vue:1075
+msgid "Publish items"
+msgstr "Items publiceren"
+
+#: app/src/pages/posts/index.vue:1089
+msgid "Duplicate items"
+msgstr "Kopieer items?"
+
+#: app/src/pages/posts/index.vue:1103
+msgid "Delete items"
+msgstr "Items verwijderen"
+
+#: app/src/pages/settings/index.vue:108
+msgid "General"
+msgstr "Algemeen"
+
+#: app/src/pages/settings/index.vue:110
+msgid "Core plugin settings and license management"
+msgstr "Kerninstellingen van de plug-in en licentiebeheer"
+
+#: app/src/pages/settings/index.vue:114
+msgid "Login"
+msgstr "Inloggen"
+
+#: app/src/pages/settings/index.vue:116
+msgid "Customize login page appearance and security"
+msgstr "Het uiterlijk en de beveiliging van de inlogpagina aanpassen"
+
+#: app/src/pages/settings/index.vue:120
+#: app/src/components/app/toolbar/index.vue:294
+#: app/src/components/app/menu/src/user-details.vue:235
+msgid "Theme"
+msgstr "Thema"
+
+#: app/src/pages/settings/index.vue:122
+msgid "Colors, styling, and visual customization"
+msgstr "Kleuren, styling en visuele aanpassingen"
+
+#: app/src/pages/settings/index.vue:126
+msgid "White Label"
+msgstr "WhiteLabel"
+
+#: app/src/pages/settings/index.vue:128
+msgid "Rebrand and customize interface text and icons"
+msgstr "Interfacetekst en pictogrammen opnieuw ontwerpen en aanpassen"
+
+#: app/src/pages/settings/index.vue:135
+msgid "Menu"
+msgstr "Menu"
+
+#: app/src/pages/settings/index.vue:137
+msgid "Admin menu behavior and interaction settings"
+msgstr "Instellingen voor het gedrag en de interactie van het beheerdersmenu"
+
+#: app/src/pages/settings/index.vue:143
+msgid "Post management and display preferences"
+msgstr "Voorkeuren voor berichtbeheer en weergave"
+
+#: app/src/pages/settings/index.vue:149
+msgid "Plugin management interface options"
+msgstr "Opties voor de interface voor plug-inbeheer"
+
+#: app/src/pages/settings/index.vue:153
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: app/src/pages/settings/index.vue:155
+msgid "Custom dashboard and admin interface settings"
+msgstr "Aangepaste instellingen voor dashboard en beheerdersinterface"
+
+#: app/src/pages/settings/index.vue:162
+msgid "Analytics"
+msgstr "Analytics"
+
+#: app/src/pages/settings/index.vue:164
+msgid "Built-in analytics and tracking settings"
+msgstr "Ingebouwde analyse- en trackinginstellingen"
+
+#: app/src/pages/settings/index.vue:168
+msgid "Media"
+msgstr "Media"
+
+#: app/src/pages/settings/index.vue:170
+msgid "Media library and upload management settings"
+msgstr "Instellingen voor mediabibliotheek en uploadbeheer"
+
+#: app/src/pages/settings/index.vue:174
+#: app/src/pages/posts/src/inline-user-select.vue:61
+#: app/src/components/utility/multiselect-roles-and-users/index.vue:66
+msgid "Users"
+msgstr "Gebruikers"
+
+#: app/src/pages/settings/index.vue:176
+msgid "User management and administration settings"
+msgstr "Gebruikersbeheer en administratie-instellingen"
+
+#: app/src/pages/settings/index.vue:182
+msgid "Comment management and administration settings"
+msgstr "Instellingen voor commentaarbeheer en administratie"
+
+#: app/src/pages/settings/index.vue:189
+msgid "Security"
+msgstr "Beveiliging"
+
+#: app/src/pages/settings/index.vue:191
+msgid "Security settings and administration"
+msgstr "Beveiligingsinstellingen en beheer"
+
+#: app/src/pages/settings/index.vue:195
+msgid "Database"
+msgstr "Database"
+
+#: app/src/pages/settings/index.vue:197
+msgid "Database explorer and management settings"
+msgstr "Database-verkenner en beheerinstellingen"
+
+#: app/src/pages/settings/index.vue:427
+#: app/src/pages/settings/src/settings-panel.vue:140
+msgid "Settings updated!"
+msgstr "Instellingen bijgewerkt!"
+
+#: app/src/pages/settings/index.vue:458
+msgid "Settings imported"
+msgstr "Instellingen geïmporteerd"
+
+#: app/src/pages/settings/index.vue:460
+msgid "Import failed"
+msgstr "Importeren mislukt"
+
+#: app/src/pages/settings/index.vue:469
+msgid "Please provide a valid JSON file"
+msgstr "Geef een geldig JSON-bestand op."
+
+#: app/src/pages/settings/index.vue:480 app/src/pages/settings/index.vue:491
+msgid "Invalid settings: must be an object"
+msgstr "Ongeldige instellingen: moet een object zijn"
+
+#: app/src/pages/settings/index.vue:504
+msgid "Error uploading settings"
+msgstr "Fout bij het uploaden van instellingen"
+
+#: app/src/pages/settings/index.vue:661
+msgid "Search settings..."
+msgstr "Zoekinstellingen..."
+
+#: app/src/pages/settings/index.vue:689
+msgid "Loading settings..."
+msgstr "Instellingen laden..."
+
+#: app/src/pages/settings/index.vue:700
+#: app/src/pages/settings/src/settings-panel.vue:528
+msgid "No settings found"
+msgstr "Geen instellingen gevonden"
+
+#: app/src/pages/settings/index.vue:701
+msgid "Try a different search term"
+msgstr "Probeer een andere zoekterm"
+
+#: app/src/pages/settings/index.vue:767
+msgid "Loading Settings..."
+msgstr "Instellingen laden..."
+
+#: app/src/pages/settings/index.vue:779
+msgid "Settings Panel"
+msgstr "Instellingenpaneel"
+
+#: app/src/pages/settings/index.vue:780
+msgid "Select a category from the list to configure your settings."
+msgstr ""
+"Selecteer een categorie uit de lijst om uw instellingen te configureren."
+
+#: app/src/pages/settings/src/settings-config.js:25
+#: app/src/pages/settings/src/settings-panel.vue:87
+msgid "Click"
+msgstr "Klik"
+
+#: app/src/pages/settings/src/settings-config.js:26
+#: app/src/pages/settings/src/settings-panel.vue:88
+msgid "Hover"
+msgstr "Hover"
+
+#: app/src/pages/settings/src/settings-config.js:34
+#: app/src/pages/settings/src/settings-panel.vue:91
+msgid "Off"
+msgstr "Uit"
+
+#: app/src/pages/settings/src/settings-config.js:35
+#: app/src/pages/settings/src/settings-panel.vue:92
+#: app/src/components/app/toolbar/index.vue:312
+msgid "Light"
+msgstr "Light"
+
+#: app/src/pages/settings/src/settings-config.js:36
+#: app/src/pages/settings/src/settings-panel.vue:93
+#: app/src/components/app/toolbar/index.vue:321
+msgid "Dark"
+msgstr "Donker"
+
+#: app/src/pages/settings/src/settings-config.js:53
+msgid "Licence key"
+msgstr "Licentiesleutel"
+
+#: app/src/pages/settings/src/settings-config.js:54
+msgid "Activating uiXpress enables updates and features"
+msgstr "Door uiXpress te activeren, worden updates en functies ingeschakeld."
+
+#: app/src/pages/settings/src/settings-config.js:66
+msgid "Logo"
+msgstr "Logo"
+
+#: app/src/pages/settings/src/settings-config.js:67
+msgid "Optional logo for to be displayed in the menu"
+msgstr "Optioneel logo dat in het menu kan worden weergegeven"
+
+#: app/src/pages/settings/src/settings-config.js:73
+msgid "Logo url"
+msgstr "Logo-url"
+
+#: app/src/pages/settings/src/settings-config.js:81
+msgid "Dark mode logo"
+msgstr "Donkere modus-logo"
+
+#: app/src/pages/settings/src/settings-config.js:82
+msgid ""
+"Set an alternative logo to use in dark mode. If one isn't set it will fall "
+"back to the standard logo."
+msgstr ""
+"Stel een alternatief logo in voor gebruik in de donkere modus. Als er geen "
+"alternatief logo is ingesteld, wordt het standaardlogo gebruikt."
+
+#: app/src/pages/settings/src/settings-config.js:88
+msgid "Dark Logo url"
+msgstr "Donker logo url"
+
+#: app/src/pages/settings/src/settings-config.js:96
+msgid "Disable theme"
+msgstr "Thema uitschakelen"
+
+#: app/src/pages/settings/src/settings-config.js:97
+msgid "Choose roles or usersnames to disable the theme for."
+msgstr ""
+"Kies rollen of gebruikersnamen waarvoor je het thema wilt uitschakelen."
+
+#: app/src/pages/settings/src/settings-config.js:111
+msgid "Search post types"
+msgstr "Zoek berichttypen"
+
+#: app/src/pages/settings/src/settings-config.js:112
+msgid "Choose which post types are available in the global search"
+msgstr "Kies welke berichttypen beschikbaar zijn in de algemene zoekfunctie"
+
+#: app/src/pages/settings/src/settings-config.js:126
+msgid "Disable global search"
+msgstr "Globale zoekfunctie uitschakelen"
+
+#: app/src/pages/settings/src/settings-config.js:127
+msgid "Disable global search for all users."
+msgstr "Schakel het algemene zoeken voor alle gebruikers uit."
+
+#: app/src/pages/settings/src/settings-config.js:138
+msgid "Admin layout"
+msgstr "Beheerderslay-out"
+
+#: app/src/pages/settings/src/settings-config.js:139
+msgid "Choose your prefered admin layout"
+msgstr "Kies uw gewenste beheerlay-out"
+
+#: app/src/pages/settings/src/settings-config.js:152
+msgid "Modernise login page"
+msgstr "Moderniseer de inlogpagina"
+
+#: app/src/pages/settings/src/settings-config.js:153
+msgid "When enabled, uiXpress will modernise the default login page."
+msgstr ""
+"Wanneer deze optie is ingeschakeld, zal uiXpress de standaard inlogpagina "
+"moderniseren."
+
+#: app/src/pages/settings/src/settings-config.js:167
+msgid "Login image"
+msgstr "Login afbeelding"
+
+#: app/src/pages/settings/src/settings-config.js:168
+msgid "Optional image that will be added to the empty panel in the login page"
+msgstr ""
+"Optionele afbeelding die wordt toegevoegd aan het lege paneel op de "
+"inlogpagina"
+
+#: app/src/pages/settings/src/settings-config.js:174
+msgid "Image url"
+msgstr "URL afbeelding"
+
+#: app/src/pages/settings/src/settings-config.js:182
+msgid "Login path"
+msgstr "Inlogpad"
+
+#: app/src/pages/settings/src/settings-config.js:183
+msgid ""
+"Change the login url from wp-login.php to a custom slug. Ensure you remember "
+"what you change this to."
+msgstr ""
+"Wijzig de inlog-URL van wp-login.php naar een aangepaste slug. Zorg ervoor "
+"dat u onthoudt waarnaar u deze wijzigt."
+
+#: app/src/pages/settings/src/settings-config.js:199
+msgid "Hide language selector"
+msgstr "Taalkeuze verbergen"
+
+#: app/src/pages/settings/src/settings-config.js:200
+msgid ""
+"When hidden the language selector on the login page will not be displayed"
+msgstr ""
+"Wanneer verborgen, wordt de taalkeuzeknop op de inlogpagina niet weergegeven."
+
+#: app/src/pages/settings/src/settings-config.js:214
+msgid "Enable TurnStyle"
+msgstr "TurnStyle inschakelen"
+
+#: app/src/pages/settings/src/settings-config.js:215
+msgid ""
+"When enabled, a cloudflare turnstyle challenge will be displayed on the "
+"login page to enhance security. Cloudflare account is required"
+msgstr ""
+"Wanneer deze optie is ingeschakeld, wordt er een Cloudflare-turnstile-"
+"uitdaging weergegeven op de inlogpagina om de veiligheid te verbeteren. Een "
+"Cloudflare-account is vereist."
+
+#: app/src/pages/settings/src/settings-config.js:229
+msgid "Turnstyle site key"
+msgstr "Turnstyle-locatiesleutel"
+
+#: app/src/pages/settings/src/settings-config.js:230
+msgid ""
+"This is the site key for your turnstyle which can be created from your "
+"cloudflare dashboard."
+msgstr ""
+"Dit is de sitesleutel voor uw tourniquet, die u kunt aanmaken vanuit uw "
+"Cloudflare-dashboard."
+
+#: app/src/pages/settings/src/settings-config.js:247
+msgid "Turnstyle secret key"
+msgstr "Turnstyle geheime sleutel"
+
+#: app/src/pages/settings/src/settings-config.js:248
+msgid ""
+"This is the secret key for your turnstyle which can be created from your "
+"cloudflare dashboard."
+msgstr ""
+"Dit is de geheime sleutel voor uw tourniquet, die u kunt aanmaken vanuit uw "
+"Cloudflare-dashboard."
+
+#: app/src/pages/settings/src/settings-config.js:269
+msgid "Force global theme"
+msgstr "Globaal thema afdwingen"
+
+#: app/src/pages/settings/src/settings-config.js:270
+msgid ""
+"When enabled, the light / dark toggle will be removed and the selected theme "
+"set for all users."
+msgstr ""
+"Wanneer deze optie is ingeschakeld, wordt de schakelaar voor licht/donker "
+"verwijderd en wordt het geselecteerde thema voor alle gebruikers ingesteld."
+
+#: app/src/pages/settings/src/settings-config.js:285
+msgid "Hide screen options"
+msgstr "Schermopties verbergen"
+
+#: app/src/pages/settings/src/settings-config.js:286
+msgid "Hide the screen options toggle in the toolbar"
+msgstr "Verberg de schakelaar voor schermopties in de werkbalk"
+
+#: app/src/pages/settings/src/settings-config.js:300
+msgid "Hide help toggle"
+msgstr "Hulp verbergen"
+
+#: app/src/pages/settings/src/settings-config.js:301
+msgid "Hide the help toggle in the toolbar"
+msgstr "Verberg de hulpknop in de werkbalk"
+
+#: app/src/pages/settings/src/settings-config.js:312
+msgid "Base theme colors"
+msgstr "Basisthema kleuren"
+
+#: app/src/pages/settings/src/settings-config.js:313
+msgid ""
+"Set a base color and uiXpress will automatically create a color scale for "
+"you."
+msgstr ""
+"Stel een basiskleur in en uiXpress maakt automatisch een kleurenschaal voor "
+"u."
+
+#: app/src/pages/settings/src/settings-config.js:322
+msgid "Base"
+msgstr "Basis"
+
+#: app/src/pages/settings/src/settings-config.js:330
+msgid "Accent theme colors"
+msgstr "Accentkleuren van het thema"
+
+#: app/src/pages/settings/src/settings-config.js:331
+msgid ""
+"Set a accent color and uiXpress will automatically create a color scale for "
+"you."
+msgstr ""
+"Stel een accentkleur in en uiXpress maakt automatisch een kleurenschaal voor "
+"u."
+
+#: app/src/pages/settings/src/settings-config.js:340
+msgid "Accent base"
+msgstr "Accentbasis"
+
+#: app/src/pages/settings/src/settings-config.js:348
+msgid "Custom css"
+msgstr "Aangepaste CSS"
+
+#: app/src/pages/settings/src/settings-config.js:349
+msgid ""
+"Custom css added here will only be added in the admin area and login page."
+msgstr ""
+"Aangepaste css die hier wordt toegevoegd, wordt alleen toegevoegd in het "
+"beheergedeelte en op de inlogpagina."
+
+#: app/src/pages/settings/src/settings-config.js:361
+msgid "External stylesheets"
+msgstr "Externe stylesheets"
+
+#: app/src/pages/settings/src/settings-config.js:362
+msgid ""
+"Add URLs to any external stylesheets you want uiXpress to load into the admin"
+msgstr ""
+"Voeg URL's toe aan externe stylesheets die u wilt dat uiXpress in de admin "
+"laadt."
+
+#: app/src/pages/settings/src/settings-config.js:378
+msgid "Admin favicon"
+msgstr "Beheerder favicon"
+
+#: app/src/pages/settings/src/settings-config.js:379
+msgid "Optional favicon to replace the WordPress favicon in the admin."
+msgstr "Optionele favicon om de WordPress-favicon in de admin te vervangen."
+
+#: app/src/pages/settings/src/settings-config.js:385
+msgid "Favicon url"
+msgstr "Favicon-url"
+
+#: app/src/pages/settings/src/settings-config.js:393
+msgid "Rename uiXpress"
+msgstr "Hernoem uiXpress"
+
+#: app/src/pages/settings/src/settings-config.js:394
+msgid ""
+"This will rename uiXpress in the plugins list as well as renaming it's "
+"settings link."
+msgstr ""
+"Hierdoor wordt uiXpress in de lijst met plug-ins hernoemd en wordt ook de "
+"link naar de instellingen hernoemd."
+
+#: app/src/pages/settings/src/settings-config.js:410
+msgid "Text Replacement"
+msgstr "Tekstvervanging"
+
+#: app/src/pages/settings/src/settings-config.js:411
+msgid ""
+"Customize the text displayed in the WordPress admin area. Enter original "
+"words or phrases and their replacements to white-label the admin interface."
+msgstr ""
+"Pas de tekst aan die wordt weergegeven in het WordPress-beheergedeelte. Voer "
+"originele woorden of zinnen en hun vervangingen in om de beheerdersinterface "
+"te voorzien van een white label."
+
+#: app/src/pages/settings/src/settings-config.js:427
+msgid "Submenu style"
+msgstr "Submenu-stijl"
+
+#: app/src/pages/settings/src/settings-config.js:428
+msgid "Choose from whether the submenu opens on click or hover."
+msgstr ""
+"Kies of het submenu wordt geopend wanneer je erop klikt of wanneer je er met "
+"de muis overheen gaat."
+
+#: app/src/pages/settings/src/settings-config.js:447
+msgid "Classic Post List View"
+msgstr "Klassieke lijstweergave van berichten"
+
+#: app/src/pages/settings/src/settings-config.js:448
+msgid ""
+"Switch to WordPress's traditional table layout for posts, removing the "
+"modern interface."
+msgstr ""
+"Schakel over naar de traditionele tabelindeling van WordPress voor berichten "
+"en verwijder de moderne interface."
+
+#: app/src/pages/settings/src/settings-config.js:466
+msgid "Modern Plugin Manager"
+msgstr "Moderne plug-inbeheerder"
+
+#: app/src/pages/settings/src/settings-config.js:467
+msgid ""
+"Replace the classic plugins page with a modern plugin manager with plugin "
+"profiling and improved features."
+msgstr ""
+"Vervang de klassieke plug-inpagina door een moderne plug-inmanager met plug-"
+"inprofilering en verbeterde functies."
+
+#: app/src/pages/settings/src/settings-config.js:485
+msgid "Modern Media Library"
+msgstr "Moderne mediabibliotheek"
+
+#: app/src/pages/settings/src/settings-config.js:486
+msgid ""
+"Replace the classic WordPress media library with a modern, responsive media "
+"manager with improved upload and organization features."
+msgstr ""
+"Vervang de klassieke WordPress-mediabibliotheek door een moderne, "
+"responsieve mediabeheerder met verbeterde upload- en organisatie functies."
+
+#: app/src/pages/settings/src/settings-config.js:500
+msgid "Enable SVG Uploads"
+msgstr "SVG-uploads inschakelen"
+
+#: app/src/pages/settings/src/settings-config.js:501
+msgid ""
+"Allow SVG (Scalable Vector Graphics) files to be uploaded to the media "
+"library. All SVG files are automatically sanitized before upload to remove "
+"potentially malicious code, ensuring safe handling of SVG files."
+msgstr ""
+"Sta toe dat SVG-bestanden (Scalable Vector Graphics) worden geüpload naar de "
+"mediabibliotheek. Alle SVG-bestanden worden automatisch opgeschoond voordat "
+"ze worden geüpload om potentieel schadelijke code te verwijderen, waardoor "
+"een veilige verwerking van SVG-bestanden wordt gegarandeerd."
+
+#: app/src/pages/settings/src/settings-config.js:519
+msgid "Modern Users Page"
+msgstr "Moderne gebruikerspagina"
+
+#: app/src/pages/settings/src/settings-config.js:520
+msgid ""
+"Replace the classic WordPress users page with a modern, responsive user "
+"manager with improved features and better organization."
+msgstr ""
+"Vervang de klassieke WordPress-gebruikerspagina door een moderne, "
+"responsieve gebruikersbeheerder met verbeterde functies en een betere "
+"organisatie."
+
+#: app/src/pages/settings/src/settings-config.js:534
+msgid "Modern Comments Page"
+msgstr "Moderne commentaarpagina"
+
+#: app/src/pages/settings/src/settings-config.js:535
+msgid ""
+"Replace the classic WordPress comments page with a modern, responsive "
+"comment manager with improved features and better organization."
+msgstr ""
+"Vervang de klassieke WordPress-commentaarpagina door een moderne, "
+"responsieve commentaarmanager met verbeterde functies en een betere "
+"organisatie."
+
+#: app/src/pages/settings/src/settings-config.js:553
+msgid "Custom Dashboard"
+msgstr "Aangepast dashboard"
+
+#: app/src/pages/settings/src/settings-config.js:554
+msgid ""
+"Replace the default WordPress dashboard with a modern, customizable "
+"dashboard interface."
+msgstr ""
+"Vervang het standaard WordPress-dashboard door een moderne, aanpasbare "
+"dashboardinterface."
+
+#: app/src/pages/settings/src/settings-config.js:572
+msgid "Enable uiXpress Analytics"
+msgstr "Schakel uiXpress Analytics in"
+
+#: app/src/pages/settings/src/settings-config.js:573
+msgid ""
+"Enable built-in analytics to track user behavior, page views, and "
+"performance metrics within your WordPress admin."
+msgstr ""
+"Schakel ingebouwde analyses in om gebruikersgedrag, paginaweergaven en "
+"prestatiestatistieken bij te houden binnen uw WordPress-beheeromgeving."
+
+#: app/src/pages/settings/src/settings-config.js:591
+msgid "Enable Database Explorer"
+msgstr "Database Explorer inschakelen"
+
+#: app/src/pages/settings/src/settings-config.js:592
+msgid ""
+"Enable the modern database explorer interface to browse tables, view data, "
+"and execute SQL queries safely."
+msgstr ""
+"Schakel de moderne database-explorerinterface in om veilig door tabellen te "
+"bladeren, gegevens te bekijken en SQL-query's uit te voeren."
+
+#: app/src/pages/settings/src/settings-config.js:610
+msgid "Enable Role Editor"
+msgstr "Rol-editor inschakelen"
+
+#: app/src/pages/settings/src/settings-config.js:611
+msgid ""
+"Enable the modern role editor interface to manage WordPress user roles and "
+"capabilities."
+msgstr ""
+"Schakel de moderne rolbewerkingsinterface in om WordPress-gebruikersrollen "
+"en -mogelijkheden te beheren."
+
+#: app/src/pages/settings/src/settings-config.js:629
+msgid "Enable Activity Logger"
+msgstr "Activiteitenlogboek inschakelen"
+
+#: app/src/pages/settings/src/settings-config.js:630
+msgid ""
+"Track and log all admin actions including post changes, user updates, plugin "
+"activations, and more."
+msgstr ""
+"Volg en registreer alle beheerdersacties, waaronder wijzigingen in "
+"berichten, gebruikersupdates, activeringen van plug-ins en meer."
+
+#: app/src/pages/settings/src/settings-config.js:644
+msgid "Retention Period (Days)"
+msgstr "Bewaartermijn (dagen)"
+
+#: app/src/pages/settings/src/settings-config.js:645
+msgid ""
+"How many days to keep activity logs before automatic cleanup. Default is 90 "
+"days."
+msgstr ""
+"Hoeveel dagen moeten activiteitenlogboeken worden bewaard voordat ze "
+"automatisch worden opgeschoond? De standaardinstelling is 90 dagen."
+
+#: app/src/pages/settings/src/settings-config.js:664
+msgid "Log Level"
+msgstr "Logboekniveau"
+
+#: app/src/pages/settings/src/settings-config.js:665
+msgid ""
+"Choose which actions to log. \"All Actions\" logs everything, \"Important "
+"Only\" logs only critical actions like deletions and role changes."
+msgstr ""
+"Kies welke acties u wilt loggen. \"Alle acties\" logt alles, \"Alleen "
+"belangrijk\" logt alleen kritieke acties zoals verwijderingen en "
+"rolwijzigingen."
+
+#: app/src/pages/settings/src/settings-config.js:673
+msgid "All Actions"
+msgstr "Prijsklasse"
+
+#: app/src/pages/settings/src/settings-config.js:674
+msgid "Important Only"
+msgstr "Belangrijk Alleen"
+
+#: app/src/pages/settings/src/settings-config.js:684
+msgid "Auto Cleanup"
+msgstr "Automatische opschoning"
+
+#: app/src/pages/settings/src/settings-config.js:685
+msgid ""
+"Automatically delete logs older than the retention period. Disable to keep "
+"logs indefinitely."
+msgstr ""
+"Verwijder automatisch logbestanden die ouder zijn dan de bewaartermijn. "
+"Schakel deze optie uit om logbestanden onbeperkt te bewaren."
+
+#: app/src/pages/settings/src/settings-panel.vue:201
+#: app/src/pages/settings/src/settings-panel.vue:213
+msgid "Failed to activate key"
+msgstr "Kan sleutel niet activeren"
+
+#: app/src/pages/settings/src/settings-panel.vue:222
+msgid "Key already activated for this site"
+msgstr "Sleutel al geactiveerd voor deze site"
+
+#: app/src/pages/settings/src/settings-panel.vue:223
+msgid "Key successfully activated"
+msgstr "Sleutel succesvol geactiveerd"
+
+#: app/src/pages/settings/src/settings-panel.vue:237
+msgid "Network error during activation"
+msgstr "Netwerkfout tijdens activering"
+
+#: app/src/pages/settings/src/settings-panel.vue:342
+#: app/src/pages/settings/src/settings-panel.vue:395
+msgid "Instance removed"
+msgstr "Instantie verwijderd"
+
+#: app/src/pages/settings/src/settings-panel.vue:377
+#: app/src/pages/settings/src/settings-panel.vue:391
+msgid "Failed to remove activation"
+msgstr "Activering kan niet worden verwijderd"
+
+#: app/src/pages/settings/src/settings-panel.vue:411
+msgid "Network error during removal"
+msgstr "Netwerkfout tijdens verwijdering"
+
+#: app/src/pages/settings/src/settings-panel.vue:499
+#: app/src/components/app/menu/index.vue:1167
+msgid "Save"
+msgstr "Opslaan"
+
+#: app/src/pages/settings/src/settings-panel.vue:506
+msgid "Please add your licence key to unlock the plugin settings"
+msgstr ""
+"Voeg uw licentiesleutel toe om de instellingen van de plug-in te "
+"ontgrendelen."
+
+#: app/src/pages/settings/src/settings-panel.vue:514
+msgid "Found"
+msgstr "Gevonden"
+
+#: app/src/pages/settings/src/settings-panel.vue:516
+msgid "matching setting(s)"
+msgstr "overeenkomende instelling(en)"
+
+#: app/src/pages/settings/src/settings-panel.vue:529
+msgid "No settings match your search in this category."
+msgstr ""
+"Er zijn geen instellingen die overeenkomen met uw zoekopdracht in deze "
+"categorie."
+
+#: app/src/pages/settings/src/settings-panel.vue:530
+msgid "Try a different search term or check another category."
+msgstr "Probeer een andere zoekterm of kijk in een andere categorie."
+
+#: app/src/pages/posts/src/batchDuplicatePosts.js:47
+msgid "Items duplicated"
+msgstr "Items gedupliceerd"
+
+#: app/src/pages/posts/src/updatePostAuthor.js:20
+msgid "Item author updated"
+msgstr "Auteur van het item bijgewerkt"
+
+#: app/src/pages/posts/src/inlineTitleUpdate.js:27
+msgid "Item title updated"
+msgstr "Titel van het item bijgewerkt"
+
+#: app/src/pages/posts/src/batchPublishPosts.js:21
+#: app/src/pages/posts/src/post-actions.vue:162
+#: app/src/pages/posts/src/batchDeletePosts.js:21
+#: app/src/components/utility/media-library/index.vue:377
+#: app/src/components/utility/media-library/index.vue:467
+msgid "Are you sure?"
+msgstr "Weet je het zeker?"
+
+#: app/src/pages/posts/src/batchPublishPosts.js:22
+msgid "Are you sure you want to publish these items?"
+msgstr "Weet u zeker dat u deze items wilt publiceren?"
+
+#: app/src/pages/posts/src/batchPublishPosts.js:23
+msgid "Yes publish them"
+msgstr "Ja, publiceer ze."
+
+#: app/src/pages/posts/src/batchPublishPosts.js:45
+msgid "Items published"
+msgstr "Gepubliceerde items"
+
+#: app/src/pages/posts/src/updatePostStatus.js:18
+msgid "Item status updated"
+msgstr "Status van het artikel bijgewerkt"
+
+#: app/src/pages/posts/src/post-actions.vue:40
+#: app/src/pages/posts/src/post-preview.vue:365
+msgid "Edit"
+msgstr "Bewerken"
+
+#: app/src/pages/posts/src/post-actions.vue:50
+#: app/src/pages/posts/src/post-preview.vue:382
+msgid "View"
+msgstr "Bekijk"
+
+#: app/src/pages/posts/src/post-actions.vue:57
+msgid "Duplicate"
+msgstr "Kopiëren"
+
+#: app/src/pages/posts/src/post-actions.vue:66
+msgid "Restore"
+msgstr "Herstellen"
+
+#: app/src/pages/posts/src/post-actions.vue:82
+#: app/src/components/app/menu/index.vue:1190
+msgid "Delete"
+msgstr "Verwijderen"
+
+#: app/src/pages/posts/src/post-actions.vue:155
+msgid "Item duplicated"
+msgstr "Item gedupliceerd"
+
+#: app/src/pages/posts/src/post-actions.vue:163
+#: app/src/components/utility/media-library/index.vue:378
+msgid ""
+"Are you sure you want to delete this item? This action cannot be undone."
+msgstr ""
+"Weet u zeker dat u dit item wilt verwijderen? Deze actie kan niet ongedaan "
+"worden gemaakt."
+
+#: app/src/pages/posts/src/post-actions.vue:167
+#: app/src/components/utility/media-library/index.vue:379
+msgid "Yes delete it"
+msgstr "Ja, verwijder het."
+
+#: app/src/pages/posts/src/post-actions.vue:185
+msgid "Item deleted"
+msgstr "x"
+
+#: app/src/pages/posts/src/post-actions.vue:201
+msgid "Item restored"
+msgstr "Item hersteld"
+
+#: app/src/pages/posts/src/inline-user-select.vue:61
+#: app/src/components/utility/multiselect-roles-and-users/index.vue:66
+msgid "Roles"
+msgstr "Rollen"
+
+#: app/src/pages/posts/src/inline-user-select.vue:142
+msgid "Unknown user"
+msgstr "Onbekende gebruiker"
+
+#: app/src/pages/posts/src/inline-user-select.vue:151
+msgid "Update author"
+msgstr "Bewaar auteur"
+
+#: app/src/pages/posts/src/inline-user-select.vue:156
+#: app/src/pages/posts/src/inline-status-select.vue:98
+#: app/src/pages/posts/src/table-filters.vue:185
+#: app/src/components/utility/media-library/index.vue:751
+#: app/src/components/utility/multiselect-roles-and-users/index.vue:203
+msgid "Search"
+msgstr "Zoeken"
+
+#: app/src/pages/posts/src/inline-image-select.vue:57
+msgid "Featured image updated"
+msgstr "Uitgelichte afbeelding bijgewerkt"
+
+#: app/src/pages/posts/src/inline-status-select.vue:93
+msgid "Update status"
+msgstr "Status bijwerken"
+
+#: app/src/pages/posts/src/batchDeletePosts.js:22
+msgid ""
+"Are you sure you want to delete these items? This action cannot be undone."
+msgstr ""
+"Weet u zeker dat u deze items wilt verwijderen? Deze actie kan niet ongedaan "
+"worden gemaakt."
+
+#: app/src/pages/posts/src/batchDeletePosts.js:23
+#: app/src/components/utility/media-library/index.vue:469
+msgid "Yes delete them"
+msgstr "Ja, verwijder ze."
+
+#: app/src/pages/posts/src/batchDeletePosts.js:45
+msgid "Items deleted"
+msgstr "Verwijderde items"
+
+#: app/src/pages/posts/src/batch-edit.vue:57
+msgid "Publish changes?"
+msgstr "Wijzigingen publiceren?"
+
+#: app/src/pages/posts/src/batch-edit.vue:58
+msgid "Are you sure you want to batch update these items?"
+msgstr "Weet u zeker dat u deze items in één keer wilt bijwerken?"
+
+#: app/src/pages/posts/src/batch-edit.vue:59
+msgid "Yes update them"
+msgstr "Ja, werk ze bij."
+
+#: app/src/pages/posts/src/batch-edit.vue:89
+msgid "Items updated"
+msgstr "Bijgewerkte items"
+
+#: app/src/pages/posts/src/batch-edit.vue:118
+#: app/src/pages/posts/src/batch-edit.vue:129
+msgid "Batch edit"
+msgstr "Batchbewerking"
+
+#: app/src/pages/posts/src/batch-edit.vue:134
+#: app/src/pages/posts/src/table-filters.vue:179
+#: app/src/pages/posts/src/post-preview.vue:413
+#: app/src/pages/posts/src/category-select.vue:362
+msgid "Categories"
+msgstr "Categorieën"
+
+#: app/src/pages/posts/src/batch-edit.vue:168
+#: app/src/pages/posts/src/post-preview.vue:402
+msgid "Author"
+msgstr "Auteur"
+
+#: app/src/pages/posts/src/batch-edit.vue:185
+#: app/src/components/app/menu/index.vue:1177
+#: app/src/components/utility/media-library/index.vue:1201
+#: app/src/components/utility/date-range-picker/index.vue:140
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: app/src/pages/posts/src/batch-edit.vue:196
+msgid "Update"
+msgstr "Bijwerken"
+
+#: app/src/pages/posts/src/table-filters.vue:174
+msgid "Filters"
+msgstr "Filters"
+
+#: app/src/pages/posts/src/table-filters.vue:190
+msgid "Date range"
+msgstr "Datum reeks"
+
+#: app/src/pages/posts/src/table-filters.vue:198
+msgid "Table settings"
+msgstr "Tabelinstellingen"
+
+#: app/src/pages/posts/src/table-filters.vue:201
+msgid "Per page"
+msgstr "Per Pagina"
+
+#: app/src/pages/posts/src/table-filters.vue:212
+msgid "Order"
+msgstr "Bestelling"
+
+#: app/src/pages/posts/src/table-filters.vue:221
+msgid "Order by"
+msgstr "Sorteer op"
+
+#: app/src/pages/posts/src/table-filters.vue:230
+msgid "Expand all posts"
+msgstr "Alle berichten uitvouwen"
+
+#: app/src/pages/posts/src/table-filters.vue:239
+msgid "Columns"
+msgstr "Kolommen"
+
+#: app/src/pages/posts/src/posts-list.vue:239
+#: app/src/pages/posts/src/post-preview.vue:324
+msgid "Untitled"
+msgstr "Naamloos"
+
+#: app/src/pages/posts/src/posts-list.vue:259
+msgid "child"
+msgstr "kinderen"
+
+#: app/src/pages/posts/src/posts-list.vue:260
+msgid "children"
+msgstr "kinderen"
+
+#: app/src/pages/posts/src/constants.js:18
+msgid "All"
+msgstr "Alle"
+
+#: app/src/pages/posts/src/constants.js:19
+msgid "Drafts"
+msgstr "Concepten"
+
+#: app/src/pages/posts/src/post-preview.vue:305
+msgid "Post Details"
+msgstr "Berichtdetails"
+
+#: app/src/pages/posts/src/post-preview.vue:306
+msgid "Select a post from the list to view details and edit properties."
+msgstr ""
+"Selecteer een bericht uit de lijst om details te bekijken en eigenschappen "
+"te bewerken."
+
+#: app/src/pages/posts/src/post-preview.vue:443
+#: app/src/components/app/menu/index.vue:1133
+#: app/src/components/utility/media-library/index.vue:1071
+msgid "URL"
+msgstr "URL"
+
+#: app/src/pages/posts/src/post-preview.vue:454
+msgid "Preview"
+msgstr "Voorbeeld"
+
+#: app/src/components/app/menu/index.vue:845
+msgid "Minify menu"
+msgstr "Menu verkleinen"
+
+#: app/src/components/app/menu/index.vue:883
+msgid "Search menu"
+msgstr "Zoekmenu"
+
+#: app/src/components/app/menu/index.vue:1094
+msgid "Shortcuts"
+msgstr "Snelkoppelingen"
+
+#: app/src/components/app/menu/index.vue:1123
+msgid "Name"
+msgstr "Naam"
+
+#: app/src/components/app/menu/index.vue:1129
+msgid "Shortcut name"
+msgstr "Snelkoppelingnaam"
+
+#: app/src/components/app/menu/index.vue:1139
+msgid "https://example.com"
+msgstr "https://voorbeeld.com"
+
+#: app/src/components/app/menu/index.vue:1143
+msgid "Icon"
+msgstr "Icoon"
+
+#: app/src/components/app/menu/index.vue:1156
+msgid "icon name"
+msgstr "pictogramnaam"
+
+#: app/src/components/app/toolbar/index.vue:163
+#: app/src/components/app/toolbar/index.vue:193
+msgid "Toggle menu"
+msgstr "Menu togglen"
+
+#: app/src/components/app/toolbar/index.vue:303
+#: app/src/components/app/menu/src/user-details.vue:272
+msgid "System"
+msgstr "Systeem"
+
+#: app/src/components/app/toolbar/index.vue:332
+#: app/src/components/app/toolbar/index.vue:336
+msgid "Logout"
+msgstr "Uitloggen"
+
+#: app/src/pages/settings/src/custom-renders/color-scale.vue:101
+msgid "Clear custom properties"
+msgstr "Aangepaste eigenschappen wissen"
+
+#: app/src/pages/settings/src/custom-renders/layout-selector.vue:39
+msgid "Default"
+msgstr "Standaard"
+
+#: app/src/pages/settings/src/custom-renders/layout-selector.vue:43
+msgid "Rounded"
+msgstr "Afgerond"
+
+#: app/src/pages/settings/src/custom-renders/layout-selector.vue:47
+msgid "Bubble"
+msgstr "Bubbel"
+
+#: app/src/pages/settings/src/custom-renders/code-editor.vue:89
+msgid "Update settings"
+msgstr "Instellingen opslaan"
+
+#: app/src/pages/settings/src/custom-renders/code-editor.vue:100
+msgid "Loading editor..."
+msgstr "Editor wordt geladen..."
+
+#: app/src/pages/settings/src/custom-renders/license-key.vue:57
+msgid "Licence Active"
+msgstr "Licentie actief"
+
+#: app/src/pages/settings/src/custom-renders/license-key.vue:66
+msgid "Remove key"
+msgstr "Code verwijderen"
+
+#: app/src/pages/settings/src/custom-renders/license-key.vue:79
+msgid "uiXpress licence key"
+msgstr "uiXpress-licentiesleutel"
+
+#: app/src/pages/settings/src/custom-renders/license-key.vue:88
+msgid "Activate"
+msgstr "Activeren"
+
+#: app/src/pages/settings/src/custom-renders/license-key.vue:94
+msgid "Development server detected, no need to activate your licence key."
+msgstr ""
+"Ontwikkelingsserver gedetecteerd, u hoeft uw licentiesleutel niet te "
+"activeren."
+
+#: app/src/components/utility/media-library/index.vue:142
+msgid "Date"
+msgstr "Datum"
+
+#: app/src/components/utility/media-library/index.vue:143
+msgid "ID"
+msgstr "ID"
+
+#: app/src/components/utility/media-library/index.vue:144
+msgid "Modified"
+msgstr "Gewijzigd"
+
+#: app/src/components/utility/media-library/index.vue:145
+msgid "Slug"
+msgstr "Slug"
+
+#: app/src/components/utility/media-library/index.vue:146
+#: app/src/components/utility/media-library/index.vue:1027
+msgid "Title"
+msgstr "Titel"
+
+#: app/src/components/utility/media-library/index.vue:366
+msgid "File updated"
+msgstr "Bestand bijgewerkt"
+
+#: app/src/components/utility/media-library/index.vue:391
+msgid "File deleted"
+msgstr "Bestand verwijderd"
+
+#: app/src/components/utility/media-library/index.vue:456
+msgid "Files duplicated"
+msgstr "Bestanden gedupliceerd"
+
+#: app/src/components/utility/media-library/index.vue:468
+msgid ""
+"Are you sure you want to delete these files? This action cannot be undone."
+msgstr ""
+"Weet u zeker dat u deze bestanden wilt verwijderen? Deze actie kan niet "
+"ongedaan worden gemaakt."
+
+#: app/src/components/utility/media-library/index.vue:485
+msgid "Files deleted"
+msgstr "Verwijderde bestanden"
+
+#: app/src/components/utility/media-library/index.vue:585
+msgid "File uploaded"
+msgstr "Bestand geüpload"
+
+#: app/src/components/utility/media-library/index.vue:733
+msgid "Media Library"
+msgstr "Mediabibliotheek"
+
+#: app/src/components/utility/media-library/index.vue:762
+msgid "File type"
+msgstr "Bestandstype"
+
+#: app/src/components/utility/media-library/index.vue:864
+msgid "Upload"
+msgstr "Uploaden"
+
+#: app/src/components/utility/media-library/index.vue:997
+#: app/src/components/app/search/index.vue:1297
+msgid "No results found"
+msgstr "Geen resultaten gevonden"
+
+#: app/src/components/utility/media-library/index.vue:998
+msgid "Edit your search criteria, or upload a new file."
+msgstr "Wijzig uw zoekcriteria of upload een nieuw bestand."
+
+#: app/src/components/utility/media-library/index.vue:1038
+msgid "Alt text"
+msgstr "Alternatieve tekst"
+
+#: app/src/components/utility/media-library/index.vue:1049
+msgid "Caption"
+msgstr "Onderschrift"
+
+#: app/src/components/utility/media-library/index.vue:1060
+msgid "Description"
+msgstr "Omschrijving"
+
+#: app/src/components/utility/media-library/index.vue:1090
+msgid "Delete file"
+msgstr "Verwijder bestand"
+
+#: app/src/components/utility/media-library/index.vue:1161
+msgid "Delete selected"
+msgstr "Verwijder selectie"
+
+#: app/src/components/utility/media-library/index.vue:1174
+msgid "Duplicate selected"
+msgstr "Geselecteerde items dupliceren"
+
+#: app/src/components/utility/media-library/index.vue:1186
+msgid "Clear selection"
+msgstr "Wis selectie"
+
+#: app/src/components/utility/media-library/index.vue:1210
+msgid "Done"
+msgstr "Klaar"
+
+#: app/src/pages/posts/src/category-select.vue:411
+#: app/src/pages/posts/src/category-select.vue:414
+#: app/src/pages/posts/src/tag-select.vue:411
+#: app/src/pages/posts/src/tag-select.vue:414
+msgid "No products found"
+msgstr "Geen producten gevonden"
+
+#: app/src/components/utility/date-range-picker/index.vue:108
+msgid "Select date"
+msgstr "Selecteer Datum"
+
+#: app/src/components/utility/date-range-picker/index.vue:154
+msgid "Set date"
+msgstr "Stel datum in"
+
+#: app/src/components/app/search/index.vue:311
+msgid "Magic dark mode enabled for this page"
+msgstr "Magische donkere modus ingeschakeld voor deze pagina"
+
+#: app/src/components/app/search/index.vue:323
+msgid "Failed to enable magic dark mode"
+msgstr "Kan de magische donkere modus niet inschakelen"
+
+#: app/src/components/app/search/index.vue:363
+msgid "Magic dark mode disabled for this page"
+msgstr "Magische donkere modus uitgeschakeld voor deze pagina"
+
+#: app/src/components/app/search/index.vue:375
+msgid "Failed to disable magic dark mode"
+msgstr "Kan de magische donkere modus niet uitschakelen"
+
+#: app/src/components/app/search/index.vue:384
+msgid "New Post"
+msgstr "Nieuw Bericht"
+
+#: app/src/components/app/search/index.vue:390
+msgid "New Page"
+msgstr "Nieuwe pagina"
+
+#: app/src/components/app/search/index.vue:396
+#: app/src/components/app/toolbar/src/buttons/view-site/component.vue:52
+msgid "View dashboard"
+msgstr "Dashboard bekijken"
+
+#: app/src/components/app/search/index.vue:402
+#: app/src/components/app/toolbar/src/buttons/view-site/component.vue:33
+msgid "View site"
+msgstr "Bekijk de site"
+
+#: app/src/components/app/search/index.vue:408
+msgid "Site settings"
+msgstr "Site instellingen"
+
+#: app/src/components/app/search/index.vue:415
+msgid "Dark mode"
+msgstr "Donkere modus"
+
+#: app/src/components/app/search/index.vue:422
+msgid "Light mode"
+msgstr "Lichte modus"
+
+#: app/src/components/app/search/index.vue:429
+msgid "Enable magic dark mode for this page"
+msgstr "Schakel de magische donkere modus in voor deze pagina"
+
+#: app/src/components/app/search/index.vue:436
+msgid "Disable magic dark mode for this page"
+msgstr "Schakel de magische donkere modus voor deze pagina uit"
+
+#: app/src/components/app/search/index.vue:503
+msgid "Just now"
+msgstr "Zojuist"
+
+#: app/src/components/app/search/index.vue:506
+msgid "minute"
+msgstr "minuut"
+
+#: app/src/components/app/search/index.vue:506
+msgid "minutes"
+msgstr "minuten"
+
+#: app/src/components/app/search/index.vue:507
+#: app/src/components/app/search/index.vue:511
+#: app/src/components/app/search/index.vue:515
+msgid "ago"
+msgstr "geleden"
+
+#: app/src/components/app/search/index.vue:510
+msgid "hour"
+msgstr "uur"
+
+#: app/src/components/app/search/index.vue:510
+msgid "hours"
+msgstr "uren"
+
+#: app/src/components/app/search/index.vue:514
+msgid "day"
+msgstr "dag"
+
+#: app/src/components/app/search/index.vue:514
+msgid "days"
+msgstr "dagen"
+
+#: app/src/components/app/search/index.vue:549
+msgid "Draft"
+msgstr "Concept"
+
+#: app/src/components/app/search/index.vue:550
+msgid "Pending"
+msgstr "In afwachting"
+
+#: app/src/components/app/search/index.vue:551
+msgid "Private"
+msgstr "Privé"
+
+#: app/src/components/app/search/index.vue:552
+msgid "Scheduled"
+msgstr "Ingepland"
+
+#: app/src/components/app/search/index.vue:1014
+msgid "Find users"
+msgstr "Gebruikers zoeken"
+
+#: app/src/components/app/search/index.vue:1015
+msgid "Quick actions"
+msgstr "Snelle acties"
+
+#: app/src/components/app/search/index.vue:1016
+msgid "View commands"
+msgstr "Commando's bekijken"
+
+#: app/src/components/app/search/index.vue:1157
+msgid "Search posts, pages, categories, users..."
+msgstr "Zoek berichten, pagina's, categorieën, gebruikers..."
+
+#: app/src/components/app/search/index.vue:1221
+msgid "Welcome to Global Search"
+msgstr "Welkom bij Global Search"
+
+#: app/src/components/app/search/index.vue:1222
+msgid ""
+"Quickly find posts, pages, users, and more. Here are some tips to get "
+"started:"
+msgstr ""
+"Vind snel berichten, pagina's, gebruikers en meer. Hier zijn enkele tips om "
+"aan de slag te gaan:"
+
+#: app/src/components/app/search/index.vue:1267
+msgid "Press"
+msgstr "Pers"
+
+#: app/src/components/app/search/index.vue:1269
+msgid "to open search"
+msgstr "zoekopdracht openen"
+
+#: app/src/components/app/search/index.vue:1276
+msgid "Got it, thanks!"
+msgstr "Snap het, bedankt!"
+
+#: app/src/components/app/search/index.vue:1298
+msgid "Try a different search term or use command syntax to filter results."
+msgstr ""
+"Probeer een andere zoekterm of gebruik de commandosyntaxis om de resultaten "
+"te filteren."
+
+#: app/src/components/app/search/index.vue:1306
+msgid "View Commands"
+msgstr "Commando's bekijken"
+
+#: app/src/components/app/search/index.vue:1310
+msgid "Clear Search"
+msgstr "Zoekopdracht wissen"
+
+#: app/src/components/app/search/index.vue:1332
+msgid "Start searching"
+msgstr "Begin met zoeken"
+
+#: app/src/components/app/search/index.vue:1333
+msgid "Search for posts, pages, users, categories, or use quick actions."
+msgstr ""
+"Zoek naar berichten, pagina's, gebruikers, categorieën of gebruik snelle "
+"acties."
+
+#: app/src/components/app/search/index.vue:1338
+msgid "Try these:"
+msgstr "Probeer deze eens:"
+
+#: app/src/components/app/search/index.vue:1361
+msgid "Keyboard Shortcuts"
+msgstr "Toetsenbord sneltoetsen"
+
+#: app/src/components/app/search/index.vue:1365
+msgid "Navigate"
+msgstr "Navigeren"
+
+#: app/src/components/app/search/index.vue:1369
+msgid "Select"
+msgstr "Selecteer"
+
+#: app/src/components/app/search/index.vue:1373
+#: app/src/components/app/wp-notifications/index.vue:171
+msgid "Close"
+msgstr "Sluiten"
+
+#: app/src/components/app/search/index.vue:1377
+msgid "Open"
+msgstr "Open"
+
+#: app/src/components/app/search/index.vue:1386
+msgid "Show tutorial again"
+msgstr "Tutorial opnieuw weergeven"
+
+#: app/src/components/app/search/index.vue:1395
+msgid "Command Syntax"
+msgstr "Commando-syntaxis"
+
+#: app/src/components/app/search/index.vue:1399
+msgid "Search only posts"
+msgstr "Zoek alleen berichten"
+
+#: app/src/components/app/search/index.vue:1403
+msgid "Search only pages"
+msgstr "Alleen pagina's zoeken"
+
+#: app/src/components/app/search/index.vue:1407
+msgid "Search only users"
+msgstr "Alleen gebruikers zoeken"
+
+#: app/src/components/app/search/index.vue:1411
+msgid "Search only categories"
+msgstr "Alleen categorieën zoeken"
+
+#: app/src/components/app/search/index.vue:1415
+msgid "Show only quick actions"
+msgstr "Alleen snelle acties weergeven"
+
+#: app/src/components/app/search/index.vue:1427
+msgid "Recent Searches"
+msgstr "Recente zoekopdrachten"
+
+#: app/src/components/app/search/index.vue:1431
+#, fuzzy
+msgid "Clear"
+msgstr "Wissen"
+
+#: app/src/components/app/search/index.vue:1457
+msgid "Recently Accessed"
+msgstr "Onlangs bekeken"
+
+#: app/src/components/app/search/index.vue:1501
+msgid "Frequently Used"
+msgstr "Veelgebruikte"
+
+#: app/src/components/app/search/index.vue:1540
+#: app/src/components/app/menu/src/user-details.vue:282
+msgid "Quick Actions"
+msgstr "Snelle acties"
+
+#: app/src/components/app/search/index.vue:1759
+msgid "to navigate"
+msgstr "navigeren"
+
+#: app/src/components/app/search/index.vue:1765
+msgid "to select"
+msgstr "selecteren"
+
+#: app/src/components/app/search/index.vue:1769
+msgid "to close"
+msgstr "sluiten"
+
+#: app/src/components/app/wp-notifications/index.vue:127
+#: app/src/components/app/wp-notifications/index.vue:168
+#: app/src/components/app/admin-notices/index.vue:198
+#: app/src/components/app/admin-notices/index.vue:225
+msgid "Notifications"
+msgstr "Meldingen"
+
+#: app/src/components/app/wp-notifications/index.vue:181
+msgid "No notifications"
+msgstr "Geen meldingen"
+
+#: app/src/components/app/menu/src/user-details.vue:89
+msgid "Edit Profile"
+msgstr "Bewerk profiel"
+
+#: app/src/components/app/menu/src/user-details.vue:96
+msgid "Visit site"
+msgstr "Bezoek site"
+
+#: app/src/components/app/menu/src/user-details.vue:103
+msgid "Site Settings"
+msgstr "Site-instellingen"
+
+#: app/src/components/app/menu/src/user-details.vue:110
+msgid "Sign Out"
+msgstr "Afmelden"
+
+#: app/src/components/app/menu/src/user-details.vue:244
+msgid "Light Mode"
+msgstr "Lichtmodus"
+
+#: app/src/components/app/menu/src/user-details.vue:258
+msgid "Dark Mode"
+msgstr "Donkere modus"
+
+#: app/src/components/app/menu/src/user-details.vue:291
+msgid "Focus Search"
+msgstr "Focus zoeken"
+
+#: app/src/components/app/admin-notices/index.vue:254
+msgid "You're all caught up"
+msgstr "Je bent helemaal bij."
+
+#: app/src/components/app/admin-notices/index.vue:255
+msgid "No new notifications"
+msgstr "Geen nieuwe meldingen"
+
+#: app/src/components/utility/icon-select/index.vue:143
+msgid "Search icons"
+msgstr "Zoekpictogrammen"
+
+#: app/src/pages/settings/src/text-pairs.vue:41
+msgid "Find"
+msgstr "Zoek"
+
+#: app/src/pages/settings/src/text-pairs.vue:47
+msgid "Replace"
+msgstr "Vervangen"
+
+#: app/src/pages/settings/src/text-pairs.vue:67
+msgid "New item"
+msgstr "Nieuw item"
+
+#: app/src/components/utility/code-editor/index.vue:222
+msgid "Edit CSS"
+msgstr "CSS bewerken"
+
+#: app/src/components/utility/code-editor/index.vue:265
+msgid "Finished"
+msgstr "Afgerond"
+
+#: app/src/components/app/toolbar/src/buttons/screen-options/component.vue:64
+msgid "Screen options"
+msgstr "Schermopties"
+
+#: app/src/components/app/toolbar/src/buttons/help/component.vue:63
+msgid "Help"
+msgstr "Help"
+
+#: app/src/components/utility/multiselect-roles-and-users/index.vue:171
+#: app/src/components/utility/post-type-select/index.vue:114
+msgid "Items selected"
+msgstr "Geselecteerde items"
+
+#: app/src/components/utility/multiselect-roles-and-users/index.vue:172
+msgid "Select users or roles"
+msgstr "Selecteer gebruikers of rollen"
+
+#: app/src/components/utility/post-type-select/index.vue:115
+msgid "Select post types"
+msgstr "Selecteer post types"
+
+#: app/src/components/utility/image-select/index.vue:56
+msgid "Select or Upload Media"
+msgstr "Selecteer of upload media"
+
+#: app/src/components/utility/image-select/index.vue:58
+msgid "Use this media"
+msgstr "Gebruik deze media"
+
+#: app/src/components/utility/image-select/index.vue:115
+msgid "url"
+msgstr "url"
+
+#: admin/src/Rest/PostsTables.php:85
+msgid "You must be logged in to access this page."
+msgstr "Je moet ingelogd zijn om toegang te krijgen tot deze pagina."
+
+#: admin/src/Rest/PostsTables.php:104
+msgid "Invalid request. Please refresh the page and try again."
+msgstr "Ongeldige aanvraag. Vernieuw de pagina en probeer het opnieuw."
+
+#: app/src/pages/posts/src/table-filters.vue:54
+msgid "Ascending"
+msgstr "Oplopend"
+
+#: app/src/pages/posts/src/table-filters.vue:55
+msgid "Descending"
+msgstr "Aflopend"

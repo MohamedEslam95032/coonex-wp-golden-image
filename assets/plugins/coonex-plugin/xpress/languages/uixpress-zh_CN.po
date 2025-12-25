@@ -1,0 +1,2213 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: uiXpress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-23 14:07+0800\n"
+"PO-Revision-Date: 2025-11-23 14:13+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+"X-Domain: uixpress\n"
+
+#: admin/src/Activity/ActivityLogger.php:53
+msgid "Every 30 Seconds"
+msgstr "每30秒"
+
+#: admin/src/Analytics/AnalyticsCron.php:64
+msgid "Every 30 Minutes"
+msgstr "每30分钟"
+
+#: admin/src/Options/MediaOptions.php:193
+msgid "Unable to read SVG file for sanitization."
+msgstr "无法读取SVG文件进行清理。"
+
+#: admin/src/Options/MediaOptions.php:207
+msgid ""
+"SVG file could not be sanitized. The file may be corrupted or contain "
+"invalid content."
+msgstr "SVG文件无法进行安全处理。该文件可能已损坏或包含无效内容。"
+
+#: admin/src/Options/MediaOptions.php:217
+msgid "Unable to write sanitized SVG file."
+msgstr "无法写入经过清理的SVG文件。"
+
+#: admin/src/Options/MediaOptions.php:228
+msgid "Error sanitizing SVG file: %s"
+msgstr "SVG文件清理错误：%s"
+
+#: admin/src/Pages/CustomActivityLogPage.php:45
+#: admin/src/Pages/CustomActivityLogPage.php:46
+msgid "Activity Log"
+msgstr "活动日志"
+
+#: admin/src/Pages/CustomDashboardPage.php:93
+msgid "Welcome to WordPress"
+msgstr "欢迎来到WordPress"
+
+#: admin/src/Pages/CustomDashboardPage.php:94
+msgid "Welcome to your WordPress dashboard! This is your site management hub."
+msgstr "欢迎来到您的WordPress仪表板！这里是您网站的管理中心。"
+
+#: admin/src/Pages/CustomDashboardPage.php:99
+msgid "Quick Draft"
+msgstr "快速草稿"
+
+#: admin/src/Pages/CustomDashboardPage.php:100
+msgid "Create a new post quickly from here."
+msgstr "在此快速创建新帖。"
+
+#: admin/src/Pages/CustomDashboardPage.php:105
+msgid "Activity"
+msgstr "动态"
+
+#: admin/src/Pages/CustomDashboardPage.php:106
+msgid "Recent activity on your site."
+msgstr "您网站上的近期活动。"
+
+#: admin/src/Pages/CustomPluginsPage.php:58
+#: app/src/pages/settings/index.vue:147
+msgid "Plugins"
+msgstr "插件"
+
+#: admin/src/Pages/DatabaseExplorerPage.php:47
+#: admin/src/Pages/DatabaseExplorerPage.php:48
+msgid "Database Explorer"
+msgstr "数据库资源管理器"
+
+#: admin/src/Pages/DummyDataPage.php:55
+msgid "Generate Dummy Analytics Data"
+msgstr "生成虚拟分析数据"
+
+#: admin/src/Pages/DummyDataPage.php:59
+msgid "Warning:"
+msgstr "警告："
+
+#: admin/src/Pages/DummyDataPage.php:60
+msgid ""
+"This will delete all existing analytics data and replace it with dummy data "
+"for testing purposes."
+msgstr "这将删除所有现有分析数据，并替换为用于测试目的的虚拟数据。"
+
+#: admin/src/Pages/DummyDataPage.php:65
+msgid "Generate Test Data"
+msgstr "生成测试数据"
+
+#: admin/src/Pages/DummyDataPage.php:66
+msgid ""
+"This tool will generate realistic dummy analytics data for the last 2 months "
+"to help you test the analytics features."
+msgstr "该工具将生成过去两个月的真实模拟分析数据，以帮助您测试分析功能。"
+
+#: admin/src/Pages/DummyDataPage.php:75
+msgid "Number of Months"
+msgstr "月数"
+
+#: admin/src/Pages/DummyDataPage.php:84
+msgid "Select how many months of dummy data to generate."
+msgstr "选择要生成的虚拟数据的月份数。"
+
+#: admin/src/Pages/DummyDataPage.php:90
+msgid "Generate Dummy Data"
+msgstr "生成虚拟数据"
+
+#: admin/src/Pages/DummyDataPage.php:91
+msgid "Are you sure? This will delete all existing analytics data."
+msgstr "确定吗？这将删除所有现有的分析数据。"
+
+#: admin/src/Pages/DummyDataPage.php:97
+msgid "What This Generates"
+msgstr "这会生成什么"
+
+#: admin/src/Pages/DummyDataPage.php:99
+msgid "Page views from various devices (desktop, mobile, tablet)"
+msgstr "来自不同设备的页面浏览量（台式机、手机、平板）"
+
+#: admin/src/Pages/DummyDataPage.php:100
+msgid "Realistic browser and operating system data"
+msgstr "真实的浏览器和操作系统数据"
+
+#: admin/src/Pages/DummyDataPage.php:101
+msgid "Geographic data from different countries and cities"
+msgstr "来自不同国家和城市的地理数据"
+
+#: admin/src/Pages/DummyDataPage.php:102
+msgid "Referrer data from search engines and social media"
+msgstr "来自搜索引擎和社交媒体的引荐来源数据"
+
+#: admin/src/Pages/DummyDataPage.php:103
+msgid "Session tracking and unique visitor data"
+msgstr "会话跟踪与独立访客数据"
+
+#: admin/src/Pages/DummyDataPage.php:104
+msgid "Aggregated daily statistics"
+msgstr "每日汇总统计"
+
+#: admin/src/Pages/DummyDataPage.php:109
+msgid "Current Analytics Status"
+msgstr "当前分析状态"
+
+#: admin/src/Pages/DummyDataPage.php:111
+msgid "Analytics Enabled:"
+msgstr "分析功能已启用："
+
+#: admin/src/Pages/DummyDataPage.php:117
+msgid "Tables Created:"
+msgstr "创建的表："
+
+#: admin/src/Pages/DummyDataPage.php:122
+msgid ""
+"Analytics must be enabled in the UiXpress settings before generating dummy "
+"data."
+msgstr "在生成虚拟数据之前，必须在UiXpress设置中启用分析功能。"
+
+#: admin/src/Pages/DummyDataPage.php:140
+msgid "Security check failed."
+msgstr "安全检查失败。"
+
+#: admin/src/Pages/DummyDataPage.php:145
+#: admin/src/Pages/CustomPluginsPage.php:171
+#: admin/src/Pages/RoleEditorPage.php:119 admin/src/Rest/PostsTables.php:108
+msgid "You do not have sufficient permissions to access this page."
+msgstr "您没有足够的权限访问此页面。"
+
+#: admin/src/Pages/DummyDataPage.php:150
+msgid "Analytics is not enabled. Please enable analytics in settings first."
+msgstr "分析功能尚未启用。请先在设置中启用分析功能。"
+
+#: admin/src/Pages/DummyDataPage.php:156
+msgid "Invalid number of months. Please select between 1 and 12 months."
+msgstr "月份数量无效。请选择1至12个月之间的数值。"
+
+#: admin/src/Pages/DummyDataPage.php:171
+msgid "Error generating dummy data: "
+msgstr "生成虚拟数据时出错： "
+
+#: admin/src/Pages/MenuBuilder.php:63
+msgid "Menu Creator"
+msgstr "菜单创建者"
+
+#: admin/src/Pages/MenuBuilder.php:294
+msgid "Add New Admin Menu"
+msgstr "添加新的管理员菜单"
+
+#: admin/src/Pages/MenuBuilder.php:295
+msgid "New Admin Menu"
+msgstr "管理菜单"
+
+#: admin/src/Pages/MenuBuilder.php:296
+msgid "Edit Admin Menu"
+msgstr "管理菜单"
+
+#: admin/src/Pages/MenuBuilder.php:297
+msgid "View Admin Menu"
+msgstr "查看管理员菜单"
+
+#: admin/src/Pages/MenuBuilder.php:298
+msgid "All Admin Menus"
+msgstr "所有管理菜单"
+
+#: admin/src/Pages/MenuBuilder.php:299
+msgid "Search Admin Menus"
+msgstr "搜索管理菜单"
+
+#: admin/src/Pages/MenuBuilder.php:300
+msgid "No Admin Menus found."
+msgstr "未找到管理员菜单。"
+
+#: admin/src/Pages/MenuBuilder.php:301
+msgid "No Admin Menus found in Trash."
+msgstr "在废纸篓中找不到管理菜单。"
+
+#: admin/src/Pages/MenuBuilder.php:305
+msgid "Post type used for the uixpresss menus"
+msgstr "用于 uixpresss 菜单的帖子类型"
+
+#: admin/src/Pages/RoleEditorPage.php:44
+msgid "Role Editor"
+msgstr "角色编辑器"
+
+#: admin/src/Pages/Settings.php:46 app/src/pages/settings/index.vue:613
+#: app/src/pages/posts/src/table-filters.vue:163
+msgid "Settings"
+msgstr "设置"
+
+#: admin/src/Rest/ActivityLog.php:154 admin/src/Rest/MediaBulk.php:104
+msgid "You do not have permission to access this endpoint."
+msgstr "您没有访问此端点的权限。"
+
+#: admin/src/Rest/ActivityLog.php:159
+msgid "Activity logger is not enabled."
+msgstr "活动记录器未启用。"
+
+#: admin/src/Rest/ActivityLog.php:165 admin/src/Rest/DatabaseExplorer.php:209
+#: admin/src/Rest/MediaBulk.php:113 admin/src/Rest/MediaReplace.php:55
+#: admin/src/Rest/PluginManager.php:215 admin/src/Rest/RoleEditor.php:99
+#: admin/src/Rest/UserCapabilities.php:64 admin/src/Rest/UserRoles.php:63
+msgid "Invalid nonce"
+msgstr "无效随机值"
+
+#: admin/src/Rest/ActivityLog.php:202 admin/src/Rest/ActivityLog.php:236
+#: admin/src/Rest/ActivityLog.php:266
+msgid "Unknown"
+msgstr "未知"
+
+#: admin/src/Rest/ActivityLog.php:228
+msgid "Log entry not found."
+msgstr "日志条目未找到。"
+
+#: admin/src/Rest/ActivityLog.php:288
+msgid "Cleaned up %d old log entries."
+msgstr "清理了 %d 条旧日志条目。"
+
+#: admin/src/Rest/AdminNotices.php:43
+msgid "Add New Admin Notice"
+msgstr "添加新管理员通知"
+
+#: admin/src/Rest/AdminNotices.php:44
+msgid "Edit Admin Notice"
+msgstr "编辑管理员通知"
+
+#: admin/src/Rest/AdminNotices.php:45
+msgid "View Admin Notice"
+msgstr "查看管理员通知"
+
+#: admin/src/Rest/AdminNotices.php:46
+msgid "All Admin Notices"
+msgstr "所有管理员通知"
+
+#: admin/src/Rest/AdminNotices.php:47
+msgid "Search Admin Notices"
+msgstr "搜索管理员通知"
+
+#: admin/src/Rest/AdminNotices.php:48
+msgid "No Admin Notices found."
+msgstr "未找到管理员通知。"
+
+#: admin/src/Rest/AdminNotices.php:52
+msgid "Persistent admin notices for uiXpress."
+msgstr "uiXpress的持续管理通知。"
+
+#: admin/src/Rest/AdminNotices.php:183
+msgid "Admin Notices"
+msgstr "管理通知"
+
+#: admin/src/Rest/DatabaseExplorer.php:122
+#: admin/src/Rest/DatabaseExplorer.php:559
+msgid "Only SELECT queries are allowed for safety."
+msgstr "出于安全考虑，仅允许执行SELECT查询。"
+
+#: admin/src/Rest/DatabaseExplorer.php:203
+msgid "You do not have permission to access the database explorer."
+msgstr "您没有权限访问数据库浏览器。"
+
+#: admin/src/Rest/DatabaseExplorer.php:383
+#: admin/src/Rest/DatabaseExplorer.php:447
+#: admin/src/Rest/DatabaseExplorer.php:628
+#: admin/src/Rest/DatabaseExplorer.php:720
+msgid "Invalid table name."
+msgstr "无效的表名。"
+
+#: admin/src/Rest/DatabaseExplorer.php:388
+#: admin/src/Rest/DatabaseExplorer.php:452
+#: admin/src/Rest/DatabaseExplorer.php:633
+#: admin/src/Rest/DatabaseExplorer.php:743
+msgid "Table not found."
+msgstr "未找到表格。"
+
+#: admin/src/Rest/DatabaseExplorer.php:461
+msgid "Unable to retrieve table structure."
+msgstr "无法获取表结构。"
+
+#: admin/src/Rest/DatabaseExplorer.php:566
+msgid "Query contains prohibited SQL keywords."
+msgstr "查询包含被禁止的SQL关键字。"
+
+#: admin/src/Rest/DatabaseExplorer.php:577
+msgid "Multiple statements are not allowed."
+msgstr "不允许有多个语句。"
+
+#: admin/src/Rest/DatabaseExplorer.php:601
+msgid "Query execution failed. Please check your SQL syntax."
+msgstr "查询执行失败。请检查您的SQL语法。"
+
+#: admin/src/Rest/DatabaseExplorer.php:655
+msgid "Password is required."
+msgstr "密码是必需的。"
+
+#: admin/src/Rest/DatabaseExplorer.php:662
+#: admin/src/Rest/DatabaseExplorer.php:732
+msgid "Invalid password."
+msgstr "密码无效。"
+
+#: admin/src/Rest/DatabaseExplorer.php:667
+msgid "Password verification failed."
+msgstr "密码验证失败。"
+
+#: admin/src/Rest/DatabaseExplorer.php:686
+msgid "WordPress core tables cannot be deleted."
+msgstr "WordPress核心数据库表不可删除。"
+
+#: admin/src/Rest/DatabaseExplorer.php:696
+msgid "System tables cannot be deleted."
+msgstr "系统表不可删除。"
+
+#: admin/src/Rest/DatabaseExplorer.php:725
+msgid "Password is required for this operation."
+msgstr "此操作需要密码。"
+
+#: admin/src/Rest/DatabaseExplorer.php:761
+msgid "Failed to delete table."
+msgstr "删除表失败。"
+
+#: admin/src/Rest/DatabaseExplorer.php:767
+msgid "Table '%s' has been deleted."
+msgstr "表单 ‘%s’ 已被删除。"
+
+#: admin/src/Rest/Media.php:42
+msgid ""
+"Return only unused media items (unattached and not used as featured image)."
+msgstr "仅归还未使用的媒体项目（未附加且未用作特色图片）。"
+
+#: admin/src/Rest/Media.php:48
+msgid "Unused detection mode: shallow (default) or deep (scans post_content)."
+msgstr "未使用的检测模式：浅层（默认）或深层（扫描 post_content）。"
+
+#: admin/src/Rest/MediaBulk.php:133
+msgid "Invalid media IDs provided."
+msgstr "提供的媒体ID无效。"
+
+#: admin/src/Rest/MediaBulk.php:142
+msgid "Maximum 100 items can be downloaded at once."
+msgstr "每次最多可下载100个项目。"
+
+#: admin/src/Rest/MediaBulk.php:151
+msgid "ZIP functionality is not available on this server."
+msgstr "此服务器不支持ZIP功能。"
+
+#: admin/src/Rest/MediaBulk.php:164
+msgid "Failed to create ZIP file."
+msgstr "创建ZIP文件失败。"
+
+#: admin/src/Rest/MediaBulk.php:191
+msgid "No valid files found to download."
+msgstr "未找到有效的文件可供下载。"
+
+#: admin/src/Rest/MediaBulk.php:331 admin/src/Rest/MediaBulk.php:451
+#: admin/src/Rest/MediaBulk.php:468
+msgid "(Untitled)"
+msgstr "（无标题）"
+
+#: admin/src/Rest/MediaReplace.php:46
+msgid "You do not have permission to upload files."
+msgstr "您没有上传文件的权限。"
+
+#: admin/src/Rest/MediaReplace.php:79
+msgid "Media ID is required."
+msgstr "需要媒体ID。"
+
+#: admin/src/Rest/MediaReplace.php:89
+msgid "Media item not found."
+msgstr "媒体项目未找到。"
+
+#: admin/src/Rest/MediaReplace.php:98
+msgid "You do not have permission to edit this media item."
+msgstr "您没有权限编辑此媒体项目。"
+
+#: admin/src/Rest/MediaReplace.php:108
+msgid "No file was uploaded."
+msgstr "没有上传文件。"
+
+#: admin/src/Rest/MediaReplace.php:121
+msgid "File upload failed. Please try again."
+msgstr "文件上传失败。请重试。"
+
+#: admin/src/Rest/MediaReplace.php:154
+msgid "File type not allowed."
+msgstr "不允许文件类型。"
+
+#: admin/src/Rest/MediaReplace.php:174
+msgid "File content does not match file type."
+msgstr "文件内容与文件类型不匹配。"
+
+#: admin/src/Rest/MediaReplace.php:186
+msgid "File name contains invalid characters."
+msgstr "文件名包含无效字符。"
+
+#: admin/src/Rest/MediaReplace.php:196
+msgid "Original file not found."
+msgstr "未找到原始文件。"
+
+#: admin/src/Rest/MediaReplace.php:216
+msgid "Invalid file path."
+msgstr "无效的文件路径。"
+
+#: admin/src/Rest/MediaReplace.php:233
+msgid "Failed to move uploaded file."
+msgstr "无法移动上传的文件。"
+
+#: admin/src/Rest/MediaReplace.php:296
+msgid "File replaced successfully."
+msgstr "文件已成功替换。"
+
+#: admin/src/Rest/MediaTags.php:66
+msgid "Filter media items by tag IDs."
+msgstr "按标签ID过滤媒体项目。"
+
+#: admin/src/Rest/MediaTags.php:138
+msgid "Media Tags"
+msgstr "媒体标签"
+
+#: admin/src/Rest/MediaTags.php:139
+msgid "Media Tag"
+msgstr "媒体标签"
+
+#: admin/src/Rest/MediaTags.php:140 app/src/pages/posts/src/batch-edit.vue:147
+#: app/src/pages/posts/src/post-preview.vue:428
+#: app/src/pages/posts/src/tag-select.vue:362
+msgid "Tags"
+msgstr "标签"
+
+#: admin/src/Rest/MediaTags.php:141
+msgid "All Tags"
+msgstr "所有标签"
+
+#: admin/src/Rest/MediaTags.php:142
+msgid "Edit Tag"
+msgstr "编辑标签"
+
+#: admin/src/Rest/MediaTags.php:143
+msgid "View Tag"
+msgstr "查看标签"
+
+#: admin/src/Rest/MediaTags.php:144
+msgid "Update Tag"
+msgstr "更新标签"
+
+#: admin/src/Rest/MediaTags.php:145
+msgid "Add New Tag"
+msgstr "添加新标签"
+
+#: admin/src/Rest/MediaTags.php:146
+msgid "New Tag Name"
+msgstr "新标签名称"
+
+#: admin/src/Rest/MediaTags.php:147
+msgid "Search Tags"
+msgstr "搜索标签"
+
+#: admin/src/Rest/MediaTags.php:148
+msgid "Popular Tags"
+msgstr "热门标签"
+
+#: admin/src/Rest/MediaTags.php:149
+msgid "Separate tags with commas"
+msgstr "用逗号分隔标签"
+
+#: admin/src/Rest/MediaTags.php:150
+msgid "Add or remove tags"
+msgstr "添加或删除标签"
+
+#: admin/src/Rest/MediaTags.php:151
+msgid "Choose from the most used tags"
+msgstr "从最常用的标签中选择"
+
+#: admin/src/Rest/MediaTags.php:152
+msgid "No tags found"
+msgstr "找不到标签"
+
+#: admin/src/Rest/MediaTags.php:324
+msgid "Tag name is required"
+msgstr "标签名称是必需的"
+
+#: admin/src/Rest/MediaTags.php:372
+msgid "Invalid media item"
+msgstr "无效媒体项"
+
+#: admin/src/Rest/MediaTags.php:468 admin/src/Rest/UserCapabilities.php:58
+msgid "You must be logged in to access this endpoint."
+msgstr "您必须登录才能访问此接口。"
+
+#: admin/src/Rest/MediaTags.php:477
+msgid "You do not have permission to manage media tags."
+msgstr "您没有权限管理媒体标签。"
+
+#: admin/src/Rest/PluginManager.php:208
+msgid "You do not have permission to perform this action."
+msgstr "您无权执行此操作。"
+
+#: admin/src/Rest/PostsTables.php:354
+#: app/src/pages/posts/src/batch-edit.vue:158
+#: app/src/pages/posts/src/post-preview.vue:391
+msgid "Status"
+msgstr "状态"
+
+#: admin/src/Rest/PostsTables.php:373
+#: app/src/components/app/search/index.vue:548
+msgid "Published"
+msgstr "已发布"
+
+#: admin/src/Rest/PostsTables.php:374 app/src/pages/settings/index.vue:180
+msgid "Comments"
+msgstr "评论"
+
+#: admin/src/Rest/PostsTables.php:584
+msgid "(No title)"
+msgstr "（无标题）"
+
+#: admin/src/Rest/PostsTables.php:602
+msgid "Scheduled for %s from now"
+msgstr "计划于%s开始"
+
+#: admin/src/Rest/PostsTables.php:605
+msgid "%s ago"
+msgstr "%s 前"
+
+#: admin/src/Rest/RoleEditor.php:93 admin/src/Rest/ServerHealth.php:57
+#: admin/src/Rest/UserRoles.php:57
+msgid "You do not have permissions to view this data."
+msgstr "您没有权限查看此对象。"
+
+#: admin/src/Rest/RoleEditor.php:117 admin/src/Rest/RoleEditor.php:163
+#: admin/src/Rest/RoleEditor.php:241 admin/src/Rest/RoleEditor.php:449
+msgid "Invalid role format."
+msgstr "无效的角色格式。"
+
+#: admin/src/Rest/RoleEditor.php:123 admin/src/Rest/RoleEditor.php:169
+#: admin/src/Rest/RoleEditor.php:247 admin/src/Rest/RoleEditor.php:455
+msgid "Invalid role."
+msgstr "角色错误。"
+
+#: admin/src/Rest/RoleEditor.php:176
+msgid "Capabilities must be an array."
+msgstr "能力必须是一个数组。"
+
+#: admin/src/Rest/RoleEditor.php:181
+msgid "Role not found."
+msgstr "角色未找到。"
+
+#: admin/src/Rest/RoleEditor.php:225
+msgid "Role capabilities updated successfully."
+msgstr "角色权限已成功更新。"
+
+#: admin/src/Rest/RoleEditor.php:258 admin/src/Rest/RoleEditor.php:368
+msgid "Role name cannot be empty."
+msgstr "角色名称不能为空。"
+
+#: admin/src/Rest/RoleEditor.php:263 admin/src/Rest/RoleEditor.php:373
+msgid "Role name is too long."
+msgstr "角色名称过长。"
+
+#: admin/src/Rest/RoleEditor.php:275
+msgid "Role name updated successfully."
+msgstr "角色名称更新成功。"
+
+#: admin/src/Rest/RoleEditor.php:383
+msgid ""
+"Role slug can only contain lowercase letters, numbers, hyphens, and "
+"underscores."
+msgstr "角色别名只能包含小写字母、数字、连字符和下划线。"
+
+#: admin/src/Rest/RoleEditor.php:388
+msgid "Role slug is too long."
+msgstr "角色别名过长。"
+
+#: admin/src/Rest/RoleEditor.php:395
+msgid "A role with this slug already exists."
+msgstr "已存在一个具有此别名的角色。"
+
+#: admin/src/Rest/RoleEditor.php:418
+msgid "Failed to create role."
+msgstr "创建角色失败。"
+
+#: admin/src/Rest/RoleEditor.php:433
+msgid "Role created successfully."
+msgstr "角色创建成功。"
+
+#: admin/src/Rest/RoleEditor.php:461
+msgid "Cannot delete default WordPress roles."
+msgstr "无法删除默认的WordPress角色。"
+
+#: admin/src/Rest/RoleEditor.php:469
+msgid ""
+"Cannot delete role. There are %d user(s) with this role. Please reassign "
+"users to another role first."
+msgstr ""
+"无法删除该角色。当前有%d个用户拥有此角色。请先将用户重新分配到其他角色。"
+
+#: admin/src/Rest/RoleEditor.php:477
+msgid "Role deleted successfully."
+msgstr "已成功删除"
+
+#: admin/src/Rest/UserAnalytics.php:211
+msgid "New Users"
+msgstr "新用户"
+
+#: app/src/pages/posts/index.vue:642 app/src/pages/posts/index.vue:812
+#: app/src/pages/settings/index.vue:141
+msgid "Posts"
+msgstr "文章"
+
+#: app/src/pages/posts/index.vue:650 app/src/pages/posts/index.vue:834
+msgid "Table View"
+msgstr "表格视图"
+
+#: app/src/pages/posts/index.vue:659 app/src/pages/posts/index.vue:773
+#: app/src/pages/posts/index.vue:873 app/src/pages/posts/index.vue:901
+msgid "New post"
+msgstr "新文章"
+
+#: app/src/pages/posts/index.vue:692
+msgid "Search posts..."
+msgstr "搜索文章..."
+
+#: app/src/pages/posts/index.vue:718
+msgid "item"
+msgstr "项目"
+
+#: app/src/pages/posts/index.vue:719
+msgid "items"
+msgstr "项目"
+
+#: app/src/pages/posts/index.vue:722
+msgid "Page"
+msgstr "页面"
+
+#: app/src/pages/posts/index.vue:731
+msgid "Previous"
+msgstr "上一个"
+
+#: app/src/pages/posts/index.vue:742
+#, fuzzy
+msgid "Next"
+msgstr "下一个"
+
+#: app/src/pages/posts/index.vue:760
+msgid "Loading posts..."
+msgstr "文章加载中……"
+
+#: app/src/pages/posts/index.vue:770
+msgid "No posts found"
+msgstr "找不到帖子"
+
+#: app/src/pages/posts/index.vue:781 app/src/pages/posts/index.vue:881
+#: app/src/pages/posts/index.vue:909
+#: app/src/pages/settings/src/custom-renders/external-stylesheets.vue:91
+msgid "Add new"
+msgstr "添加新的"
+
+#: app/src/pages/posts/index.vue:833
+msgid "Sidebar View"
+msgstr "侧边栏视图"
+
+#: app/src/pages/posts/index.vue:851
+#: app/src/components/app/search/index.vue:1011
+msgid "Search posts"
+msgstr "搜索文章"
+
+#: app/src/pages/posts/index.vue:894
+msgid "Nothing found"
+msgstr "什么都没找到"
+
+#: app/src/pages/posts/index.vue:895
+msgid "When you create new items they will show up here."
+msgstr "当您创建新项目时，它们将显示在此处。"
+
+#: app/src/pages/posts/index.vue:1003
+msgid "%s child items"
+msgstr "%s 子项"
+
+#: app/src/pages/posts/index.vue:1009
+msgid "%s child item"
+msgstr "%s 子项"
+
+#: app/src/pages/posts/index.vue:1067
+msgid "item selected"
+msgstr "所选项目"
+
+#: app/src/pages/posts/index.vue:1068
+msgid "items selected"
+msgstr "选定的项目"
+
+#: app/src/pages/posts/index.vue:1075
+msgid "Publish items"
+msgstr "发布项目"
+
+#: app/src/pages/posts/index.vue:1089
+msgid "Duplicate items"
+msgstr "重复项目"
+
+#: app/src/pages/posts/index.vue:1103
+msgid "Delete items"
+msgstr "删除项目"
+
+#: app/src/pages/settings/index.vue:108
+msgid "General"
+msgstr "常规"
+
+#: app/src/pages/settings/index.vue:110
+msgid "Core plugin settings and license management"
+msgstr "核心插件设置与许可证管理"
+
+#: app/src/pages/settings/index.vue:114
+msgid "Login"
+msgstr "登录"
+
+#: app/src/pages/settings/index.vue:116
+msgid "Customize login page appearance and security"
+msgstr "自定义登录页面外观与安全性"
+
+#: app/src/pages/settings/index.vue:120
+#: app/src/components/app/toolbar/index.vue:294
+#: app/src/components/app/menu/src/user-details.vue:235
+msgid "Theme"
+msgstr "主题"
+
+#: app/src/pages/settings/index.vue:122
+msgid "Colors, styling, and visual customization"
+msgstr "颜色、样式和视觉定制"
+
+#: app/src/pages/settings/index.vue:126
+msgid "White Label"
+msgstr "白色标签"
+
+#: app/src/pages/settings/index.vue:128
+msgid "Rebrand and customize interface text and icons"
+msgstr "重新设计品牌标识并自定义界面文本与图标"
+
+#: app/src/pages/settings/index.vue:135
+msgid "Menu"
+msgstr "菜单"
+
+#: app/src/pages/settings/index.vue:137
+msgid "Admin menu behavior and interaction settings"
+msgstr "管理菜单行为与交互设置"
+
+#: app/src/pages/settings/index.vue:143
+msgid "Post management and display preferences"
+msgstr "帖子管理与显示偏好设置"
+
+#: app/src/pages/settings/index.vue:149
+msgid "Plugin management interface options"
+msgstr "插件管理界面选项"
+
+#: app/src/pages/settings/index.vue:153
+msgid "Dashboard"
+msgstr "仪表盘"
+
+#: app/src/pages/settings/index.vue:155
+msgid "Custom dashboard and admin interface settings"
+msgstr "自定义仪表板和管理界面设置"
+
+#: app/src/pages/settings/index.vue:162
+msgid "Analytics"
+msgstr "分析"
+
+#: app/src/pages/settings/index.vue:164
+msgid "Built-in analytics and tracking settings"
+msgstr "内置分析和跟踪设置"
+
+#: app/src/pages/settings/index.vue:168
+msgid "Media"
+msgstr "媒体"
+
+#: app/src/pages/settings/index.vue:170
+msgid "Media library and upload management settings"
+msgstr "媒体库与上传管理设置"
+
+#: app/src/pages/settings/index.vue:174
+#: app/src/pages/posts/src/inline-user-select.vue:61
+#: app/src/components/utility/multiselect-roles-and-users/index.vue:66
+msgid "Users"
+msgstr "用户"
+
+#: app/src/pages/settings/index.vue:176
+msgid "User management and administration settings"
+msgstr "用户管理与管理设置"
+
+#: app/src/pages/settings/index.vue:182
+msgid "Comment management and administration settings"
+msgstr "评论管理与管理设置"
+
+#: app/src/pages/settings/index.vue:189
+msgid "Security"
+msgstr "安全"
+
+#: app/src/pages/settings/index.vue:191
+msgid "Security settings and administration"
+msgstr "安全设置与管理"
+
+#: app/src/pages/settings/index.vue:195
+msgid "Database"
+msgstr "数据库"
+
+#: app/src/pages/settings/index.vue:197
+msgid "Database explorer and management settings"
+msgstr "数据库浏览器与管理设置"
+
+#: app/src/pages/settings/index.vue:427
+#: app/src/pages/settings/src/settings-panel.vue:140
+msgid "Settings updated!"
+msgstr "设置已更新！"
+
+#: app/src/pages/settings/index.vue:458
+msgid "Settings imported"
+msgstr "设置已导入"
+
+#: app/src/pages/settings/index.vue:460
+msgid "Import failed"
+msgstr "导入失败"
+
+#: app/src/pages/settings/index.vue:469
+msgid "Please provide a valid JSON file"
+msgstr "请提供一个有效的JSON文件"
+
+#: app/src/pages/settings/index.vue:480 app/src/pages/settings/index.vue:491
+msgid "Invalid settings: must be an object"
+msgstr "无效设置：必须是对象"
+
+#: app/src/pages/settings/index.vue:504
+msgid "Error uploading settings"
+msgstr "上传设置时出错"
+
+#: app/src/pages/settings/index.vue:661
+msgid "Search settings..."
+msgstr "搜索设置..."
+
+#: app/src/pages/settings/index.vue:689
+msgid "Loading settings..."
+msgstr "正在加载设置..."
+
+#: app/src/pages/settings/index.vue:700
+#: app/src/pages/settings/src/settings-panel.vue:528
+msgid "No settings found"
+msgstr "未找到设置"
+
+#: app/src/pages/settings/index.vue:701
+msgid "Try a different search term"
+msgstr "尝试使用不同的搜索词"
+
+#: app/src/pages/settings/index.vue:767
+msgid "Loading Settings..."
+msgstr "正在加载设置..."
+
+#: app/src/pages/settings/index.vue:779
+msgid "Settings Panel"
+msgstr "转到设置面板"
+
+#: app/src/pages/settings/index.vue:780
+msgid "Select a category from the list to configure your settings."
+msgstr "从列表中选择一个类别以配置您的设置。"
+
+#: app/src/pages/settings/src/settings-config.js:25
+#: app/src/pages/settings/src/settings-panel.vue:87
+msgid "Click"
+msgstr "点击"
+
+#: app/src/pages/settings/src/settings-config.js:26
+#: app/src/pages/settings/src/settings-panel.vue:88
+msgid "Hover"
+msgstr "悬停"
+
+#: app/src/pages/settings/src/settings-config.js:34
+#: app/src/pages/settings/src/settings-panel.vue:91
+msgid "Off"
+msgstr "关闭"
+
+#: app/src/pages/settings/src/settings-config.js:35
+#: app/src/pages/settings/src/settings-panel.vue:92
+#: app/src/components/app/toolbar/index.vue:312
+msgid "Light"
+msgstr "浅色"
+
+#: app/src/pages/settings/src/settings-config.js:36
+#: app/src/pages/settings/src/settings-panel.vue:93
+#: app/src/components/app/toolbar/index.vue:321
+msgid "Dark"
+msgstr "深色"
+
+#: app/src/pages/settings/src/settings-config.js:53
+msgid "Licence key"
+msgstr "许可证密钥"
+
+#: app/src/pages/settings/src/settings-config.js:54
+msgid "Activating uiXpress enables updates and features"
+msgstr "启用 uiXpress 可获取更新和新功能"
+
+#: app/src/pages/settings/src/settings-config.js:66
+msgid "Logo"
+msgstr "Logo"
+
+#: app/src/pages/settings/src/settings-config.js:67
+msgid "Optional logo for to be displayed in the menu"
+msgstr "可选徽标，用于在菜单中显示"
+
+#: app/src/pages/settings/src/settings-config.js:73
+msgid "Logo url"
+msgstr "Logo网址"
+
+#: app/src/pages/settings/src/settings-config.js:81
+msgid "Dark mode logo"
+msgstr "深色模式标识"
+
+#: app/src/pages/settings/src/settings-config.js:82
+msgid ""
+"Set an alternative logo to use in dark mode. If one isn't set it will fall "
+"back to the standard logo."
+msgstr "设置在深色模式下使用的备用徽标。若未设置，则将回退到标准徽标。"
+
+#: app/src/pages/settings/src/settings-config.js:88
+msgid "Dark Logo url"
+msgstr "黑暗标志网址"
+
+#: app/src/pages/settings/src/settings-config.js:96
+msgid "Disable theme"
+msgstr "禁用主题"
+
+#: app/src/pages/settings/src/settings-config.js:97
+msgid "Choose roles or usersnames to disable the theme for."
+msgstr "选择要禁用该主题的角色或用户名。"
+
+#: app/src/pages/settings/src/settings-config.js:111
+msgid "Search post types"
+msgstr "搜索文章类型"
+
+#: app/src/pages/settings/src/settings-config.js:112
+msgid "Choose which post types are available in the global search"
+msgstr "选择在全局搜索中可用的文章类型"
+
+#: app/src/pages/settings/src/settings-config.js:126
+msgid "Disable global search"
+msgstr "禁用全局搜索"
+
+#: app/src/pages/settings/src/settings-config.js:127
+msgid "Disable global search for all users."
+msgstr "禁用所有用户的全局搜索功能。"
+
+#: app/src/pages/settings/src/settings-config.js:138
+msgid "Admin layout"
+msgstr "管理员布局"
+
+#: app/src/pages/settings/src/settings-config.js:139
+msgid "Choose your prefered admin layout"
+msgstr "选择您偏好的管理界面布局"
+
+#: app/src/pages/settings/src/settings-config.js:152
+msgid "Modernise login page"
+msgstr "现代化登录页面"
+
+#: app/src/pages/settings/src/settings-config.js:153
+msgid "When enabled, uiXpress will modernise the default login page."
+msgstr "启用后，uiXpress将对默认登录页面进行现代化改造。"
+
+#: app/src/pages/settings/src/settings-config.js:167
+msgid "Login image"
+msgstr "登录图像"
+
+#: app/src/pages/settings/src/settings-config.js:168
+msgid "Optional image that will be added to the empty panel in the login page"
+msgstr "可选图片，将添加至登录页面的空白面板中"
+
+#: app/src/pages/settings/src/settings-config.js:174
+msgid "Image url"
+msgstr "图片网址"
+
+#: app/src/pages/settings/src/settings-config.js:182
+msgid "Login path"
+msgstr "登录路径"
+
+#: app/src/pages/settings/src/settings-config.js:183
+msgid ""
+"Change the login url from wp-login.php to a custom slug. Ensure you remember "
+"what you change this to."
+msgstr "将登录网址从 wp-login.php 更改为自定义别名。请务必记住您更改后的名称。"
+
+#: app/src/pages/settings/src/settings-config.js:199
+msgid "Hide language selector"
+msgstr "隐藏语言选择器"
+
+#: app/src/pages/settings/src/settings-config.js:200
+msgid ""
+"When hidden the language selector on the login page will not be displayed"
+msgstr "当隐藏时，登录页面上的语言选择器将不会显示。"
+
+#: app/src/pages/settings/src/settings-config.js:214
+msgid "Enable TurnStyle"
+msgstr "启用旋转门"
+
+#: app/src/pages/settings/src/settings-config.js:215
+msgid ""
+"When enabled, a cloudflare turnstyle challenge will be displayed on the "
+"login page to enhance security. Cloudflare account is required"
+msgstr ""
+"启用后，登录页面将显示Cloudflare转门挑战以增强安全性。需拥有Cloudflare账户。"
+
+#: app/src/pages/settings/src/settings-config.js:229
+msgid "Turnstyle site key"
+msgstr "旋转门站点密钥"
+
+#: app/src/pages/settings/src/settings-config.js:230
+msgid ""
+"This is the site key for your turnstyle which can be created from your "
+"cloudflare dashboard."
+msgstr "这是您旋转门装置的站点密钥，可通过您的Cloudflare控制面板创建。"
+
+#: app/src/pages/settings/src/settings-config.js:247
+msgid "Turnstyle secret key"
+msgstr "旋转门密钥"
+
+#: app/src/pages/settings/src/settings-config.js:248
+msgid ""
+"This is the secret key for your turnstyle which can be created from your "
+"cloudflare dashboard."
+msgstr "这是您旋转门的密钥，可通过您的Cloudflare控制面板创建。"
+
+#: app/src/pages/settings/src/settings-config.js:269
+msgid "Force global theme"
+msgstr "强制全局主题"
+
+#: app/src/pages/settings/src/settings-config.js:270
+msgid ""
+"When enabled, the light / dark toggle will be removed and the selected theme "
+"set for all users."
+msgstr "启用后，浅色/深色切换按钮将被移除，所选主题将为所有用户统一设置。"
+
+#: app/src/pages/settings/src/settings-config.js:285
+msgid "Hide screen options"
+msgstr "隐藏屏幕选项"
+
+#: app/src/pages/settings/src/settings-config.js:286
+msgid "Hide the screen options toggle in the toolbar"
+msgstr "在工具栏中隐藏屏幕选项切换按钮"
+
+#: app/src/pages/settings/src/settings-config.js:300
+msgid "Hide help toggle"
+msgstr "隐藏帮助切换按钮"
+
+#: app/src/pages/settings/src/settings-config.js:301
+msgid "Hide the help toggle in the toolbar"
+msgstr "在工具栏中隐藏帮助切换按钮"
+
+#: app/src/pages/settings/src/settings-config.js:312
+msgid "Base theme colors"
+msgstr "基础主题颜色"
+
+#: app/src/pages/settings/src/settings-config.js:313
+msgid ""
+"Set a base color and uiXpress will automatically create a color scale for "
+"you."
+msgstr "设置基础色，uiXpress将自动为您生成色阶。"
+
+#: app/src/pages/settings/src/settings-config.js:322
+msgid "Base"
+msgstr "基础"
+
+#: app/src/pages/settings/src/settings-config.js:330
+msgid "Accent theme colors"
+msgstr "强调主题颜色"
+
+#: app/src/pages/settings/src/settings-config.js:331
+msgid ""
+"Set a accent color and uiXpress will automatically create a color scale for "
+"you."
+msgstr "设置一种强调色，uiXpress将自动为您生成色阶。"
+
+#: app/src/pages/settings/src/settings-config.js:340
+msgid "Accent base"
+msgstr "重音基准"
+
+#: app/src/pages/settings/src/settings-config.js:348
+msgid "Custom css"
+msgstr "自定义CSS"
+
+#: app/src/pages/settings/src/settings-config.js:349
+msgid ""
+"Custom css added here will only be added in the admin area and login page."
+msgstr "在此处添加的自定义CSS仅会在管理区域和登录页面生效。"
+
+#: app/src/pages/settings/src/settings-config.js:361
+msgid "External stylesheets"
+msgstr "外部样式表"
+
+#: app/src/pages/settings/src/settings-config.js:362
+msgid ""
+"Add URLs to any external stylesheets you want uiXpress to load into the admin"
+msgstr "将您希望 uiXpress 在管理后台加载的任何外部样式表的 URL 添加至此处。"
+
+#: app/src/pages/settings/src/settings-config.js:378
+msgid "Admin favicon"
+msgstr "管理员网站图标"
+
+#: app/src/pages/settings/src/settings-config.js:379
+msgid "Optional favicon to replace the WordPress favicon in the admin."
+msgstr "可选网站图标，用于替换管理后台中的WordPress默认图标。"
+
+#: app/src/pages/settings/src/settings-config.js:385
+msgid "Favicon url"
+msgstr "Favicon 链接"
+
+#: app/src/pages/settings/src/settings-config.js:393
+msgid "Rename uiXpress"
+msgstr "重命名 uiXpress"
+
+#: app/src/pages/settings/src/settings-config.js:394
+msgid ""
+"This will rename uiXpress in the plugins list as well as renaming it's "
+"settings link."
+msgstr "这将同时重命名插件列表中的 uiXpress 以及其设置链接。"
+
+#: app/src/pages/settings/src/settings-config.js:410
+msgid "Text Replacement"
+msgstr "文本替换"
+
+#: app/src/pages/settings/src/settings-config.js:411
+msgid ""
+"Customize the text displayed in the WordPress admin area. Enter original "
+"words or phrases and their replacements to white-label the admin interface."
+msgstr ""
+"自定义WordPress管理区域显示的文本。输入原始词语或短语及其替换内容，即可实现管"
+"理界面的白标定制。"
+
+#: app/src/pages/settings/src/settings-config.js:427
+msgid "Submenu style"
+msgstr "子菜单风格"
+
+#: app/src/pages/settings/src/settings-config.js:428
+msgid "Choose from whether the submenu opens on click or hover."
+msgstr "选择子菜单是在点击时打开还是悬停时打开。"
+
+#: app/src/pages/settings/src/settings-config.js:447
+msgid "Classic Post List View"
+msgstr "经典帖子列表视图"
+
+#: app/src/pages/settings/src/settings-config.js:448
+msgid ""
+"Switch to WordPress's traditional table layout for posts, removing the "
+"modern interface."
+msgstr "切换至WordPress的传统表格布局来显示文章，移除现代界面。"
+
+#: app/src/pages/settings/src/settings-config.js:466
+msgid "Modern Plugin Manager"
+msgstr "现代插件管理器"
+
+#: app/src/pages/settings/src/settings-config.js:467
+msgid ""
+"Replace the classic plugins page with a modern plugin manager with plugin "
+"profiling and improved features."
+msgstr "用具备插件分析功能和增强特性的现代化插件管理器取代经典插件页面。"
+
+#: app/src/pages/settings/src/settings-config.js:485
+msgid "Modern Media Library"
+msgstr "现代媒体图书馆"
+
+#: app/src/pages/settings/src/settings-config.js:486
+msgid ""
+"Replace the classic WordPress media library with a modern, responsive media "
+"manager with improved upload and organization features."
+msgstr ""
+"用现代化的响应式媒体管理器取代经典的WordPress媒体库，该管理器具备增强的上传和"
+"组织功能。"
+
+#: app/src/pages/settings/src/settings-config.js:500
+msgid "Enable SVG Uploads"
+msgstr "启用 SVG 上传"
+
+#: app/src/pages/settings/src/settings-config.js:501
+msgid ""
+"Allow SVG (Scalable Vector Graphics) files to be uploaded to the media "
+"library. All SVG files are automatically sanitized before upload to remove "
+"potentially malicious code, ensuring safe handling of SVG files."
+msgstr ""
+"允许将SVG（可缩放矢量图形）文件上传至媒体库。所有SVG文件在上传前均会自动进行"
+"安全处理，以清除潜在的恶意代码，确保SVG文件的安全处理。"
+
+#: app/src/pages/settings/src/settings-config.js:519
+msgid "Modern Users Page"
+msgstr "现代用户页面"
+
+#: app/src/pages/settings/src/settings-config.js:520
+msgid ""
+"Replace the classic WordPress users page with a modern, responsive user "
+"manager with improved features and better organization."
+msgstr ""
+"用现代化的响应式用户管理器取代经典的WordPress用户页面，该管理器具备增强的功能"
+"和更优的组织结构。"
+
+#: app/src/pages/settings/src/settings-config.js:534
+msgid "Modern Comments Page"
+msgstr "现代评论页面"
+
+#: app/src/pages/settings/src/settings-config.js:535
+msgid ""
+"Replace the classic WordPress comments page with a modern, responsive "
+"comment manager with improved features and better organization."
+msgstr ""
+"用现代化的响应式评论管理器取代经典的WordPress评论页面，该管理器具备增强的功能"
+"和更优的组织结构。"
+
+#: app/src/pages/settings/src/settings-config.js:553
+msgid "Custom Dashboard"
+msgstr "自定义仪表板"
+
+#: app/src/pages/settings/src/settings-config.js:554
+msgid ""
+"Replace the default WordPress dashboard with a modern, customizable "
+"dashboard interface."
+msgstr "用现代化的可定制仪表盘界面替换默认的WordPress仪表盘。"
+
+#: app/src/pages/settings/src/settings-config.js:572
+msgid "Enable uiXpress Analytics"
+msgstr "启用 uiXpress 分析功能"
+
+#: app/src/pages/settings/src/settings-config.js:573
+msgid ""
+"Enable built-in analytics to track user behavior, page views, and "
+"performance metrics within your WordPress admin."
+msgstr ""
+"启用内置分析功能，在WordPress管理后台追踪用户行为、页面浏览量及性能指标。"
+
+#: app/src/pages/settings/src/settings-config.js:591
+msgid "Enable Database Explorer"
+msgstr "启用数据库资源管理器"
+
+#: app/src/pages/settings/src/settings-config.js:592
+msgid ""
+"Enable the modern database explorer interface to browse tables, view data, "
+"and execute SQL queries safely."
+msgstr "启用现代数据库浏览器界面，安全地浏览表、查看数据并执行SQL查询。"
+
+#: app/src/pages/settings/src/settings-config.js:610
+msgid "Enable Role Editor"
+msgstr "启用角色编辑器"
+
+#: app/src/pages/settings/src/settings-config.js:611
+msgid ""
+"Enable the modern role editor interface to manage WordPress user roles and "
+"capabilities."
+msgstr "启用现代角色编辑器界面，用于管理WordPress用户角色和权限。"
+
+#: app/src/pages/settings/src/settings-config.js:629
+msgid "Enable Activity Logger"
+msgstr "启用活动记录器"
+
+#: app/src/pages/settings/src/settings-config.js:630
+msgid ""
+"Track and log all admin actions including post changes, user updates, plugin "
+"activations, and more."
+msgstr "追踪并记录所有管理员操作，包括文章修改、用户更新、插件激活等。"
+
+#: app/src/pages/settings/src/settings-config.js:644
+msgid "Retention Period (Days)"
+msgstr "保留期限（天）"
+
+#: app/src/pages/settings/src/settings-config.js:645
+msgid ""
+"How many days to keep activity logs before automatic cleanup. Default is 90 "
+"days."
+msgstr "活动日志在自动清理前保留多少天？默认值为90天。"
+
+#: app/src/pages/settings/src/settings-config.js:664
+msgid "Log Level"
+msgstr "日志级别"
+
+#: app/src/pages/settings/src/settings-config.js:665
+msgid ""
+"Choose which actions to log. \"All Actions\" logs everything, \"Important "
+"Only\" logs only critical actions like deletions and role changes."
+msgstr ""
+"选择要记录的操作。\"所有操作\"记录所有内容，\"仅重要操作\"仅记录删除和角色变"
+"更等关键操作。"
+
+#: app/src/pages/settings/src/settings-config.js:673
+msgid "All Actions"
+msgstr "所有操作"
+
+#: app/src/pages/settings/src/settings-config.js:674
+msgid "Important Only"
+msgstr "重要 仅限"
+
+#: app/src/pages/settings/src/settings-config.js:684
+msgid "Auto Cleanup"
+msgstr "自动清理"
+
+#: app/src/pages/settings/src/settings-config.js:685
+msgid ""
+"Automatically delete logs older than the retention period. Disable to keep "
+"logs indefinitely."
+msgstr "自动删除超过保留期限的日志。禁用此功能可无限期保留日志。"
+
+#: app/src/pages/settings/src/settings-panel.vue:201
+#: app/src/pages/settings/src/settings-panel.vue:213
+msgid "Failed to activate key"
+msgstr "激活密钥失败"
+
+#: app/src/pages/settings/src/settings-panel.vue:222
+msgid "Key already activated for this site"
+msgstr "该网站的密钥已激活"
+
+#: app/src/pages/settings/src/settings-panel.vue:223
+msgid "Key successfully activated"
+msgstr "密钥激活成功"
+
+#: app/src/pages/settings/src/settings-panel.vue:237
+msgid "Network error during activation"
+msgstr "激活过程中发生网络错误"
+
+#: app/src/pages/settings/src/settings-panel.vue:342
+#: app/src/pages/settings/src/settings-panel.vue:395
+msgid "Instance removed"
+msgstr "实例已删除"
+
+#: app/src/pages/settings/src/settings-panel.vue:377
+#: app/src/pages/settings/src/settings-panel.vue:391
+msgid "Failed to remove activation"
+msgstr "激活移除失败"
+
+#: app/src/pages/settings/src/settings-panel.vue:411
+msgid "Network error during removal"
+msgstr "移除过程中发生网络错误"
+
+#: app/src/pages/settings/src/settings-panel.vue:499
+#: app/src/components/app/menu/index.vue:1167
+msgid "Save"
+msgstr "保存"
+
+#: app/src/pages/settings/src/settings-panel.vue:506
+msgid "Please add your licence key to unlock the plugin settings"
+msgstr "请添加您的许可证密钥以解锁插件设置"
+
+#: app/src/pages/settings/src/settings-panel.vue:514
+msgid "Found"
+msgstr "找到"
+
+#: app/src/pages/settings/src/settings-panel.vue:516
+msgid "matching setting(s)"
+msgstr "匹配设置"
+
+#: app/src/pages/settings/src/settings-panel.vue:529
+msgid "No settings match your search in this category."
+msgstr "此类别中没有符合您搜索条件的设置。"
+
+#: app/src/pages/settings/src/settings-panel.vue:530
+msgid "Try a different search term or check another category."
+msgstr "请尝试使用不同的搜索词，或查看其他类别。"
+
+#: app/src/pages/posts/src/batchDuplicatePosts.js:47
+msgid "Items duplicated"
+msgstr "项目重复"
+
+#: app/src/pages/posts/src/updatePostAuthor.js:20
+msgid "Item author updated"
+msgstr "项目作者更新"
+
+#: app/src/pages/posts/src/inlineTitleUpdate.js:27
+msgid "Item title updated"
+msgstr "项目标题已更新"
+
+#: app/src/pages/posts/src/batchPublishPosts.js:21
+#: app/src/pages/posts/src/post-actions.vue:162
+#: app/src/pages/posts/src/batchDeletePosts.js:21
+#: app/src/components/utility/media-library/index.vue:377
+#: app/src/components/utility/media-library/index.vue:467
+msgid "Are you sure?"
+msgstr "你确定？"
+
+#: app/src/pages/posts/src/batchPublishPosts.js:22
+msgid "Are you sure you want to publish these items?"
+msgstr "你确定要发布这些项目吗？"
+
+#: app/src/pages/posts/src/batchPublishPosts.js:23
+msgid "Yes publish them"
+msgstr "是的，发布它们。"
+
+#: app/src/pages/posts/src/batchPublishPosts.js:45
+msgid "Items published"
+msgstr "已发布项目"
+
+#: app/src/pages/posts/src/updatePostStatus.js:18
+msgid "Item status updated"
+msgstr "项目状态已更新"
+
+#: app/src/pages/posts/src/post-actions.vue:40
+#: app/src/pages/posts/src/post-preview.vue:365
+msgid "Edit"
+msgstr "编辑"
+
+#: app/src/pages/posts/src/post-actions.vue:50
+#: app/src/pages/posts/src/post-preview.vue:382
+msgid "View"
+msgstr "查看"
+
+#: app/src/pages/posts/src/post-actions.vue:57
+msgid "Duplicate"
+msgstr "复制"
+
+#: app/src/pages/posts/src/post-actions.vue:66
+msgid "Restore"
+msgstr "恢复"
+
+#: app/src/pages/posts/src/post-actions.vue:82
+#: app/src/components/app/menu/index.vue:1190
+msgid "Delete"
+msgstr "删除"
+
+#: app/src/pages/posts/src/post-actions.vue:155
+msgid "Item duplicated"
+msgstr "项目重复"
+
+#: app/src/pages/posts/src/post-actions.vue:163
+#: app/src/components/utility/media-library/index.vue:378
+msgid ""
+"Are you sure you want to delete this item? This action cannot be undone."
+msgstr "您确定要删除此项目吗？此操作无法撤销。"
+
+#: app/src/pages/posts/src/post-actions.vue:167
+#: app/src/components/utility/media-library/index.vue:379
+msgid "Yes delete it"
+msgstr "是，删除它"
+
+#: app/src/pages/posts/src/post-actions.vue:185
+msgid "Item deleted"
+msgstr "项目已删除"
+
+#: app/src/pages/posts/src/post-actions.vue:201
+msgid "Item restored"
+msgstr "已恢复"
+
+#: app/src/pages/posts/src/inline-user-select.vue:61
+#: app/src/components/utility/multiselect-roles-and-users/index.vue:66
+msgid "Roles"
+msgstr "角色"
+
+#: app/src/pages/posts/src/inline-user-select.vue:142
+msgid "Unknown user"
+msgstr "未知用户"
+
+#: app/src/pages/posts/src/inline-user-select.vue:151
+msgid "Update author"
+msgstr "更新作者"
+
+#: app/src/pages/posts/src/inline-user-select.vue:156
+#: app/src/pages/posts/src/inline-status-select.vue:98
+#: app/src/pages/posts/src/table-filters.vue:185
+#: app/src/components/utility/media-library/index.vue:751
+#: app/src/components/utility/multiselect-roles-and-users/index.vue:203
+msgid "Search"
+msgstr "搜索"
+
+#: app/src/pages/posts/src/inline-image-select.vue:57
+msgid "Featured image updated"
+msgstr "特色图片已更新"
+
+#: app/src/pages/posts/src/inline-status-select.vue:93
+msgid "Update status"
+msgstr "更新状态"
+
+#: app/src/pages/posts/src/batchDeletePosts.js:22
+msgid ""
+"Are you sure you want to delete these items? This action cannot be undone."
+msgstr "您确定要删除这些项目吗？此操作无法撤销。"
+
+#: app/src/pages/posts/src/batchDeletePosts.js:23
+#: app/src/components/utility/media-library/index.vue:469
+msgid "Yes delete them"
+msgstr "是的，删除它们"
+
+#: app/src/pages/posts/src/batchDeletePosts.js:45
+msgid "Items deleted"
+msgstr "项目已删除"
+
+#: app/src/pages/posts/src/batch-edit.vue:57
+msgid "Publish changes?"
+msgstr "发布更改？"
+
+#: app/src/pages/posts/src/batch-edit.vue:58
+msgid "Are you sure you want to batch update these items?"
+msgstr "您确定要批量更新这些项目吗？"
+
+#: app/src/pages/posts/src/batch-edit.vue:59
+msgid "Yes update them"
+msgstr "是的，更新它们"
+
+#: app/src/pages/posts/src/batch-edit.vue:89
+msgid "Items updated"
+msgstr "项数据已更新"
+
+#: app/src/pages/posts/src/batch-edit.vue:118
+#: app/src/pages/posts/src/batch-edit.vue:129
+msgid "Batch edit"
+msgstr "批量编辑"
+
+#: app/src/pages/posts/src/batch-edit.vue:134
+#: app/src/pages/posts/src/table-filters.vue:179
+#: app/src/pages/posts/src/post-preview.vue:413
+#: app/src/pages/posts/src/category-select.vue:362
+msgid "Categories"
+msgstr "类别"
+
+#: app/src/pages/posts/src/batch-edit.vue:168
+#: app/src/pages/posts/src/post-preview.vue:402
+msgid "Author"
+msgstr "作者"
+
+#: app/src/pages/posts/src/batch-edit.vue:185
+#: app/src/components/app/menu/index.vue:1177
+#: app/src/components/utility/media-library/index.vue:1201
+#: app/src/components/utility/date-range-picker/index.vue:140
+msgid "Cancel"
+msgstr "取消"
+
+#: app/src/pages/posts/src/batch-edit.vue:196
+msgid "Update"
+msgstr "更新"
+
+#: app/src/pages/posts/src/table-filters.vue:174
+msgid "Filters"
+msgstr "筛选"
+
+#: app/src/pages/posts/src/table-filters.vue:190
+msgid "Date range"
+msgstr "日期范围"
+
+#: app/src/pages/posts/src/table-filters.vue:198
+msgid "Table settings"
+msgstr "表格设置"
+
+#: app/src/pages/posts/src/table-filters.vue:201
+msgid "Per page"
+msgstr "每页"
+
+#: app/src/pages/posts/src/table-filters.vue:212
+#, fuzzy
+msgid "Order"
+msgstr "排序"
+
+#: app/src/pages/posts/src/table-filters.vue:221
+msgid "Order by"
+msgstr "排序"
+
+#: app/src/pages/posts/src/table-filters.vue:230
+msgid "Expand all posts"
+msgstr "展开所有帖子"
+
+#: app/src/pages/posts/src/table-filters.vue:239
+msgid "Columns"
+msgstr "列"
+
+#: app/src/pages/posts/src/posts-list.vue:239
+#: app/src/pages/posts/src/post-preview.vue:324
+msgid "Untitled"
+msgstr "无标题"
+
+#: app/src/pages/posts/src/posts-list.vue:259
+msgid "child"
+msgstr "儿童"
+
+#: app/src/pages/posts/src/posts-list.vue:260
+msgid "children"
+msgstr "孩子"
+
+#: app/src/pages/posts/src/constants.js:18
+msgid "All"
+msgstr "所有"
+
+#: app/src/pages/posts/src/constants.js:19
+msgid "Drafts"
+msgstr "草稿"
+
+#: app/src/pages/posts/src/post-preview.vue:305
+msgid "Post Details"
+msgstr "文章详情"
+
+#: app/src/pages/posts/src/post-preview.vue:306
+msgid "Select a post from the list to view details and edit properties."
+msgstr "从列表中选择一条帖子以查看详情并编辑属性。"
+
+#: app/src/pages/posts/src/post-preview.vue:443
+#: app/src/components/app/menu/index.vue:1133
+#: app/src/components/utility/media-library/index.vue:1071
+msgid "URL"
+msgstr "网址"
+
+#: app/src/pages/posts/src/post-preview.vue:454
+msgid "Preview"
+msgstr "预览"
+
+#: app/src/components/app/menu/index.vue:845
+msgid "Minify menu"
+msgstr "最小化菜单"
+
+#: app/src/components/app/menu/index.vue:883
+msgid "Search menu"
+msgstr "搜索菜单"
+
+#: app/src/components/app/menu/index.vue:1094
+msgid "Shortcuts"
+msgstr "快捷键"
+
+#: app/src/components/app/menu/index.vue:1123
+msgid "Name"
+msgstr "名称"
+
+#: app/src/components/app/menu/index.vue:1129
+msgid "Shortcut name"
+msgstr "快捷名称"
+
+#: app/src/components/app/menu/index.vue:1139
+msgid "https://example.com"
+msgstr "https://example.com"
+
+#: app/src/components/app/menu/index.vue:1143
+msgid "Icon"
+msgstr "图标"
+
+#: app/src/components/app/menu/index.vue:1156
+msgid "icon name"
+msgstr "图标名（来自FontAwesome集）"
+
+#: app/src/components/app/toolbar/index.vue:163
+#: app/src/components/app/toolbar/index.vue:193
+msgid "Toggle menu"
+msgstr "切换菜单"
+
+#: app/src/components/app/toolbar/index.vue:303
+#: app/src/components/app/menu/src/user-details.vue:272
+msgid "System"
+msgstr "系统"
+
+#: app/src/components/app/toolbar/index.vue:332
+#: app/src/components/app/toolbar/index.vue:336
+msgid "Logout"
+msgstr "注销"
+
+#: app/src/pages/settings/src/custom-renders/color-scale.vue:101
+msgid "Clear custom properties"
+msgstr "清除自定义属性"
+
+#: app/src/pages/settings/src/custom-renders/layout-selector.vue:39
+msgid "Default"
+msgstr "默认"
+
+#: app/src/pages/settings/src/custom-renders/layout-selector.vue:43
+msgid "Rounded"
+msgstr "圆角"
+
+#: app/src/pages/settings/src/custom-renders/layout-selector.vue:47
+msgid "Bubble"
+msgstr "气泡"
+
+#: app/src/pages/settings/src/custom-renders/code-editor.vue:89
+msgid "Update settings"
+msgstr "更新设置"
+
+#: app/src/pages/settings/src/custom-renders/code-editor.vue:100
+msgid "Loading editor..."
+msgstr "正在加载编辑器..."
+
+#: app/src/pages/settings/src/custom-renders/license-key.vue:57
+msgid "Licence Active"
+msgstr "许可证已激活"
+
+#: app/src/pages/settings/src/custom-renders/license-key.vue:66
+msgid "Remove key"
+msgstr "移除秘钥"
+
+#: app/src/pages/settings/src/custom-renders/license-key.vue:79
+msgid "uiXpress licence key"
+msgstr "uiXpress 许可证密钥"
+
+#: app/src/pages/settings/src/custom-renders/license-key.vue:88
+msgid "Activate"
+msgstr "启用"
+
+#: app/src/pages/settings/src/custom-renders/license-key.vue:94
+msgid "Development server detected, no need to activate your licence key."
+msgstr "检测到开发服务器，无需激活许可证密钥。"
+
+#: app/src/components/utility/media-library/index.vue:142
+msgid "Date"
+msgstr "日期"
+
+#: app/src/components/utility/media-library/index.vue:143
+msgid "ID"
+msgstr "ID"
+
+#: app/src/components/utility/media-library/index.vue:144
+msgid "Modified"
+msgstr "修改"
+
+#: app/src/components/utility/media-library/index.vue:145
+msgid "Slug"
+msgstr "别名"
+
+#: app/src/components/utility/media-library/index.vue:146
+#: app/src/components/utility/media-library/index.vue:1027
+msgid "Title"
+msgstr "标题"
+
+#: app/src/components/utility/media-library/index.vue:366
+msgid "File updated"
+msgstr "文件已更新"
+
+#: app/src/components/utility/media-library/index.vue:391
+msgid "File deleted"
+msgstr "%u 个文件已删除"
+
+#: app/src/components/utility/media-library/index.vue:456
+msgid "Files duplicated"
+msgstr "文件重复"
+
+#: app/src/components/utility/media-library/index.vue:468
+msgid ""
+"Are you sure you want to delete these files? This action cannot be undone."
+msgstr "您确定要删除这些文件吗？此操作无法撤销。"
+
+#: app/src/components/utility/media-library/index.vue:485
+msgid "Files deleted"
+msgstr "已删除的文件"
+
+#: app/src/components/utility/media-library/index.vue:585
+msgid "File uploaded"
+msgstr "已上传文件"
+
+#: app/src/components/utility/media-library/index.vue:733
+msgid "Media Library"
+msgstr "媒体库"
+
+#: app/src/components/utility/media-library/index.vue:762
+msgid "File type"
+msgstr "文件类型"
+
+#: app/src/components/utility/media-library/index.vue:864
+msgid "Upload"
+msgstr "上传"
+
+#: app/src/components/utility/media-library/index.vue:997
+#: app/src/components/app/search/index.vue:1297
+msgid "No results found"
+msgstr "未找到结果"
+
+#: app/src/components/utility/media-library/index.vue:998
+msgid "Edit your search criteria, or upload a new file."
+msgstr "编辑您的搜索条件，或上传新文件。"
+
+#: app/src/components/utility/media-library/index.vue:1038
+msgid "Alt text"
+msgstr "Alt 文本"
+
+#: app/src/components/utility/media-library/index.vue:1049
+msgid "Caption"
+msgstr "标题"
+
+#: app/src/components/utility/media-library/index.vue:1060
+msgid "Description"
+msgstr "描述"
+
+#: app/src/components/utility/media-library/index.vue:1090
+msgid "Delete file"
+msgstr "删除文件"
+
+#: app/src/components/utility/media-library/index.vue:1161
+msgid "Delete selected"
+msgstr "删除所选"
+
+#: app/src/components/utility/media-library/index.vue:1174
+msgid "Duplicate selected"
+msgstr "复制所选"
+
+#: app/src/components/utility/media-library/index.vue:1186
+msgid "Clear selection"
+msgstr "清除选择"
+
+#: app/src/components/utility/media-library/index.vue:1210
+msgid "Done"
+msgstr "完成"
+
+#: app/src/pages/posts/src/category-select.vue:411
+#: app/src/pages/posts/src/category-select.vue:414
+#: app/src/pages/posts/src/tag-select.vue:411
+#: app/src/pages/posts/src/tag-select.vue:414
+msgid "No products found"
+msgstr "没有找到产品"
+
+#: app/src/components/utility/date-range-picker/index.vue:108
+msgid "Select date"
+msgstr "选择日期"
+
+#: app/src/components/utility/date-range-picker/index.vue:154
+msgid "Set date"
+msgstr "设置日期"
+
+#: app/src/components/app/search/index.vue:311
+msgid "Magic dark mode enabled for this page"
+msgstr "本页面已启用魔幻暗黑模式"
+
+#: app/src/components/app/search/index.vue:323
+msgid "Failed to enable magic dark mode"
+msgstr "无法启用魔法暗黑模式"
+
+#: app/src/components/app/search/index.vue:363
+msgid "Magic dark mode disabled for this page"
+msgstr "此页面已禁用魔幻暗黑模式"
+
+#: app/src/components/app/search/index.vue:375
+msgid "Failed to disable magic dark mode"
+msgstr "无法禁用魔法暗黑模式"
+
+#: app/src/components/app/search/index.vue:384
+msgid "New Post"
+msgstr "最新帖子"
+
+#: app/src/components/app/search/index.vue:390
+msgid "New Page"
+msgstr "新页面"
+
+#: app/src/components/app/search/index.vue:396
+#: app/src/components/app/toolbar/src/buttons/view-site/component.vue:52
+msgid "View dashboard"
+msgstr "查看仪表盘"
+
+#: app/src/components/app/search/index.vue:402
+#: app/src/components/app/toolbar/src/buttons/view-site/component.vue:33
+msgid "View site"
+msgstr "查看网站"
+
+#: app/src/components/app/search/index.vue:408
+msgid "Site settings"
+msgstr "网站设置"
+
+#: app/src/components/app/search/index.vue:415
+msgid "Dark mode"
+msgstr "黑暗模式"
+
+#: app/src/components/app/search/index.vue:422
+msgid "Light mode"
+msgstr "亮色模式"
+
+#: app/src/components/app/search/index.vue:429
+msgid "Enable magic dark mode for this page"
+msgstr "为本页面启用魔法暗黑模式"
+
+#: app/src/components/app/search/index.vue:436
+msgid "Disable magic dark mode for this page"
+msgstr "禁用本页面的深色模式"
+
+#: app/src/components/app/search/index.vue:503
+msgid "Just now"
+msgstr "现在"
+
+#: app/src/components/app/search/index.vue:506
+msgid "minute"
+msgstr "分钟"
+
+#: app/src/components/app/search/index.vue:506
+msgid "minutes"
+msgstr "分钟"
+
+#: app/src/components/app/search/index.vue:507
+#: app/src/components/app/search/index.vue:511
+#: app/src/components/app/search/index.vue:515
+msgid "ago"
+msgstr "前"
+
+#: app/src/components/app/search/index.vue:510
+msgid "hour"
+msgstr "小时"
+
+#: app/src/components/app/search/index.vue:510
+msgid "hours"
+msgstr "小时"
+
+#: app/src/components/app/search/index.vue:514
+msgid "day"
+msgstr "天"
+
+#: app/src/components/app/search/index.vue:514
+msgid "days"
+msgstr "天"
+
+#: app/src/components/app/search/index.vue:549
+msgid "Draft"
+msgstr "草稿"
+
+#: app/src/components/app/search/index.vue:550
+msgid "Pending"
+msgstr "待定"
+
+#: app/src/components/app/search/index.vue:551
+msgid "Private"
+msgstr "私有"
+
+#: app/src/components/app/search/index.vue:552
+msgid "Scheduled"
+msgstr "计划"
+
+#: app/src/components/app/search/index.vue:1014
+msgid "Find users"
+msgstr "查找用户"
+
+#: app/src/components/app/search/index.vue:1015
+msgid "Quick actions"
+msgstr "快速行动"
+
+#: app/src/components/app/search/index.vue:1016
+msgid "View commands"
+msgstr "查看命令"
+
+#: app/src/components/app/search/index.vue:1157
+msgid "Search posts, pages, categories, users..."
+msgstr "搜索文章、页面、分类、用户..."
+
+#: app/src/components/app/search/index.vue:1221
+msgid "Welcome to Global Search"
+msgstr "欢迎来到全球搜索"
+
+#: app/src/components/app/search/index.vue:1222
+msgid ""
+"Quickly find posts, pages, users, and more. Here are some tips to get "
+"started:"
+msgstr "快速查找帖子、页面、用户等内容。以下是一些入门技巧："
+
+#: app/src/components/app/search/index.vue:1267
+msgid "Press"
+msgstr "按下"
+
+#: app/src/components/app/search/index.vue:1269
+msgid "to open search"
+msgstr "打开搜索"
+
+#: app/src/components/app/search/index.vue:1276
+msgid "Got it, thanks!"
+msgstr "明白了，谢谢！"
+
+#: app/src/components/app/search/index.vue:1298
+msgid "Try a different search term or use command syntax to filter results."
+msgstr "尝试使用不同的搜索词，或使用命令语法来筛选结果。"
+
+#: app/src/components/app/search/index.vue:1306
+msgid "View Commands"
+msgstr "查看命令"
+
+#: app/src/components/app/search/index.vue:1310
+msgid "Clear Search"
+msgstr "清除搜索"
+
+#: app/src/components/app/search/index.vue:1332
+msgid "Start searching"
+msgstr "开始搜索"
+
+#: app/src/components/app/search/index.vue:1333
+msgid "Search for posts, pages, users, categories, or use quick actions."
+msgstr "搜索文章、页面、用户、分类，或使用快速操作。"
+
+#: app/src/components/app/search/index.vue:1338
+msgid "Try these:"
+msgstr "试试这些："
+
+#: app/src/components/app/search/index.vue:1361
+msgid "Keyboard Shortcuts"
+msgstr "键盘快捷键"
+
+#: app/src/components/app/search/index.vue:1365
+msgid "Navigate"
+msgstr "导航"
+
+#: app/src/components/app/search/index.vue:1369
+#, fuzzy
+msgid "Select"
+msgstr "选择"
+
+#: app/src/components/app/search/index.vue:1373
+#: app/src/components/app/wp-notifications/index.vue:171
+#, fuzzy
+msgid "Close"
+msgstr "关闭"
+
+#: app/src/components/app/search/index.vue:1377
+msgid "Open"
+msgstr "打开"
+
+#: app/src/components/app/search/index.vue:1386
+msgid "Show tutorial again"
+msgstr "再次显示教程"
+
+#: app/src/components/app/search/index.vue:1395
+msgid "Command Syntax"
+msgstr "命令语法"
+
+#: app/src/components/app/search/index.vue:1399
+msgid "Search only posts"
+msgstr "仅搜索帖子"
+
+#: app/src/components/app/search/index.vue:1403
+msgid "Search only pages"
+msgstr "仅搜索页面"
+
+#: app/src/components/app/search/index.vue:1407
+msgid "Search only users"
+msgstr "仅搜索用户"
+
+#: app/src/components/app/search/index.vue:1411
+msgid "Search only categories"
+msgstr "仅搜索类别"
+
+#: app/src/components/app/search/index.vue:1415
+msgid "Show only quick actions"
+msgstr "仅显示快速操作"
+
+#: app/src/components/app/search/index.vue:1427
+msgid "Recent Searches"
+msgstr "最近的搜索"
+
+#: app/src/components/app/search/index.vue:1431
+msgid "Clear"
+msgstr "清除"
+
+#: app/src/components/app/search/index.vue:1457
+msgid "Recently Accessed"
+msgstr "最近访问"
+
+#: app/src/components/app/search/index.vue:1501
+msgid "Frequently Used"
+msgstr "经常使用"
+
+#: app/src/components/app/search/index.vue:1540
+#: app/src/components/app/menu/src/user-details.vue:282
+msgid "Quick Actions"
+msgstr "快速操作"
+
+#: app/src/components/app/search/index.vue:1759
+msgid "to navigate"
+msgstr "导航"
+
+#: app/src/components/app/search/index.vue:1765
+msgid "to select"
+msgstr "选择"
+
+#: app/src/components/app/search/index.vue:1769
+msgid "to close"
+msgstr "关闭"
+
+#: app/src/components/app/wp-notifications/index.vue:127
+#: app/src/components/app/wp-notifications/index.vue:168
+#: app/src/components/app/admin-notices/index.vue:198
+#: app/src/components/app/admin-notices/index.vue:225
+msgid "Notifications"
+msgstr "通知"
+
+#: app/src/components/app/wp-notifications/index.vue:181
+msgid "No notifications"
+msgstr "没有通知"
+
+#: app/src/components/app/menu/src/user-details.vue:89
+msgid "Edit Profile"
+msgstr "编辑个人资料"
+
+#: app/src/components/app/menu/src/user-details.vue:96
+msgid "Visit site"
+msgstr "查看站点"
+
+#: app/src/components/app/menu/src/user-details.vue:103
+msgid "Site Settings"
+msgstr "网站设置"
+
+#: app/src/components/app/menu/src/user-details.vue:110
+msgid "Sign Out"
+msgstr "登出"
+
+#: app/src/components/app/menu/src/user-details.vue:244
+msgid "Light Mode"
+msgstr "亮色模式"
+
+#: app/src/components/app/menu/src/user-details.vue:258
+msgid "Dark Mode"
+msgstr "深色模式"
+
+#: app/src/components/app/menu/src/user-details.vue:291
+msgid "Focus Search"
+msgstr "焦点搜索"
+
+#: app/src/components/app/admin-notices/index.vue:254
+msgid "You're all caught up"
+msgstr "你已经全部跟上了"
+
+#: app/src/components/app/admin-notices/index.vue:255
+msgid "No new notifications"
+msgstr "没有新的通知"
+
+#: app/src/components/utility/icon-select/index.vue:143
+msgid "Search icons"
+msgstr "搜索图标"
+
+#: app/src/pages/settings/src/text-pairs.vue:41
+msgid "Find"
+msgstr "查找"
+
+#: app/src/pages/settings/src/text-pairs.vue:47
+msgid "Replace"
+msgstr "替换"
+
+#: app/src/pages/settings/src/text-pairs.vue:67
+msgid "New item"
+msgstr "新项目"
+
+#: app/src/components/utility/code-editor/index.vue:222
+msgid "Edit CSS"
+msgstr "编辑CSS"
+
+#: app/src/components/utility/code-editor/index.vue:265
+msgid "Finished"
+msgstr "已完成"
+
+#: app/src/components/app/toolbar/src/buttons/screen-options/component.vue:64
+msgid "Screen options"
+msgstr "屏幕选项"
+
+#: app/src/components/app/toolbar/src/buttons/help/component.vue:63
+msgid "Help"
+msgstr "帮助"
+
+#: app/src/components/utility/multiselect-roles-and-users/index.vue:171
+#: app/src/components/utility/post-type-select/index.vue:114
+msgid "Items selected"
+msgstr "没有项目被选择"
+
+#: app/src/components/utility/multiselect-roles-and-users/index.vue:172
+msgid "Select users or roles"
+msgstr "选择用户或角色"
+
+#: app/src/components/utility/post-type-select/index.vue:115
+msgid "Select post types"
+msgstr "选择文章类型"
+
+#: app/src/components/utility/image-select/index.vue:56
+msgid "Select or Upload Media"
+msgstr "选择或上传媒体"
+
+#: app/src/components/utility/image-select/index.vue:58
+msgid "Use this media"
+msgstr "使用这个媒体"
+
+#: app/src/components/utility/image-select/index.vue:115
+msgid "url"
+msgstr "网址"
+
+#: admin/src/Rest/PostsTables.php:85
+msgid "You must be logged in to access this page."
+msgstr "您必须先登录才能访问本页面。"
+
+#: admin/src/Rest/PostsTables.php:104
+msgid "Invalid request. Please refresh the page and try again."
+msgstr "请求无效。请刷新页面并重试。"
+
+#: app/src/pages/posts/src/table-filters.vue:54
+msgid "Ascending"
+msgstr "升序"
+
+#: app/src/pages/posts/src/table-filters.vue:55
+msgid "Descending"
+msgstr "降序"

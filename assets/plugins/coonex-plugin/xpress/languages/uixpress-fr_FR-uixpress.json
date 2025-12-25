@@ -1,0 +1,1524 @@
+{
+  "domain": "uixpress",
+  "locale_data": {
+    "uixpress": {
+      "": {
+        "domain": "uixpress",
+        "lang": "fr_FR",
+        "plural-forms": "nplurals=2; plural=(n != 1);"
+      },
+      "Every 30 Seconds": [
+        "Toutes les 30 secondes"
+      ],
+      "Every 30 Minutes": [
+        "Toutes les 30 minutes"
+      ],
+      "Unable to read SVG file for sanitization.": [
+        "Impossible de lire le fichier SVG pour la désinfection."
+      ],
+      "SVG file could not be sanitized. The file may be corrupted or contain invalid content.": [
+        "Le fichier SVG n'a pas pu être nettoyé. Le fichier est peut-être corrompu ou contient du contenu non valide."
+      ],
+      "Unable to write sanitized SVG file.": [
+        "Impossible d'écrire le fichier SVG nettoyé."
+      ],
+      "Error sanitizing SVG file: %s": [
+        "Erreur lors du nettoyage du fichier SVG : %s"
+      ],
+      "Activity Log": [
+        "Journal d'activité"
+      ],
+      "Welcome to WordPress": [
+        "Bienvenue sur WordPress"
+      ],
+      "Welcome to your WordPress dashboard! This is your site management hub.": [
+        "Bienvenue dans votre tableau de bord WordPress ! Il s'agit du centre de gestion de votre site."
+      ],
+      "Quick Draft": [
+        "Projet rapide"
+      ],
+      "Create a new post quickly from here.": [
+        "Créez rapidement un nouvel article à partir d'ici."
+      ],
+      "Activity": [
+        "Activité"
+      ],
+      "Recent activity on your site.": [
+        "Activité récente sur votre site."
+      ],
+      "Plugins": [
+        "Extensions"
+      ],
+      "Database Explorer": [
+        "Explorateur de base de données"
+      ],
+      "Generate Dummy Analytics Data": [
+        "Générer des données analytiques factices"
+      ],
+      "Warning:": [
+        "Attention:"
+      ],
+      "This will delete all existing analytics data and replace it with dummy data for testing purposes.": [
+        "Cela supprimera toutes les données analytiques existantes et les remplacera par des données factices à des fins de test."
+      ],
+      "Generate Test Data": [
+        "Générer des données de test"
+      ],
+      "This tool will generate realistic dummy analytics data for the last 2 months to help you test the analytics features.": [
+        "Cet outil générera des données analytiques fictives réalistes pour les deux derniers mois afin de vous aider à tester les fonctionnalités analytiques."
+      ],
+      "Number of Months": [
+        "Nombre de mois"
+      ],
+      "Select how many months of dummy data to generate.": [
+        "Sélectionnez le nombre de mois de données fictives à générer."
+      ],
+      "Generate Dummy Data": [
+        "Générer des données factices"
+      ],
+      "Are you sure? This will delete all existing analytics data.": [
+        "Êtes-vous sûr ? Cela supprimera toutes les données analytiques existantes."
+      ],
+      "What This Generates": [
+        "Ce que cela génère"
+      ],
+      "Page views from various devices (desktop, mobile, tablet)": [
+        "Pages vues depuis différents appareils (ordinateur de bureau, mobile, tablette)"
+      ],
+      "Realistic browser and operating system data": [
+        "Données réalistes sur les navigateurs et les systèmes d'exploitation"
+      ],
+      "Geographic data from different countries and cities": [
+        "Données géographiques provenant de différents pays et villes"
+      ],
+      "Referrer data from search engines and social media": [
+        "Données de référence provenant des moteurs de recherche et des réseaux sociaux"
+      ],
+      "Session tracking and unique visitor data": [
+        "Suivi des sessions et données sur les visiteurs uniques"
+      ],
+      "Aggregated daily statistics": [
+        "Statistiques quotidiennes agrégées"
+      ],
+      "Current Analytics Status": [
+        "État actuel de l'analyse"
+      ],
+      "Analytics Enabled:": [
+        "Analyses activées :"
+      ],
+      "Tables Created:": [
+        "Tables créées :"
+      ],
+      "Analytics must be enabled in the UiXpress settings before generating dummy data.": [
+        "Les analyses doivent être activées dans les paramètres UiXpress avant de générer des données factices."
+      ],
+      "Security check failed.": [
+        "Échec du test de sécurité."
+      ],
+      "You do not have sufficient permissions to access this page.": [
+        "Vous n'avez pas les permissions suffisantes pour accéder à cette page."
+      ],
+      "Analytics is not enabled. Please enable analytics in settings first.": [
+        "L'analyse n'est pas activée. Veuillez d'abord activer l'analyse dans les paramètres."
+      ],
+      "Invalid number of months. Please select between 1 and 12 months.": [
+        "Nombre de mois invalide. Veuillez sélectionner entre 1 et 12 mois."
+      ],
+      "Error generating dummy data: ": [
+        "Erreur lors de la génération des données factices : "
+      ],
+      "Menu Creator": [
+        "Créateur de menu"
+      ],
+      "Add New Admin Menu": [
+        "Ajouter un nouveau menu d'administration"
+      ],
+      "New Admin Menu": [
+        "Nouveau menu d'administration"
+      ],
+      "Edit Admin Menu": [
+        "Modifier le menu d'administration"
+      ],
+      "View Admin Menu": [
+        "Voir menu admin"
+      ],
+      "All Admin Menus": [
+        "Tous les menus d'administration"
+      ],
+      "Search Admin Menus": [
+        "Rechercher dans les menus d'administration"
+      ],
+      "No Admin Menus found.": [
+        "Aucun menu d'administration trouvé."
+      ],
+      "No Admin Menus found in Trash.": [
+        "Aucun menu d'administration trouvé dans la corbeille."
+      ],
+      "Post type used for the uixpresss menus": [
+        "Type de publication utilisé pour les menus uixpresss"
+      ],
+      "Role Editor": [
+        "Éditeur de rôle"
+      ],
+      "Settings": [
+        "Réglages"
+      ],
+      "You do not have permission to access this endpoint.": [
+        "Vous n'avez pas l'autorisation d'accéder à ce point de terminaison."
+      ],
+      "Activity logger is not enabled.": [
+        "L'enregistreur d'activité n'est pas activé."
+      ],
+      "Invalid nonce": [
+        "Nonce invalide"
+      ],
+      "Unknown": [
+        "Inconnu"
+      ],
+      "Log entry not found.": [
+        "Entrée de journal introuvable."
+      ],
+      "Cleaned up %d old log entries.": [
+        "Nettoyage de %d anciennes entrées de journal."
+      ],
+      "Add New Admin Notice": [
+        "Ajouter une nouvelle notification administrative"
+      ],
+      "Edit Admin Notice": [
+        "Modifier l'avis administratif"
+      ],
+      "View Admin Notice": [
+        "Afficher l'avis de l'administrateur"
+      ],
+      "All Admin Notices": [
+        "Toutes les notifications administratives"
+      ],
+      "Search Admin Notices": [
+        "Rechercher les avis administratifs"
+      ],
+      "No Admin Notices found.": [
+        "Aucune notification administrative trouvée."
+      ],
+      "Persistent admin notices for uiXpress.": [
+        "Notifications administratives persistantes pour uiXpress."
+      ],
+      "Admin Notices": [
+        "Avis d'administration"
+      ],
+      "Only SELECT queries are allowed for safety.": [
+        "Seules les requêtes SELECT sont autorisées pour des raisons de sécurité."
+      ],
+      "You do not have permission to access the database explorer.": [
+        "Vous n'avez pas l'autorisation d'accéder à l'explorateur de base de données."
+      ],
+      "Invalid table name.": [
+        "Nom de table invalide."
+      ],
+      "Table not found.": [
+        "Table introuvable."
+      ],
+      "Unable to retrieve table structure.": [
+        "Impossible de récupérer la structure de la table."
+      ],
+      "Query contains prohibited SQL keywords.": [
+        "La requête contient des mots-clés SQL interdits."
+      ],
+      "Multiple statements are not allowed.": [
+        "Les déclarations multiples ne sont pas autorisées."
+      ],
+      "Query execution failed. Please check your SQL syntax.": [
+        "Échec de l'exécution de la requête. Veuillez vérifier votre syntaxe SQL."
+      ],
+      "Password is required.": [
+        "Mot de passe requis."
+      ],
+      "Invalid password.": [
+        "Mot de passe invalide."
+      ],
+      "Password verification failed.": [
+        "Échec de la vérification du mot de passe."
+      ],
+      "WordPress core tables cannot be deleted.": [
+        "Les tables principales de WordPress ne peuvent pas être supprimées."
+      ],
+      "System tables cannot be deleted.": [
+        "Les tables système ne peuvent pas être supprimées."
+      ],
+      "Password is required for this operation.": [
+        "Un mot de passe est requis pour cette opération."
+      ],
+      "Failed to delete table.": [
+        "Échec de la suppression de la table."
+      ],
+      "Table '%s' has been deleted.": [
+        "La table ‘%s’ a été supprimée."
+      ],
+      "Return only unused media items (unattached and not used as featured image).": [
+        "Ne renvoyez que les éléments multimédias non utilisés (non attachés et non utilisés comme image principale)."
+      ],
+      "Unused detection mode: shallow (default) or deep (scans post_content).": [
+        "Mode de détection inutilisé : superficiel (par défaut) ou approfondi (analyse post_content)."
+      ],
+      "Invalid media IDs provided.": [
+        "Identifiants multimédias non valides fournis."
+      ],
+      "Maximum 100 items can be downloaded at once.": [
+        "Vous pouvez télécharger jusqu'à 100 articles à la fois."
+      ],
+      "ZIP functionality is not available on this server.": [
+        "La fonctionnalité ZIP n'est pas disponible sur ce serveur."
+      ],
+      "Failed to create ZIP file.": [
+        "Échec de la création du fichier ZIP."
+      ],
+      "No valid files found to download.": [
+        "Aucun fichier valide trouvé à télécharger."
+      ],
+      "(Untitled)": [
+        "(Sans titre)"
+      ],
+      "You do not have permission to upload files.": [
+        "Vous n’avez pas l’autorisation d’envoyer des fichiers."
+      ],
+      "Media ID is required.": [
+        "L'identifiant média est obligatoire."
+      ],
+      "Media item not found.": [
+        "Élément multimédia introuvable."
+      ],
+      "You do not have permission to edit this media item.": [
+        "Vous n'avez pas l'autorisation de modifier cet élément multimédia."
+      ],
+      "No file was uploaded.": [
+        "Aucun fichier téléchargé."
+      ],
+      "File upload failed. Please try again.": [
+        "Le téléchargement du fichier a échoué. Veuillez réessayer."
+      ],
+      "File type not allowed.": [
+        "Type de fichier non autorisé."
+      ],
+      "File content does not match file type.": [
+        "Le contenu du fichier ne correspond pas au type de fichier."
+      ],
+      "File name contains invalid characters.": [
+        "Le nom du fichier contient des caractères non valides."
+      ],
+      "Original file not found.": [
+        "Fichier original introuvable."
+      ],
+      "Invalid file path.": [
+        "Chemin d'accès au fichier invalide."
+      ],
+      "Failed to move uploaded file.": [
+        "Erreur de migration de fichier."
+      ],
+      "File replaced successfully.": [
+        "Fichier remplacé avec succès."
+      ],
+      "Filter media items by tag IDs.": [
+        "Filtrer les éléments multimédias par identifiant de balise."
+      ],
+      "Media Tags": [
+        "Tags médias"
+      ],
+      "Media Tag": [
+        "Étiquette mèdia"
+      ],
+      "Tags": [
+        "Étiquettes"
+      ],
+      "All Tags": [
+        "Tous les mots-clés"
+      ],
+      "Edit Tag": [
+        "Modifier le mot-clé"
+      ],
+      "View Tag": [
+        "Voir l’étiquette"
+      ],
+      "Update Tag": [
+        "Mettre à jour le mot-clé"
+      ],
+      "Add New Tag": [
+        "Ajouter un nouveau mot-clé"
+      ],
+      "New Tag Name": [
+        "Nom du nouveau mot-clé"
+      ],
+      "Search Tags": [
+        "Rechercher des étiquettes"
+      ],
+      "Popular Tags": [
+        "Etiquettes populaires"
+      ],
+      "Separate tags with commas": [
+        "Séparez les étiquettes par des virgules"
+      ],
+      "Add or remove tags": [
+        "Ajouter ou retirer des mots-clés"
+      ],
+      "Choose from the most used tags": [
+        "Choisir parmi les étiquettes les plus utilisées"
+      ],
+      "No tags found": [
+        "Aucune étiquette trouvée"
+      ],
+      "Tag name is required": [
+        "Le nom du tag est obligatoire."
+      ],
+      "Invalid media item": [
+        "Élément multimédia non valide"
+      ],
+      "You must be logged in to access this endpoint.": [
+        "Vous devez être connecté pour accéder à ce point d'accès."
+      ],
+      "You do not have permission to manage media tags.": [
+        "Vous n'avez pas l'autorisation de gérer les balises multimédias."
+      ],
+      "You do not have permission to perform this action.": [
+        "Vous n'êtes pas autorisé à effectuer cette action."
+      ],
+      "Status": [
+        "Statut"
+      ],
+      "Published": [
+        "Publié"
+      ],
+      "Comments": [
+        "Commentaires"
+      ],
+      "(No title)": [
+        "(Aucun titre)"
+      ],
+      "Scheduled for %s from now": [
+        "Prévu pour %s à partir de maintenant"
+      ],
+      "%s ago": [
+        "il y a %s"
+      ],
+      "You do not have permissions to view this data.": [
+        "Vous n'avez pas les autorisations nécessaires pour consulter ces données."
+      ],
+      "Invalid role format.": [
+        "Format de rôle non valide."
+      ],
+      "Invalid role.": [
+        "Rôle invalide."
+      ],
+      "Capabilities must be an array.": [
+        "Les capacités doivent être un tableau."
+      ],
+      "Role not found.": [
+        "Rôle introuvable."
+      ],
+      "Role capabilities updated successfully.": [
+        "Les capacités du rôle ont été mises à jour avec succès."
+      ],
+      "Role name cannot be empty.": [
+        "Le nom du rôle ne peut être vide."
+      ],
+      "Role name is too long.": [
+        "Le nom du rôle est trop long."
+      ],
+      "Role name updated successfully.": [
+        "Nom du rôle mis à jour avec succès."
+      ],
+      "Role slug can only contain lowercase letters, numbers, hyphens, and underscores.": [
+        "Le slug de rôle ne peut contenir que des lettres minuscules, des chiffres, des tirets et des traits de soulignement."
+      ],
+      "Role slug is too long.": [
+        "Le slug du rôle est trop long."
+      ],
+      "A role with this slug already exists.": [
+        "Un rôle avec cette balle existe déjà."
+      ],
+      "Failed to create role.": [
+        "Échec de la création du rôle."
+      ],
+      "Role created successfully.": [
+        "Rôle créé avec succès."
+      ],
+      "Cannot delete default WordPress roles.": [
+        "Impossible de supprimer les rôles WordPress par défaut."
+      ],
+      "Cannot delete role. There are %d user(s) with this role. Please reassign users to another role first.": [
+        "Impossible de supprimer le rôle. Il y a %d utilisateur(s) avec ce rôle. Veuillez d'abord réattribuer les utilisateurs à un autre rôle."
+      ],
+      "Role deleted successfully.": [
+        "Rôle supprimé avec succès."
+      ],
+      "New Users": [
+        "Nouveaux utilisateurs"
+      ],
+      "Posts": [
+        "Articles"
+      ],
+      "Table View": [
+        "Affichage Tableau"
+      ],
+      "New post": [
+        "Nouvel article"
+      ],
+      "Search posts...": [
+        "Recherche d'articles..."
+      ],
+      "item": [
+        "article"
+      ],
+      "items": [
+        "articles"
+      ],
+      "Page": [
+        "Page"
+      ],
+      "Previous": [
+        "Précédent"
+      ],
+      "Next": [
+        "Suivant"
+      ],
+      "Loading posts...": [
+        "Chargement en cours…"
+      ],
+      "No posts found": [
+        "Aucune publication trouvée"
+      ],
+      "Add new": [
+        "Ajouter"
+      ],
+      "Sidebar View": [
+        "Vue Barre Latérale"
+      ],
+      "Search posts": [
+        "Recherche des articles"
+      ],
+      "Nothing found": [
+        "Aucun résultat"
+      ],
+      "When you create new items they will show up here.": [
+        "Lorsque vous créez de nouveaux éléments, ils apparaissent ici."
+      ],
+      "%s child items": [
+        "%s éléments enfants"
+      ],
+      "%s child item": [
+        "%s élément enfant"
+      ],
+      "item selected": [
+        "élément sélectionné"
+      ],
+      "items selected": [
+        "éléments sélectionnés"
+      ],
+      "Publish items": [
+        "Publier des articles"
+      ],
+      "Duplicate items": [
+        "Dupliquer les éléments"
+      ],
+      "Delete items": [
+        "Supprimez des éléments"
+      ],
+      "General": [
+        "Général"
+      ],
+      "Core plugin settings and license management": [
+        "Paramètres du plugin principal et gestion des licences"
+      ],
+      "Login": [
+        "Connexion"
+      ],
+      "Customize login page appearance and security": [
+        "Personnalisez l'apparence et la sécurité de la page de connexion"
+      ],
+      "Theme": [
+        "Thème"
+      ],
+      "Colors, styling, and visual customization": [
+        "Couleurs, style et personnalisation visuelle"
+      ],
+      "White Label": [
+        "Marque blanche"
+      ],
+      "Rebrand and customize interface text and icons": [
+        "Refonte et personnalisation du texte et des icônes de l'interface"
+      ],
+      "Menu": [
+        "Menu"
+      ],
+      "Admin menu behavior and interaction settings": [
+        "Paramètres de comportement et d'interaction du menu d'administration"
+      ],
+      "Post management and display preferences": [
+        "Préférences d'affichage et de gestion des publications"
+      ],
+      "Plugin management interface options": [
+        "Options de l'interface de gestion des plugins"
+      ],
+      "Dashboard": [
+        "Tableau de bord"
+      ],
+      "Custom dashboard and admin interface settings": [
+        "Paramètres personnalisés du tableau de bord et de l'interface d'administration"
+      ],
+      "Analytics": [
+        "Analytics"
+      ],
+      "Built-in analytics and tracking settings": [
+        "Paramètres d'analyse et de suivi intégrés"
+      ],
+      "Media": [
+        "Média"
+      ],
+      "Media library and upload management settings": [
+        "Paramètres de gestion de la médiathèque et des téléchargements"
+      ],
+      "Users": [
+        "Utilisateurs"
+      ],
+      "User management and administration settings": [
+        "Paramètres de gestion et d'administration des utilisateurs"
+      ],
+      "Comment management and administration settings": [
+        "Paramètres de gestion et d'administration des commentaires"
+      ],
+      "Security": [
+        "Sécurité"
+      ],
+      "Security settings and administration": [
+        "Paramètres de sécurité et administration"
+      ],
+      "Database": [
+        "Base de données"
+      ],
+      "Database explorer and management settings": [
+        "Explorateur de base de données et paramètres de gestion"
+      ],
+      "Settings updated!": [
+        "Paramètres mis à jour !"
+      ],
+      "Settings imported": [
+        "Paramètres importés"
+      ],
+      "Import failed": [
+        "Échec de l’importation"
+      ],
+      "Please provide a valid JSON file": [
+        "Veuillez fournir un fichier JSON valide."
+      ],
+      "Invalid settings: must be an object": [
+        "Paramètres non valides : doit être un objet"
+      ],
+      "Error uploading settings": [
+        "Erreur lors du téléchargement des paramètres"
+      ],
+      "Search settings...": [
+        "Paramètres de recherche..."
+      ],
+      "Loading settings...": [
+        "Chargement des paramètres..."
+      ],
+      "No settings found": [
+        "Aucun paramètre trouvé"
+      ],
+      "Try a different search term": [
+        "Essayez un autre terme de recherche."
+      ],
+      "Loading Settings...": [
+        "Chargement des réglages......"
+      ],
+      "Settings Panel": [
+        "Panneau de configuration"
+      ],
+      "Select a category from the list to configure your settings.": [
+        "Sélectionnez une catégorie dans la liste pour configurer vos paramètres."
+      ],
+      "Click": [
+        "Cliquer"
+      ],
+      "Hover": [
+        "Survol"
+      ],
+      "Off": [
+        "Désactivé"
+      ],
+      "Light": [
+        "Clair"
+      ],
+      "Dark": [
+        "Sombre"
+      ],
+      "Licence key": [
+        "Clé de licence"
+      ],
+      "Activating uiXpress enables updates and features": [
+        "L'activation de uiXpress permet les mises à jour et les fonctionnalités"
+      ],
+      "Logo": [
+        "Logo"
+      ],
+      "Optional logo for to be displayed in the menu": [
+        "Logo facultatif à afficher dans le menu"
+      ],
+      "Logo url": [
+        "Logo url"
+      ],
+      "Dark mode logo": [
+        "Logo en mode sombre"
+      ],
+      "Set an alternative logo to use in dark mode. If one isn't set it will fall back to the standard logo.": [
+        "Définissez un logo alternatif à utiliser en mode sombre. Si aucun logo n'est défini, le logo standard sera utilisé par défaut."
+      ],
+      "Dark Logo url": [
+        "Logo sombre url"
+      ],
+      "Disable theme": [
+        "Désactiver le thème"
+      ],
+      "Choose roles or usersnames to disable the theme for.": [
+        "Choisissez les rôles ou les noms d'utilisateur pour lesquels vous souhaitez désactiver le thème."
+      ],
+      "Search post types": [
+        "Rechercher les types de publication"
+      ],
+      "Choose which post types are available in the global search": [
+        "Choisissez les types de publications disponibles dans la recherche globale."
+      ],
+      "Disable global search": [
+        "Désactiver la recherche globale"
+      ],
+      "Disable global search for all users.": [
+        "Désactiver la recherche globale pour tous les utilisateurs."
+      ],
+      "Admin layout": [
+        "Disposition administrative"
+      ],
+      "Choose your prefered admin layout": [
+        "Choisissez votre mise en page d'administration préférée"
+      ],
+      "Modernise login page": [
+        "Moderniser la page de connexion"
+      ],
+      "When enabled, uiXpress will modernise the default login page.": [
+        "Lorsque cette option est activée, uiXpress modernise la page de connexion par défaut."
+      ],
+      "Login image": [
+        "Image de connexion"
+      ],
+      "Optional image that will be added to the empty panel in the login page": [
+        "Image facultative qui sera ajoutée au panneau vide de la page de connexion"
+      ],
+      "Image url": [
+        "URL de l’image"
+      ],
+      "Login path": [
+        "Chemin d'accès à la connexion"
+      ],
+      "Change the login url from wp-login.php to a custom slug. Ensure you remember what you change this to.": [
+        "Modifiez l'URL de connexion de wp-login.php à une chaîne personnalisée. Veillez à bien noter ce que vous avez saisi."
+      ],
+      "Hide language selector": [
+        "Masquer le sélecteur de langue"
+      ],
+      "When hidden the language selector on the login page will not be displayed": [
+        "Lorsque le sélecteur de langue est masqué, il n'apparaîtra pas sur la page de connexion."
+      ],
+      "Enable TurnStyle": [
+        "Activer TurnStyle"
+      ],
+      "When enabled, a cloudflare turnstyle challenge will be displayed on the login page to enhance security. Cloudflare account is required": [
+        "Lorsque cette option est activée, un défi Cloudflare Turnstile s'affiche sur la page de connexion afin de renforcer la sécurité. Un compte Cloudflare est requis."
+      ],
+      "Turnstyle site key": [
+        "Clé du site Turnstyle"
+      ],
+      "This is the site key for your turnstyle which can be created from your cloudflare dashboard.": [
+        "Il s'agit de la clé du site pour votre tourniquet, qui peut être créée à partir de votre tableau de bord Cloudflare."
+      ],
+      "Turnstyle secret key": [
+        "Clé secrète Turnstyle"
+      ],
+      "This is the secret key for your turnstyle which can be created from your cloudflare dashboard.": [
+        "Il s'agit de la clé secrète de votre tourniquet, qui peut être créée à partir de votre tableau de bord Cloudflare."
+      ],
+      "Force global theme": [
+        "Forcer le thème global"
+      ],
+      "When enabled, the light / dark toggle will be removed and the selected theme set for all users.": [
+        "Lorsque cette option est activée, le bouton de basculement clair/foncé sera supprimé et le thème sélectionné sera défini pour tous les utilisateurs."
+      ],
+      "Hide screen options": [
+        "Cacher les options de l'écran"
+      ],
+      "Hide the screen options toggle in the toolbar": [
+        "Masquer le bouton d'activation/désactivation des options d'écran dans la barre d'outils"
+      ],
+      "Hide help toggle": [
+        "Masquer l'aide"
+      ],
+      "Hide the help toggle in the toolbar": [
+        "Masquer le bouton d'aide dans la barre d'outils"
+      ],
+      "Base theme colors": [
+        "Couleurs de base du thème"
+      ],
+      "Set a base color and uiXpress will automatically create a color scale for you.": [
+        "Définissez une couleur de base et uiXpress créera automatiquement une échelle de couleurs pour vous."
+      ],
+      "Base": [
+        "Base"
+      ],
+      "Accent theme colors": [
+        "Couleurs thématiques accentuées"
+      ],
+      "Set a accent color and uiXpress will automatically create a color scale for you.": [
+        "Définissez une couleur d'accentuation et uiXpress créera automatiquement une échelle de couleurs pour vous."
+      ],
+      "Accent base": [
+        "Base d'accent"
+      ],
+      "Custom css": [
+        "CSS personnalisé"
+      ],
+      "Custom css added here will only be added in the admin area and login page.": [
+        "Le CSS personnalisé ajouté ici ne sera ajouté que dans la zone d'administration et la page de connexion."
+      ],
+      "External stylesheets": [
+        "Feuilles de style externes"
+      ],
+      "Add URLs to any external stylesheets you want uiXpress to load into the admin": [
+        "Ajoutez les URL des feuilles de style externes que vous souhaitez que uiXpress charge dans l'interface d'administration."
+      ],
+      "Admin favicon": [
+        "Favicon administrateur"
+      ],
+      "Optional favicon to replace the WordPress favicon in the admin.": [
+        "Favicon facultatif pour remplacer le favicon WordPress dans l'administration."
+      ],
+      "Favicon url": [
+        "URL du favicon"
+      ],
+      "Rename uiXpress": [
+        "Renommer uiXpress"
+      ],
+      "This will rename uiXpress in the plugins list as well as renaming it's settings link.": [
+        "Cela renommera uiXpress dans la liste des plugins et renommera également son lien de paramètres."
+      ],
+      "Text Replacement": [
+        "Remplacement de texte"
+      ],
+      "Customize the text displayed in the WordPress admin area. Enter original words or phrases and their replacements to white-label the admin interface.": [
+        "Personnalisez le texte affiché dans la zone d'administration WordPress. Entrez les mots ou expressions d'origine et leurs remplacements pour personnaliser l'interface d'administration."
+      ],
+      "Submenu style": [
+        "Style de sous-menu"
+      ],
+      "Choose from whether the submenu opens on click or hover.": [
+        "Choisissez si le sous-menu s'ouvre au clic ou au survol."
+      ],
+      "Classic Post List View": [
+        "Affichage classique de la liste des messages"
+      ],
+      "Switch to WordPress's traditional table layout for posts, removing the modern interface.": [
+        "Passez à la mise en page traditionnelle de WordPress pour les articles, en supprimant l'interface moderne."
+      ],
+      "Modern Plugin Manager": [
+        "Gestionnaire de plugins moderne"
+      ],
+      "Replace the classic plugins page with a modern plugin manager with plugin profiling and improved features.": [
+        "Remplacez la page classique des plugins par un gestionnaire de plugins moderne avec profilage des plugins et fonctionnalités améliorées."
+      ],
+      "Modern Media Library": [
+        "Médiathèque moderne"
+      ],
+      "Replace the classic WordPress media library with a modern, responsive media manager with improved upload and organization features.": [
+        "Remplacez la bibliothèque multimédia classique de WordPress par un gestionnaire multimédia moderne et réactif, doté de fonctionnalités améliorées de téléchargement et d'organisation."
+      ],
+      "Enable SVG Uploads": [
+        "Activer les téléchargements SVG"
+      ],
+      "Allow SVG (Scalable Vector Graphics) files to be uploaded to the media library. All SVG files are automatically sanitized before upload to remove potentially malicious code, ensuring safe handling of SVG files.": [
+        "Autorisez le téléchargement de fichiers SVG (Scalable Vector Graphics) dans la médiathèque. Tous les fichiers SVG sont automatiquement nettoyés avant leur téléchargement afin de supprimer tout code potentiellement malveillant, garantissant ainsi une gestion sécurisée des fichiers SVG."
+      ],
+      "Modern Users Page": [
+        "Page des utilisateurs modernes"
+      ],
+      "Replace the classic WordPress users page with a modern, responsive user manager with improved features and better organization.": [
+        "Remplacez la page classique des utilisateurs WordPress par un gestionnaire d'utilisateurs moderne et réactif, doté de fonctionnalités améliorées et d'une meilleure organisation."
+      ],
+      "Modern Comments Page": [
+        "Page des commentaires modernes"
+      ],
+      "Replace the classic WordPress comments page with a modern, responsive comment manager with improved features and better organization.": [
+        "Remplacez la page de commentaires WordPress classique par un gestionnaire de commentaires moderne et réactif, doté de fonctionnalités améliorées et d'une meilleure organisation."
+      ],
+      "Custom Dashboard": [
+        "Tableau de bord personnalisé"
+      ],
+      "Replace the default WordPress dashboard with a modern, customizable dashboard interface.": [
+        "Remplacez le tableau de bord WordPress par défaut par une interface moderne et personnalisable."
+      ],
+      "Enable uiXpress Analytics": [
+        "Activer uiXpress Analytics"
+      ],
+      "Enable built-in analytics to track user behavior, page views, and performance metrics within your WordPress admin.": [
+        "Activez les analyses intégrées pour suivre le comportement des utilisateurs, les pages vues et les indicateurs de performance dans votre administration WordPress."
+      ],
+      "Enable Database Explorer": [
+        "Activer l'explorateur de base de données"
+      ],
+      "Enable the modern database explorer interface to browse tables, view data, and execute SQL queries safely.": [
+        "Activez l'interface moderne d'exploration de base de données pour parcourir les tables, afficher les données et exécuter des requêtes SQL en toute sécurité."
+      ],
+      "Enable Role Editor": [
+        "Activer l'éditeur de rôles"
+      ],
+      "Enable the modern role editor interface to manage WordPress user roles and capabilities.": [
+        "Activez l'interface moderne de l'éditeur de rôles pour gérer les rôles et les capacités des utilisateurs WordPress."
+      ],
+      "Enable Activity Logger": [
+        "Activer l'enregistreur d'activité"
+      ],
+      "Track and log all admin actions including post changes, user updates, plugin activations, and more.": [
+        "Suivez et consignez toutes les actions administratives, y compris les modifications de publications, les mises à jour des utilisateurs, les activations de plugins, etc."
+      ],
+      "Retention Period (Days)": [
+        "Période de conservation (jours)"
+      ],
+      "How many days to keep activity logs before automatic cleanup. Default is 90 days.": [
+        "Combien de jours conserver les journaux d'activité avant leur suppression automatique. La valeur par défaut est 90 jours."
+      ],
+      "Log Level": [
+        "Niveau du log"
+      ],
+      "Choose which actions to log. \"All Actions\" logs everything, \"Important Only\" logs only critical actions like deletions and role changes.": [
+        "Choisissez les actions à enregistrer. « Toutes les actions » enregistre tout, « Important uniquement » enregistre uniquement les actions critiques telles que les suppressions et les changements de rôle."
+      ],
+      "All Actions": [
+        "Toutes les actions"
+      ],
+      "Important Only": [
+        "Important Seulement"
+      ],
+      "Auto Cleanup": [
+        "Nettoyage automatique"
+      ],
+      "Automatically delete logs older than the retention period. Disable to keep logs indefinitely.": [
+        "Supprimer automatiquement les journaux plus anciens que la période de conservation. Désactiver pour conserver les journaux indéfiniment."
+      ],
+      "Failed to activate key": [
+        "Échec de l'activation de la clé"
+      ],
+      "Key already activated for this site": [
+        "Clé déjà activée pour ce site"
+      ],
+      "Key successfully activated": [
+        "Clé activée avec succès"
+      ],
+      "Network error during activation": [
+        "Erreur réseau lors de l'activation"
+      ],
+      "Instance removed": [
+        "Instance supprimée"
+      ],
+      "Failed to remove activation": [
+        "Échec de la suppression de l'activation"
+      ],
+      "Network error during removal": [
+        "Erreur réseau lors de la suppression"
+      ],
+      "Save": [
+        "Sauvegarder"
+      ],
+      "Please add your licence key to unlock the plugin settings": [
+        "Veuillez ajouter votre clé de licence pour déverrouiller les paramètres du plugin."
+      ],
+      "Found": [
+        "Trouvé"
+      ],
+      "matching setting(s)": [
+        "paramètre(s) correspondant(s)"
+      ],
+      "No settings match your search in this category.": [
+        "Aucun paramètre ne correspond à votre recherche dans cette catégorie."
+      ],
+      "Try a different search term or check another category.": [
+        "Essayez un autre terme de recherche ou consultez une autre catégorie."
+      ],
+      "Items duplicated": [
+        "Éléments dupliqués"
+      ],
+      "Item author updated": [
+        "Auteur de l'article mis à jour"
+      ],
+      "Item title updated": [
+        "Titre de l'article mis à jour"
+      ],
+      "Are you sure?": [
+        "Êtes-vous sûr ?"
+      ],
+      "Are you sure you want to publish these items?": [
+        "Êtes-vous sûr de vouloir publier ces éléments ?"
+      ],
+      "Yes publish them": [
+        "Oui, publiez-les."
+      ],
+      "Items published": [
+        "Articles publiés"
+      ],
+      "Item status updated": [
+        "Statut de l'article mis à jour"
+      ],
+      "Edit": [
+        "Modifier"
+      ],
+      "View": [
+        "Voir"
+      ],
+      "Duplicate": [
+        "Dupliquer"
+      ],
+      "Restore": [
+        "Restaurer"
+      ],
+      "Delete": [
+        "Supprimer"
+      ],
+      "Item duplicated": [
+        "Article dupliqué"
+      ],
+      "Are you sure you want to delete this item? This action cannot be undone.": [
+        "Confirmez-vous la suppression définitive cet élément ? Cette action ne peut pas être annulée."
+      ],
+      "Yes delete it": [
+        "Oui, supprimez-le."
+      ],
+      "Item deleted": [
+        "Élémént supprimé"
+      ],
+      "Item restored": [
+        "Article restauré"
+      ],
+      "Roles": [
+        "Rôles"
+      ],
+      "Unknown user": [
+        "Utilisateur inconnu"
+      ],
+      "Update author": [
+        "Mettre à jour l’auteur•rice"
+      ],
+      "Search": [
+        "Rechercher"
+      ],
+      "Featured image updated": [
+        "Image vedette mise à jour"
+      ],
+      "Update status": [
+        "Mettre à jour statut"
+      ],
+      "Are you sure you want to delete these items? This action cannot be undone.": [
+        "Voulez-vous vraiment supprimer ces éléments ? Cette action ne peut pas être annulée."
+      ],
+      "Yes delete them": [
+        "Oui, supprimez-les."
+      ],
+      "Items deleted": [
+        "Elément supprimé"
+      ],
+      "Publish changes?": [
+        "Publier les modifications ?"
+      ],
+      "Are you sure you want to batch update these items?": [
+        "Êtes-vous sûr de vouloir mettre à jour ces éléments par lots ?"
+      ],
+      "Yes update them": [
+        "Oui, mettez-les à jour."
+      ],
+      "Items updated": [
+        "Éléments mis à jour"
+      ],
+      "Batch edit": [
+        "Modification groupée"
+      ],
+      "Categories": [
+        "Catégories"
+      ],
+      "Author": [
+        "Auteur"
+      ],
+      "Cancel": [
+        "Annuler"
+      ],
+      "Update": [
+        "Mettre à jour"
+      ],
+      "Filters": [
+        "Filtres"
+      ],
+      "Date range": [
+        "Plage de dates"
+      ],
+      "Table settings": [
+        "Paramètres de table"
+      ],
+      "Per page": [
+        "Par page"
+      ],
+      "Order": [
+        "Commande"
+      ],
+      "Order by": [
+        "Trier par"
+      ],
+      "Expand all posts": [
+        "Développer tous les messages"
+      ],
+      "Columns": [
+        "Colonnes"
+      ],
+      "Untitled": [
+        "Sans titre"
+      ],
+      "child": [
+        "enfant"
+      ],
+      "children": [
+        "enfants"
+      ],
+      "All": [
+        "Tout"
+      ],
+      "Drafts": [
+        "Brouillons"
+      ],
+      "Post Details": [
+        "Détails de l'article"
+      ],
+      "Select a post from the list to view details and edit properties.": [
+        "Sélectionnez un message dans la liste pour afficher les détails et modifier les propriétés."
+      ],
+      "URL": [
+        "URL"
+      ],
+      "Preview": [
+        "Aperçu"
+      ],
+      "Minify menu": [
+        "Réduire le menu"
+      ],
+      "Search menu": [
+        "Rechercher un menu"
+      ],
+      "Shortcuts": [
+        "Raccourcis"
+      ],
+      "Name": [
+        "Nom"
+      ],
+      "Shortcut name": [
+        "Nome do atalho"
+      ],
+      "https://example.com": [
+        "https://exemple.com"
+      ],
+      "Icon": [
+        "Icône"
+      ],
+      "icon name": [
+        "nom de l'icône"
+      ],
+      "Toggle menu": [
+        "Basculer le menu"
+      ],
+      "System": [
+        "Système"
+      ],
+      "Logout": [
+        "Déconnexion"
+      ],
+      "Clear custom properties": [
+        "Effacer les propriétés personnalisées"
+      ],
+      "Default": [
+        "Par défaut"
+      ],
+      "Rounded": [
+        "Arrondi"
+      ],
+      "Bubble": [
+        "Bulle"
+      ],
+      "Update settings": [
+        "Mettre à jour les réglages"
+      ],
+      "Loading editor...": [
+        "Chargement de l'éditeur..."
+      ],
+      "Licence Active": [
+        "Licence active"
+      ],
+      "Remove key": [
+        "Supprimer la clé"
+      ],
+      "uiXpress licence key": [
+        "Clé de licence uiXpress"
+      ],
+      "Activate": [
+        "Activer"
+      ],
+      "Development server detected, no need to activate your licence key.": [
+        "Serveur de développement détecté, pas besoin d'activer votre clé de licence."
+      ],
+      "Date": [
+        "Date"
+      ],
+      "ID": [
+        "ID"
+      ],
+      "Modified": [
+        "Modifié"
+      ],
+      "Slug": [
+        "Identifiant"
+      ],
+      "Title": [
+        "Titre"
+      ],
+      "File updated": [
+        "Fichier mis à jour"
+      ],
+      "File deleted": [
+        "Fichier supprimé"
+      ],
+      "Files duplicated": [
+        "Fichiers dupliqués"
+      ],
+      "Are you sure you want to delete these files? This action cannot be undone.": [
+        "Êtes-vous sûr de vouloir supprimer ces fichiers ? Cette action ne peut pas être annulée."
+      ],
+      "Files deleted": [
+        "Fichiers supprimés"
+      ],
+      "File uploaded": [
+        "Fichier téléchargé"
+      ],
+      "Media Library": [
+        "Bibliothèque de médias"
+      ],
+      "File type": [
+        "Type de fichier"
+      ],
+      "Upload": [
+        "Téléverser"
+      ],
+      "No results found": [
+        "Aucun résultat trouvé"
+      ],
+      "Edit your search criteria, or upload a new file.": [
+        "Modifiez vos critères de recherche ou téléchargez un nouveau fichier."
+      ],
+      "Alt text": [
+        "Texte alternatif"
+      ],
+      "Caption": [
+        "Légende"
+      ],
+      "Description": [
+        "Description"
+      ],
+      "Delete file": [
+        "Supprimer le fichier"
+      ],
+      "Delete selected": [
+        "Supprimer la sélection"
+      ],
+      "Duplicate selected": [
+        "Dupliquer la sélection"
+      ],
+      "Clear selection": [
+        "Effacer la sélection"
+      ],
+      "Done": [
+        "Terminé"
+      ],
+      "No products found": [
+        "Aucun produit trouvé"
+      ],
+      "Select date": [
+        "Sélectionner une date"
+      ],
+      "Set date": [
+        "Régler date"
+      ],
+      "Magic dark mode enabled for this page": [
+        "Mode sombre magique activé pour cette page"
+      ],
+      "Failed to enable magic dark mode": [
+        "Échec de l'activation du mode sombre magique"
+      ],
+      "Magic dark mode disabled for this page": [
+        "Mode sombre désactivé pour cette page"
+      ],
+      "Failed to disable magic dark mode": [
+        "Échec de la désactivation du mode sombre magique"
+      ],
+      "New Post": [
+        "Nouvel article"
+      ],
+      "New Page": [
+        "Nouvelle page"
+      ],
+      "View dashboard": [
+        "Voir le tableau de bord"
+      ],
+      "View site": [
+        "Voir le site"
+      ],
+      "Site settings": [
+        "Paramètres du site"
+      ],
+      "Dark mode": [
+        "Mode sombre"
+      ],
+      "Light mode": [
+        "Mode Light"
+      ],
+      "Enable magic dark mode for this page": [
+        "Activer le mode sombre magique pour cette page"
+      ],
+      "Disable magic dark mode for this page": [
+        "Désactiver le mode sombre magique pour cette page"
+      ],
+      "Just now": [
+        "Maintenant"
+      ],
+      "minute": [
+        "minute"
+      ],
+      "minutes": [
+        "minutes"
+      ],
+      "ago": [
+        "depuis"
+      ],
+      "hour": [
+        "heure"
+      ],
+      "hours": [
+        "heures"
+      ],
+      "day": [
+        "jour"
+      ],
+      "days": [
+        "jours"
+      ],
+      "Draft": [
+        "Brouillon"
+      ],
+      "Pending": [
+        "En attente"
+      ],
+      "Private": [
+        "Privé"
+      ],
+      "Scheduled": [
+        "Planifié"
+      ],
+      "Find users": [
+        "Chercher utilisateurs"
+      ],
+      "Quick actions": [
+        "Actions rapides"
+      ],
+      "View commands": [
+        "Afficher les commandes"
+      ],
+      "Search posts, pages, categories, users...": [
+        "Rechercher des articles, des pages, des catégories, des utilisateurs..."
+      ],
+      "Welcome to Global Search": [
+        "Bienvenue dans Global Search"
+      ],
+      "Quickly find posts, pages, users, and more. Here are some tips to get started:": [
+        "Trouvez rapidement des publications, des pages, des utilisateurs et bien plus encore. Voici quelques conseils pour vous aider à démarrer :"
+      ],
+      "Press": [
+        "Presse"
+      ],
+      "to open search": [
+        "pour ouvrir la recherche"
+      ],
+      "Got it, thanks!": [
+        "J’ai compris, merci !"
+      ],
+      "Try a different search term or use command syntax to filter results.": [
+        "Essayez un autre terme de recherche ou utilisez la syntaxe de commande pour filtrer les résultats."
+      ],
+      "View Commands": [
+        "Afficher les commandes"
+      ],
+      "Clear Search": [
+        "Effacer la recherche"
+      ],
+      "Start searching": [
+        "Lancer la recherche"
+      ],
+      "Search for posts, pages, users, categories, or use quick actions.": [
+        "Recherchez des publications, des pages, des utilisateurs, des catégories ou utilisez les actions rapides."
+      ],
+      "Try these:": [
+        "Essayez ceci :"
+      ],
+      "Keyboard Shortcuts": [
+        "Raccourcis clavier"
+      ],
+      "Navigate": [
+        "Naviguer"
+      ],
+      "Select": [
+        "Sélectionner"
+      ],
+      "Close": [
+        "Fermer"
+      ],
+      "Open": [
+        "Ouvert"
+      ],
+      "Show tutorial again": [
+        "Afficher à nouveau le tutoriel"
+      ],
+      "Command Syntax": [
+        "Syntaxe des commandes"
+      ],
+      "Search only posts": [
+        "Rechercher uniquement dans les publications"
+      ],
+      "Search only pages": [
+        "Rechercher uniquement dans les pages"
+      ],
+      "Search only users": [
+        "Rechercher uniquement les utilisateurs"
+      ],
+      "Search only categories": [
+        "Rechercher uniquement dans les catégories"
+      ],
+      "Show only quick actions": [
+        "Afficher uniquement les actions rapides"
+      ],
+      "Recent Searches": [
+        "Recherches Recentes"
+      ],
+      "Clear": [
+        "Effacer"
+      ],
+      "Recently Accessed": [
+        "Récemment consulté"
+      ],
+      "Frequently Used": [
+        "Fréquemment utilisé"
+      ],
+      "Quick Actions": [
+        "Actions rapides"
+      ],
+      "to navigate": [
+        "pour naviguer"
+      ],
+      "to select": [
+        "sélectionner"
+      ],
+      "to close": [
+        "fermer"
+      ],
+      "Notifications": [
+        "Notifications"
+      ],
+      "No notifications": [
+        "Pas de notifications"
+      ],
+      "Edit Profile": [
+        "Modifier le profil"
+      ],
+      "Visit site": [
+        "Visiter le site"
+      ],
+      "Site Settings": [
+        "Paramètres du site"
+      ],
+      "Sign Out": [
+        "Déconnexion"
+      ],
+      "Light Mode": [
+        "Mode Jour"
+      ],
+      "Dark Mode": [
+        "Mode sombre"
+      ],
+      "Focus Search": [
+        "Recherche ciblée"
+      ],
+      "You're all caught up": [
+        "Vous êtes tous rattrapés."
+      ],
+      "No new notifications": [
+        "Pas de nouvelle notifications"
+      ],
+      "Search icons": [
+        "Recherche d'icônes"
+      ],
+      "Find": [
+        "Trouver"
+      ],
+      "Replace": [
+        "Remplacer"
+      ],
+      "New item": [
+        "Nouvel élément"
+      ],
+      "Edit CSS": [
+        "Modifier le style CSS"
+      ],
+      "Finished": [
+        "Terminé"
+      ],
+      "Screen options": [
+        "Options de l’écran"
+      ],
+      "Help": [
+        "Aide"
+      ],
+      "Items selected": [
+        "Éléments sélectionnés"
+      ],
+      "Select users or roles": [
+        "Sélectionner des utilisateurs ou des rôles"
+      ],
+      "Select post types": [
+        "Sélectionner des types d’articles"
+      ],
+      "Select or Upload Media": [
+        "Sélectionnez ou télécharger un média"
+      ],
+      "Use this media": [
+        "Utiliser ce média"
+      ],
+      "url": [
+        "url"
+      ],
+      "You must be logged in to access this page.": [
+        "Vous devez être connecté pour accéder à cette page."
+      ],
+      "Invalid request. Please refresh the page and try again.": [
+        "Demande non valide. Veuillez actualiser la page et réessayer."
+      ],
+      "Ascending": [
+        "Ascendant"
+      ],
+      "Descending": [
+        "Descendant"
+      ]
+    }
+  }
+}
