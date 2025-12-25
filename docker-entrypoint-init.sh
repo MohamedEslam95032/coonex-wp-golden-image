@@ -100,9 +100,7 @@ fi
 # --------------------------------------------------
 # 6) Secure defaults
 # --------------------------------------------------
-wp config set DISALLOW_FILE_EDIT true --raw --allow-root --path="$WP_PATH"
-wp config set DISALLOW_FILE_MODS true --raw --allow-root --path="$WP_PATH"
-wp config set AUTOMATIC_UPDATER_DISABLED true --raw --allow-root --path="$WP_PATH"
+
 
 # --------------------------------------------------
 # 7) Install WordPress (once only)
