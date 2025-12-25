@@ -42,9 +42,11 @@ if (!empty(\$_SERVER['HTTP_X_FORWARDED_PROTO'])) {\\n\
 # --------------------------------------------------
 # Copy themes / plugins / MU plugins
 # --------------------------------------------------
-COPY assets/themes/ /usr/src/wordpress/wp-content/themes/
-COPY assets/plugins/ /usr/src/wordpress/wp-content/plugins/
-COPY assets/mu-plugins/ /usr/src/wordpress/wp-content/mu-plugins/
+COPY assets/themes/ /var/www/html/wp-content/themes/
+COPY assets/plugins/ /var/www/html/wp-content/plugins/
+COPY assets/mu-plugins/ /var/www/html/wp-content/mu-plugins/
+
+
 
 # --------------------------------------------------
 # Entrypoint
