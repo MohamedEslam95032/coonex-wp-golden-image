@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Coonex Security Layer
- * Description: Core security rules for Coonex managed WordPress
+ * Plugin Name: Coonex Security – UI & Profile Lock
+ * Description: Disable theme editor and user profile editing for Coonex managed WordPress
  */
 
 if (!defined('ABSPATH')) {
@@ -9,34 +9,39 @@ if (!defined('ABSPATH')) {
 }
 
 /**
- * --------------------------------------------------
- * 1) Disable Theme Editor completely
- * --------------------------------------------------
+ * ==================================================
+ * 1) Disable Theme File Editor (UI + Direct Access)
+ * ==================================================
  */
 
-// Hide editor links from UI
+// Remove Theme Editor from UI
 add_action('admin_menu', function () {
     remove_submenu_page('themes.php', 'theme-editor.php');
 });
 
-// Extra hard block (direct URL access)
+// Block direct access to theme editor
 add_action('admin_init', function () {
-    if (isset($_GET['file']) && strpos($_SERVER['PHP_SELF'], 'theme-editor.php') !== false) {
-        wp_die(__('Theme editor is disabled on this platform.'));
+    if (strpos($_SERVER['PHP_SELF'], 'theme-editor.php') !== false) {
+        wp_die(__('Theme file editor is disabled on this platform.'));
     }
 });
 
+// Extra safety (WordPress native editor switch)
+if (!defined('DISALLOW_FILE_EDIT')) {
+    define('DISALLOW_FILE_EDIT', true);
+}
+
 
 /**
- * --------------------------------------------------
- * 2) Block User Profile & Edit Profile (self included)
- * --------------------------------------------------
+ * ==================================================
+ * 2) Disable User Profile & Edit Profile (UI + Direct)
+ * ==================================================
  */
 
-// Remove profile menu items
+// Remove Profile from admin menu
 add_action('admin_menu', function () {
-    remove_menu_page('profile.php');          // Profile
-    remove_submenu_page('users.php', 'profile.php');
+    remove_menu_page('profile.php');                 // Profile
+    remove_submenu_page('users.php', 'profile.php'); // Edit own profile
 });
 
 // Block direct access to profile pages
@@ -54,18 +59,18 @@ add_action('admin_init', function () {
     }
 });
 
-// Prevent REST-based profile updates (important)
+// Block REST API user profile updates
 add_filter('rest_authentication_errors', function ($result) {
 
     if (!is_user_logged_in()) {
         return $result;
     }
 
-    $route = $_SERVER['REQUEST_URI'] ?? '';
+    $uri = $_SERVER['REQUEST_URI'] ?? '';
 
-    if (strpos($route, '/wp/v2/users') !== false) {
+    if (strpos($uri, '/wp/v2/users') !== false) {
         return new WP_Error(
-            'coonex_user_edit_blocked',
+            'coonex_user_profile_blocked',
             __('User profile modification is disabled on this platform.'),
             ['status' => 403]
         );
