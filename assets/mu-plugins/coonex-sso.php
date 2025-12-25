@@ -1,31 +1,47 @@
 <?php
 /**
  * Plugin Name: Coonex JWT SSO
- * Description: Secure JWT-based SSO for Coonex (Role controlled via ENV)
+ * Description: Secure WordPress login via Coonex using JWT (SSO only).
+ * Version: 1.0.0
+ * Author: Coonex
  */
+
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 /**
- * Main SSO handler
+ * Handle SSO login ONLY on wp-login.php
  */
+add_action('login_init', 'coonex_handle_sso');
+
 function coonex_handle_sso() {
 
-    // --------------------------------------------
-    // 1) Enforce SSO-only login
-    // --------------------------------------------
+    // لو المستخدم داخل بالفعل، سيبه
+    if (is_user_logged_in()) {
+        return;
+    }
+
+    // اسمح لـ WP-CLI
+    if (defined('WP_CLI') && WP_CLI) {
+        return;
+    }
+
+    // امنع أي دخول من غير token
     if (!isset($_GET['token'])) {
         wp_die('Login via Coonex only');
     }
 
-    $jwt    = trim($_GET['token']);
+    $jwt = trim($_GET['token']);
     $secret = getenv('COONEX_SSO_SECRET');
 
     if (!$secret) {
         wp_die('SSO secret not configured');
     }
 
-    // --------------------------------------------
-    // 2) Validate JWT structure
-    // --------------------------------------------
+    // --------------------------------
+    // JWT validation (HS256)
+    // --------------------------------
     $parts = explode('.', $jwt);
     if (count($parts) !== 3) {
         wp_die('Invalid token structure');
@@ -33,10 +49,7 @@ function coonex_handle_sso() {
 
     [$header, $payload, $signature] = $parts;
 
-    // --------------------------------------------
-    // 3) Verify JWT signature (HS256)
-    // --------------------------------------------
-    $expected_signature = rtrim(strtr(
+    $expected = rtrim(strtr(
         base64_encode(hash_hmac(
             'sha256',
             "$header.$payload",
@@ -47,94 +60,73 @@ function coonex_handle_sso() {
         '-_'
     ), '=');
 
-    if (!hash_equals($expected_signature, $signature)) {
+    if (!hash_equals($expected, $signature)) {
         wp_die('Invalid SSO signature');
     }
 
-    // --------------------------------------------
-    // 4) Decode payload
-    // --------------------------------------------
-    $data = json_decode(
-        base64_decode(strtr($payload, '-_', '+/')),
-        true
-    );
+    // Decode payload safely
+    $data = json_decode(coonex_base64url_decode($payload), true);
 
-    if (
-        empty($data['email']) ||
-        empty($data['exp']) ||
-        time() > $data['exp']
-    ) {
-        wp_die('Expired or invalid token');
+    if (!$data || empty($data['email'])) {
+        wp_die('Invalid SSO payload');
     }
 
-    // --------------------------------------------
-    // 5) Extract user data
-    // --------------------------------------------
+    // --------------------------------
+    // Token expiry check (optional but recommended)
+    // --------------------------------
+    if (!empty($data['exp']) && time() > intval($data['exp'])) {
+        wp_die('SSO token expired');
+    }
+
+    // --------------------------------
+    // User handling
+    // --------------------------------
     $email = sanitize_email($data['email']);
-    $name  = sanitize_text_field($data['name'] ?? '');
+    $name  = !empty($data['name']) ? sanitize_text_field($data['name']) : '';
+    $role  = !empty($data['role']) ? sanitize_text_field($data['role']) : 'subscriber';
 
-    // --------------------------------------------
-    // 6) Resolve role (ENV > JWT > fallback)
-    // --------------------------------------------
-    $allowed_roles = ['administrator', 'editor', 'author', 'subscriber'];
-
-    $env_role = sanitize_key(getenv('COONEX_DEFAULT_ROLE') ?: '');
-    $jwt_role = sanitize_key($data['role'] ?? '');
-
-    if (in_array($env_role, $allowed_roles, true)) {
-        $role = $env_role;                // ✅ Coolify ENV wins
-    } elseif (in_array($jwt_role, $allowed_roles, true)) {
-        $role = $jwt_role;                // fallback to JWT
-    } else {
-        $role = 'subscriber';             // safe default
-    }
-
-    // --------------------------------------------
-    // 7) Find or create WordPress user
-    // --------------------------------------------
     $user = get_user_by('email', $email);
 
     if (!$user) {
-        $username = sanitize_user(strstr($email, '@', true));
-
+        // Create user if not exists
         $user_id = wp_create_user(
-            $username,
+            $email,
             wp_generate_password(32),
             $email
         );
 
+        if (is_wp_error($user_id)) {
+            wp_die('Failed to create user');
+        }
+
         wp_update_user([
             'ID'           => $user_id,
-            'display_name' => $name,
-            'role'         => $role
+            'display_name' => $name ?: $email,
+            'role'         => $role,
         ]);
 
         $user = get_user_by('id', $user_id);
-    } else {
-        // Enforce role from ENV/JWT every login
-        if (!in_array($role, (array) $user->roles, true)) {
-            wp_update_user([
-                'ID'   => $user->ID,
-                'role' => $role
-            ]);
-        }
     }
 
-    // --------------------------------------------
-    // 8) Authenticate user (no password)
-    // --------------------------------------------
+    // --------------------------------
+    // Login user
+    // --------------------------------
     wp_set_current_user($user->ID);
     wp_set_auth_cookie($user->ID, true);
     do_action('wp_login', $user->user_login, $user);
 
-    // --------------------------------------------
-    // 9) Redirect to admin
-    // --------------------------------------------
-    wp_safe_redirect(admin_url());
+    // Redirect to admin
+    wp_redirect(admin_url());
     exit;
 }
 
 /**
- * Run SSO only on wp-login.php
+ * Base64 URL decode helper
  */
-add_action('login_init', 'coonex_handle_sso');
+function coonex_base64url_decode($data) {
+    $remainder = strlen($data) % 4;
+    if ($remainder) {
+        $data .= str_repeat('=', 4 - $remainder);
+    }
+    return base64_decode(strtr($data, '-_', '+/'));
+}
