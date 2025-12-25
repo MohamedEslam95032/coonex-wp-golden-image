@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: Coonex JWT SSO
- * Description: JWT-based Single Sign-On for Coonex (SSO only – safe for wp-login.php)
- * Version: 1.2.0
+ * Description: JWT-based Single Sign-On for Coonex (SSO only, safe & production-ready)
+ * Version: 1.3.0
  * Author: Coonex
  */
 
@@ -154,7 +154,7 @@ function coonex_handle_sso() {
     wp_set_current_user($user->ID);
     wp_set_auth_cookie($user->ID, true, is_ssl());
 
-    // 🔑 Critical: regenerate session tokens (fix nonce / link expired)
+    // 🔑 Regenerate session tokens (fix nonce / link expired)
     if (class_exists('WP_Session_Tokens')) {
         $manager = WP_Session_Tokens::get_instance($user->ID);
         $manager->destroy_all();
@@ -163,16 +163,23 @@ function coonex_handle_sso() {
 
     do_action('wp_login', $user->user_login, $user);
 
-    /**
-     * 10) Redirect to admin
-     */
-    wp_safe_redirect(admin_url());
-    exit;
+    // ❗ لا تعمل redirect هنا
+    // WordPress هيعمل redirect طبيعي بعد login
 }
 
 /**
  * =====================================================
- * HOOK SSO SAFELY INTO wp-login.php
+ * SAFE HOOK INTO wp-login.php
  * =====================================================
  */
 add_action('login_init', 'coonex_handle_sso');
+
+
+/**
+ * =====================================================
+ * FORCE REDIRECT AFTER SUCCESSFUL LOGIN
+ * =====================================================
+ */
+add_filter('login_redirect', function ($redirect_to, $requested, $user) {
+    return admin_url();
+}, 10, 3);
