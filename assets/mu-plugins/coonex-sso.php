@@ -1,17 +1,23 @@
 <?php
 /**
  * Plugin Name: Coonex JWT SSO
- * Description: Secure JWT-based SSO for Coonex (Role controlled via ENV)
+ * Description: Secure JWT-based Single Sign-On for Coonex (SSO only – no UI restrictions)
+ * Version: 1.0.0
+ * Author: Coonex
  */
 
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 /**
- * Main SSO handler
+ * =====================================================
+ * MAIN SSO HANDLER
+ * =====================================================
  */
 function coonex_handle_sso() {
 
-    // --------------------------------------------
-    // 1) Enforce SSO-only login
-    // --------------------------------------------
+    // Enforce SSO-only login
     if (!isset($_GET['token'])) {
         wp_die('Login via Coonex only');
     }
@@ -23,9 +29,7 @@ function coonex_handle_sso() {
         wp_die('SSO secret not configured');
     }
 
-    // --------------------------------------------
-    // 2) Validate JWT structure
-    // --------------------------------------------
+    // Validate JWT structure
     $parts = explode('.', $jwt);
     if (count($parts) !== 3) {
         wp_die('Invalid token structure');
@@ -33,16 +37,11 @@ function coonex_handle_sso() {
 
     [$header, $payload, $signature] = $parts;
 
-    // --------------------------------------------
-    // 3) Verify JWT signature (HS256)
-    // --------------------------------------------
+    // Verify signature (HS256)
     $expected_signature = rtrim(strtr(
-        base64_encode(hash_hmac(
-            'sha256',
-            "$header.$payload",
-            $secret,
-            true
-        )),
+        base64_encode(
+            hash_hmac('sha256', "$header.$payload", $secret, true)
+        ),
         '+/',
         '-_'
     ), '=');
@@ -51,9 +50,7 @@ function coonex_handle_sso() {
         wp_die('Invalid SSO signature');
     }
 
-    // --------------------------------------------
-    // 4) Decode payload
-    // --------------------------------------------
+    // Decode payload
     $data = json_decode(
         base64_decode(strtr($payload, '-_', '+/')),
         true
@@ -67,31 +64,25 @@ function coonex_handle_sso() {
         wp_die('Expired or invalid token');
     }
 
-    // --------------------------------------------
-    // 5) Extract user data
-    // --------------------------------------------
+    // Extract user data
     $email = sanitize_email($data['email']);
     $name  = sanitize_text_field($data['name'] ?? '');
 
-    // --------------------------------------------
-    // 6) Resolve role (ENV > JWT > fallback)
-    // --------------------------------------------
+    // Resolve role (ENV > JWT > fallback)
     $allowed_roles = ['administrator', 'editor', 'author', 'subscriber'];
 
     $env_role = sanitize_key(getenv('COONEX_DEFAULT_ROLE') ?: '');
     $jwt_role = sanitize_key($data['role'] ?? '');
 
     if (in_array($env_role, $allowed_roles, true)) {
-        $role = $env_role;                // ✅ Coolify ENV wins
+        $role = $env_role;
     } elseif (in_array($jwt_role, $allowed_roles, true)) {
-        $role = $jwt_role;                // fallback to JWT
+        $role = $jwt_role;
     } else {
-        $role = 'subscriber';             // safe default
+        $role = 'subscriber';
     }
 
-    // --------------------------------------------
-    // 7) Find or create WordPress user
-    // --------------------------------------------
+    // Find or create WordPress user
     $user = get_user_by('email', $email);
 
     if (!$user) {
@@ -111,7 +102,7 @@ function coonex_handle_sso() {
 
         $user = get_user_by('id', $user_id);
     } else {
-        // Enforce role from ENV/JWT every login
+        // Enforce role on every SSO login
         if (!in_array($role, (array) $user->roles, true)) {
             wp_update_user([
                 'ID'   => $user->ID,
@@ -120,16 +111,24 @@ function coonex_handle_sso() {
         }
     }
 
-    // --------------------------------------------
-    // 8) Authenticate user (no password)
-    // --------------------------------------------
+    /**
+     * =====================================================
+     * AUTHENTICATE USER (FULL WORDPRESS SESSION)
+     * =====================================================
+     */
     wp_set_current_user($user->ID);
-    wp_set_auth_cookie($user->ID, true);
+    wp_set_auth_cookie($user->ID, true, is_ssl());
+
+    // 🔑 Critical fix: regenerate session tokens
+    if (class_exists('WP_Session_Tokens')) {
+        $manager = WP_Session_Tokens::get_instance($user->ID);
+        $manager->destroy_all();
+        $manager->create(time() + DAY_IN_SECONDS);
+    }
+
     do_action('wp_login', $user->user_login, $user);
 
-    // --------------------------------------------
-    // 9) Redirect to admin
-    // --------------------------------------------
+    // Redirect to admin dashboard
     wp_safe_redirect(admin_url());
     exit;
 }
