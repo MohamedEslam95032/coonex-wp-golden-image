@@ -3,17 +3,14 @@
  * Plugin Name: Coonex JWT SSO
  */
 
-add_action('init', function () {
+function coonex_handle_sso() {
 
     if (!isset($_GET['token'])) {
-        return;
+        wp_die('Login via Coonex only');
     }
 
     $jwt = trim($_GET['token']);
     $secret = getenv('COONEX_SSO_SECRET');
-
-    error_log('SSO DEBUG: Secret loaded = ' . ($secret ? 'YES' : 'NO'));
-    error_log('SSO DEBUG: JWT = ' . $jwt);
 
     if (!$secret) {
         wp_die('SSO secret not configured');
@@ -37,14 +34,11 @@ add_action('init', function () {
         '-_'
     ), '=');
 
-    error_log('SSO DEBUG: Expected = ' . $expected);
-    error_log('SSO DEBUG: Provided = ' . $signature);
-
     if (!hash_equals($expected, $signature)) {
         wp_die('Invalid SSO signature');
     }
 
-    $data = json_decode(base64_decode($payload), true);
+    $data = json_decode(base64_decode(strtr($payload, '-_', '+/')), true);
 
     if (
         empty($data['email']) ||
@@ -84,13 +78,9 @@ add_action('init', function () {
 
     wp_safe_redirect(admin_url());
     exit;
-});
+}
 
 /**
- * Disable native wp-login
+ * Handle SSO ONLY on wp-login.php
  */
-add_action('login_init', function () {
-    if (!isset($_GET['token'])) {
-        wp_die('Login via Coonex only');
-    }
-});
+add_action('login_init', 'coonex_handle_sso');
