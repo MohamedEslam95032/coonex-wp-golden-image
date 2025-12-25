@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: Coonex JWT SSO
- * Description: JWT-based SSO for Coonex (passwordless, stable, nonce-safe)
- * Version: 2.2.0
+ * Description: JWT-based SSO for Coonex (passwordless, stable, no login loop)
+ * Version: 2.1.0
  * Author: Coonex
  */
 
@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
 
 function coonex_jwt_sso() {
 
-    // اشتغل فقط لو token موجود
+    // شغّل SSO فقط لو token موجود
     if (!isset($_GET['token'])) {
         return;
     }
@@ -101,24 +101,22 @@ function coonex_jwt_sso() {
     }
 
     /**
-     * ✅ LOGIN + SESSION (CRITICAL)
+     * ✅ LOGIN (الطريقة الصح للـ SSO)
      */
     wp_clear_auth_cookie();
     wp_set_current_user($user->ID);
     wp_set_auth_cookie($user->ID, true, is_ssl());
 
-    // 🔑 THIS FIXES "link expired"
-    if (class_exists('WP_Session_Tokens')) {
-        $manager = WP_Session_Tokens::get_instance($user->ID);
-        $manager->destroy_all();
-        $manager->create(time() + DAY_IN_SECONDS);
-    }
-
     do_action('wp_login', $user->user_login, $user);
 
-    // Redirect
+    /**
+     * Redirect يدوي
+     */
     wp_safe_redirect(admin_url());
     exit;
 }
 
+/**
+ * شغّل SSO بدري قبل wp-login
+ */
 add_action('init', 'coonex_jwt_sso', 1);
