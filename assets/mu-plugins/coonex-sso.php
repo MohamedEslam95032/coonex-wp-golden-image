@@ -1,25 +1,19 @@
 <?php
 /**
  * Plugin Name: Coonex JWT SSO
- * Description: JWT-based SSO for Coonex (passwordless, stable, no login loop)
- * Version: 2.1.0
- * Author: Coonex
+ * Description: Secure JWT-based SSO for Coonex (Role controlled via ENV)
  */
 
-if (!defined('ABSPATH')) {
-    exit;
-}
+/**
+ * Main SSO handler
+ */
+function coonex_handle_sso() {
 
-function coonex_jwt_sso() {
-
-    // شغّل SSO فقط لو token موجود
+    // --------------------------------------------
+    // 1) Enforce SSO-only login
+    // --------------------------------------------
     if (!isset($_GET['token'])) {
-        return;
-    }
-
-    // لو المستخدم داخل خلاص
-    if (is_user_logged_in()) {
-        return;
+        wp_die('Login via Coonex only');
     }
 
     $jwt    = trim($_GET['token']);
@@ -29,7 +23,9 @@ function coonex_jwt_sso() {
         wp_die('SSO secret not configured');
     }
 
-    // Validate JWT
+    // --------------------------------------------
+    // 2) Validate JWT structure
+    // --------------------------------------------
     $parts = explode('.', $jwt);
     if (count($parts) !== 3) {
         wp_die('Invalid token structure');
@@ -37,18 +33,27 @@ function coonex_jwt_sso() {
 
     [$header, $payload, $signature] = $parts;
 
-    $expected = rtrim(strtr(
-        base64_encode(
-            hash_hmac('sha256', "$header.$payload", $secret, true)
-        ),
+    // --------------------------------------------
+    // 3) Verify JWT signature (HS256)
+    // --------------------------------------------
+    $expected_signature = rtrim(strtr(
+        base64_encode(hash_hmac(
+            'sha256',
+            "$header.$payload",
+            $secret,
+            true
+        )),
         '+/',
         '-_'
     ), '=');
 
-    if (!hash_equals($expected, $signature)) {
+    if (!hash_equals($expected_signature, $signature)) {
         wp_die('Invalid SSO signature');
     }
 
+    // --------------------------------------------
+    // 4) Decode payload
+    // --------------------------------------------
     $data = json_decode(
         base64_decode(strtr($payload, '-_', '+/')),
         true
@@ -57,33 +62,40 @@ function coonex_jwt_sso() {
     if (
         empty($data['email']) ||
         empty($data['exp']) ||
-        time() > (int) $data['exp']
+        time() > $data['exp']
     ) {
         wp_die('Expired or invalid token');
     }
 
+    // --------------------------------------------
+    // 5) Extract user data
+    // --------------------------------------------
     $email = sanitize_email($data['email']);
     $name  = sanitize_text_field($data['name'] ?? '');
 
-    if (!$email) {
-        wp_die('Invalid email in token');
+    // --------------------------------------------
+    // 6) Resolve role (ENV > JWT > fallback)
+    // --------------------------------------------
+    $allowed_roles = ['administrator', 'editor', 'author', 'subscriber'];
+
+    $env_role = sanitize_key(getenv('COONEX_DEFAULT_ROLE') ?: '');
+    $jwt_role = sanitize_key($data['role'] ?? '');
+
+    if (in_array($env_role, $allowed_roles, true)) {
+        $role = $env_role;                // ✅ Coolify ENV wins
+    } elseif (in_array($jwt_role, $allowed_roles, true)) {
+        $role = $jwt_role;                // fallback to JWT
+    } else {
+        $role = 'subscriber';             // safe default
     }
 
-    // Resolve role
-    $allowed_roles = ['administrator', 'editor', 'author', 'subscriber'];
-    $role = in_array($data['role'] ?? '', $allowed_roles, true)
-        ? $data['role']
-        : 'subscriber';
-
-    // Find or create user
+    // --------------------------------------------
+    // 7) Find or create WordPress user
+    // --------------------------------------------
     $user = get_user_by('email', $email);
 
     if (!$user) {
         $username = sanitize_user(strstr($email, '@', true));
-
-        if (username_exists($username)) {
-            $username .= '_' . wp_generate_password(4, false);
-        }
 
         $user_id = wp_create_user(
             $username,
@@ -98,25 +110,31 @@ function coonex_jwt_sso() {
         ]);
 
         $user = get_user_by('id', $user_id);
+    } else {
+        // Enforce role from ENV/JWT every login
+        if (!in_array($role, (array) $user->roles, true)) {
+            wp_update_user([
+                'ID'   => $user->ID,
+                'role' => $role
+            ]);
+        }
     }
 
-    /**
-     * ✅ LOGIN (الطريقة الصح للـ SSO)
-     */
-    wp_clear_auth_cookie();
+    // --------------------------------------------
+    // 8) Authenticate user (no password)
+    // --------------------------------------------
     wp_set_current_user($user->ID);
-    wp_set_auth_cookie($user->ID, true, is_ssl());
-
+    wp_set_auth_cookie($user->ID, true);
     do_action('wp_login', $user->user_login, $user);
 
-    /**
-     * Redirect يدوي
-     */
+    // --------------------------------------------
+    // 9) Redirect to admin
+    // --------------------------------------------
     wp_safe_redirect(admin_url());
     exit;
 }
 
 /**
- * شغّل SSO بدري قبل wp-login
+ * Run SSO only on wp-login.php
  */
-add_action('init', 'coonex_jwt_sso', 1);
+add_action('login_init', 'coonex_handle_sso');
