@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: Coonex JWT SSO
- * Description: Secure WordPress login via Coonex using JWT (SSO only).
- * Version: 1.0.0
+ * Description: Login to WordPress via Coonex using JWT. Allows manual login when no token is present.
+ * Version: 1.1.0
  * Author: Coonex
  */
 
@@ -11,26 +11,30 @@ if (!defined('ABSPATH')) {
 }
 
 /**
- * Handle SSO login ONLY on wp-login.php
+ * Run ONLY on wp-login.php
  */
 add_action('login_init', 'coonex_handle_sso');
 
 function coonex_handle_sso() {
 
-    // لو المستخدم داخل بالفعل، سيبه
+    // 1️⃣ لو المستخدم داخل بالفعل، سيبه تمامًا
     if (is_user_logged_in()) {
         return;
     }
 
-    // اسمح لـ WP-CLI
+    // 2️⃣ اسمح لـ WP-CLI
     if (defined('WP_CLI') && WP_CLI) {
         return;
     }
 
-    // امنع أي دخول من غير token
-    if (!isset($_GET['token'])) {
-        wp_die('Login via Coonex only');
+    // 3️⃣ لو مفيش token → سيب WordPress يعمل login عادي
+    if (!isset($_GET['token']) || empty($_GET['token'])) {
+        return;
     }
+
+    // ===============================
+    // من هنا SSO فقط
+    // ===============================
 
     $jwt = trim($_GET['token']);
     $secret = getenv('COONEX_SSO_SECRET');
@@ -72,7 +76,7 @@ function coonex_handle_sso() {
     }
 
     // --------------------------------
-    // Token expiry check (optional but recommended)
+    // Token expiry (optional but recommended)
     // --------------------------------
     if (!empty($data['exp']) && time() > intval($data['exp'])) {
         wp_die('SSO token expired');
@@ -88,7 +92,6 @@ function coonex_handle_sso() {
     $user = get_user_by('email', $email);
 
     if (!$user) {
-        // Create user if not exists
         $user_id = wp_create_user(
             $email,
             wp_generate_password(32),
@@ -115,8 +118,8 @@ function coonex_handle_sso() {
     wp_set_auth_cookie($user->ID, true);
     do_action('wp_login', $user->user_login, $user);
 
-    // Redirect to admin
-    wp_redirect(admin_url());
+    // Redirect safely to admin
+    wp_safe_redirect(admin_url());
     exit;
 }
 
