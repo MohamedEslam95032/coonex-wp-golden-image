@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'uixpress/uixpress',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'ca56212289600dc4e71e88dfb084987a63bfa5d6',
+        'type' => 'project',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        'enshrined/svg-sanitize' => array(
+            'pretty_version' => '0.16.0',
+            'version' => '0.16.0.0',
+            'reference' => '239e257605e2141265b429e40987b2ee51bba4b4',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../enshrined/svg-sanitize',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'ezyang/htmlpurifier' => array(
+            'pretty_version' => 'v4.19.0',
+            'version' => '4.19.0.0',
+            'reference' => 'b287d2a16aceffbf6e0295559b39662612b77fcf',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../ezyang/htmlpurifier',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'uixpress/uixpress' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'ca56212289600dc4e71e88dfb084987a63bfa5d6',
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

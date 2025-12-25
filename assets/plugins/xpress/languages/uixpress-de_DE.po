@@ -1,0 +1,2324 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: uiXpress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-23T05:34:15.904Z\n"
+"PO-Revision-Date: 2025-11-23 13:48+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+"X-Domain: uixpress\n"
+
+#: admin/src/Activity/ActivityLogger.php:53
+msgid "Every 30 Seconds"
+msgstr "Alle 30 Sekunden"
+
+#: admin/src/Analytics/AnalyticsCron.php:64
+msgid "Every 30 Minutes"
+msgstr "Alle 30 Minuten"
+
+#: admin/src/Options/MediaOptions.php:193
+msgid "Unable to read SVG file for sanitization."
+msgstr "SVG-Datei kann nicht zur Bereinigung gelesen werden."
+
+#: admin/src/Options/MediaOptions.php:207
+msgid ""
+"SVG file could not be sanitized. The file may be corrupted or contain "
+"invalid content."
+msgstr ""
+"Die SVG-Datei konnte nicht bereinigt werden. Die Datei ist möglicherweise "
+"beschädigt oder enthält ungültige Inhalte."
+
+#: admin/src/Options/MediaOptions.php:217
+msgid "Unable to write sanitized SVG file."
+msgstr "Es ist nicht möglich, eine bereinigte SVG-Datei zu schreiben."
+
+#: admin/src/Options/MediaOptions.php:228
+msgid "Error sanitizing SVG file: %s"
+msgstr "Fehler beim Bereinigen der SVG-Datei: %s"
+
+#: admin/src/Pages/CustomActivityLogPage.php:45
+#: admin/src/Pages/CustomActivityLogPage.php:46
+msgid "Activity Log"
+msgstr "Aktivitätsprotokoll"
+
+#: admin/src/Pages/CustomDashboardPage.php:93
+msgid "Welcome to WordPress"
+msgstr "Willkommen bei WordPress"
+
+#: admin/src/Pages/CustomDashboardPage.php:94
+msgid "Welcome to your WordPress dashboard! This is your site management hub."
+msgstr ""
+"Willkommen in Ihrem WordPress-Dashboard! Dies ist Ihre zentrale Anlaufstelle "
+"für die Verwaltung Ihrer Website."
+
+#: admin/src/Pages/CustomDashboardPage.php:99
+msgid "Quick Draft"
+msgstr "Schneller Entwurf"
+
+#: admin/src/Pages/CustomDashboardPage.php:100
+msgid "Create a new post quickly from here."
+msgstr "Erstellen Sie von hier aus schnell einen neuen Beitrag."
+
+#: admin/src/Pages/CustomDashboardPage.php:105
+msgid "Activity"
+msgstr "Aktivität"
+
+#: admin/src/Pages/CustomDashboardPage.php:106
+msgid "Recent activity on your site."
+msgstr "Aktuelle Aktivitäten auf Ihrer Website."
+
+#: admin/src/Pages/CustomPluginsPage.php:58
+#: app/src/pages/settings/index.vue:147
+msgid "Plugins"
+msgstr "Plugins"
+
+#: admin/src/Pages/DatabaseExplorerPage.php:47
+#: admin/src/Pages/DatabaseExplorerPage.php:48
+msgid "Database Explorer"
+msgstr "Datenbank-Explorer"
+
+#: admin/src/Pages/DummyDataPage.php:55
+msgid "Generate Dummy Analytics Data"
+msgstr "Dummy-Analysedaten generieren"
+
+#: admin/src/Pages/DummyDataPage.php:59
+msgid "Warning:"
+msgstr "Warnung:"
+
+#: admin/src/Pages/DummyDataPage.php:60
+msgid ""
+"This will delete all existing analytics data and replace it with dummy data "
+"for testing purposes."
+msgstr ""
+"Dadurch werden alle vorhandenen Analysedaten gelöscht und zu Testzwecken "
+"durch Dummy-Daten ersetzt."
+
+#: admin/src/Pages/DummyDataPage.php:65
+msgid "Generate Test Data"
+msgstr "Testdaten generieren"
+
+#: admin/src/Pages/DummyDataPage.php:66
+msgid ""
+"This tool will generate realistic dummy analytics data for the last 2 months "
+"to help you test the analytics features."
+msgstr ""
+"Dieses Tool generiert realistische Dummy-Analysedaten für die letzten zwei "
+"Monate, damit Sie die Analysefunktionen testen können."
+
+#: admin/src/Pages/DummyDataPage.php:75
+msgid "Number of Months"
+msgstr "Anzahl Monate"
+
+#: admin/src/Pages/DummyDataPage.php:84
+msgid "Select how many months of dummy data to generate."
+msgstr "Wählen Sie aus, wie viele Monate Dummy-Daten generiert werden sollen."
+
+#: admin/src/Pages/DummyDataPage.php:90
+msgid "Generate Dummy Data"
+msgstr "Dummy-Daten generieren"
+
+#: admin/src/Pages/DummyDataPage.php:91
+msgid "Are you sure? This will delete all existing analytics data."
+msgstr ""
+"Sind Sie sicher? Dadurch werden alle vorhandenen Analysedaten gelöscht."
+
+#: admin/src/Pages/DummyDataPage.php:97
+msgid "What This Generates"
+msgstr "Was dies bewirkt"
+
+#: admin/src/Pages/DummyDataPage.php:99
+msgid "Page views from various devices (desktop, mobile, tablet)"
+msgstr ""
+"Seitenaufrufe von verschiedenen Geräten (Desktop, Mobilgeräte, Tablets)"
+
+#: admin/src/Pages/DummyDataPage.php:100
+msgid "Realistic browser and operating system data"
+msgstr "Realistische Browser- und Betriebssystemdaten"
+
+#: admin/src/Pages/DummyDataPage.php:101
+msgid "Geographic data from different countries and cities"
+msgstr "Geografische Daten aus verschiedenen Ländern und Städten"
+
+#: admin/src/Pages/DummyDataPage.php:102
+msgid "Referrer data from search engines and social media"
+msgstr "Referrer-Daten von Suchmaschinen und sozialen Medien"
+
+#: admin/src/Pages/DummyDataPage.php:103
+msgid "Session tracking and unique visitor data"
+msgstr "Sitzungserfassung und Daten zu einzelnen Besuchern"
+
+#: admin/src/Pages/DummyDataPage.php:104
+msgid "Aggregated daily statistics"
+msgstr "Aggregierte Tagesstatistiken"
+
+#: admin/src/Pages/DummyDataPage.php:109
+msgid "Current Analytics Status"
+msgstr "Aktueller Analyse-Status"
+
+#: admin/src/Pages/DummyDataPage.php:111
+msgid "Analytics Enabled:"
+msgstr "Analytik aktiviert:"
+
+#: admin/src/Pages/DummyDataPage.php:117
+msgid "Tables Created:"
+msgstr "Erstellte Tabellen:"
+
+#: admin/src/Pages/DummyDataPage.php:122
+msgid ""
+"Analytics must be enabled in the UiXpress settings before generating dummy "
+"data."
+msgstr ""
+"Analytics muss in den UiXpress-Einstellungen aktiviert sein, bevor Dummy-"
+"Daten generiert werden können."
+
+#: admin/src/Pages/DummyDataPage.php:140
+msgid "Security check failed."
+msgstr "Sicherheits-Check ist fehlgeschlagen."
+
+#: admin/src/Pages/DummyDataPage.php:145
+#: admin/src/Pages/CustomPluginsPage.php:171
+#: admin/src/Pages/RoleEditorPage.php:119 admin/src/Rest/PostsTables.php:108
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+"Du hast nicht die erforderlichen Rechte, um auf diese Seite zuzugreifen."
+
+#: admin/src/Pages/DummyDataPage.php:150
+msgid "Analytics is not enabled. Please enable analytics in settings first."
+msgstr ""
+"Analytics ist nicht aktiviert. Bitte aktivieren Sie Analytics zunächst in "
+"den Einstellungen."
+
+#: admin/src/Pages/DummyDataPage.php:156
+msgid "Invalid number of months. Please select between 1 and 12 months."
+msgstr ""
+"Ungültige Anzahl von Monaten. Bitte wählen Sie zwischen 1 und 12 Monaten."
+
+#: admin/src/Pages/DummyDataPage.php:171
+msgid "Error generating dummy data: "
+msgstr "Fehler beim Generieren von Dummy-Daten: "
+
+#: admin/src/Pages/MenuBuilder.php:63
+msgid "Menu Creator"
+msgstr "Menü-Ersteller"
+
+#: admin/src/Pages/MenuBuilder.php:294
+msgid "Add New Admin Menu"
+msgstr "Neues Admin-Menü hinzufügen"
+
+#: admin/src/Pages/MenuBuilder.php:295
+msgid "New Admin Menu"
+msgstr "Erstellt ein neues Admin-Menü."
+
+#: admin/src/Pages/MenuBuilder.php:296
+msgid "Edit Admin Menu"
+msgstr "Admin-Menü bearbeiten"
+
+#: admin/src/Pages/MenuBuilder.php:297
+msgid "View Admin Menu"
+msgstr "Admin-Menü anzeigen"
+
+#: admin/src/Pages/MenuBuilder.php:298
+msgid "All Admin Menus"
+msgstr "Alle Admin-Menüs"
+
+#: admin/src/Pages/MenuBuilder.php:299
+msgid "Search Admin Menus"
+msgstr "Admin-Menüs durchsuchen"
+
+#: admin/src/Pages/MenuBuilder.php:300
+msgid "No Admin Menus found."
+msgstr "Keine Admin-Menüs gefunden."
+
+#: admin/src/Pages/MenuBuilder.php:301
+msgid "No Admin Menus found in Trash."
+msgstr "Keine Admin-Menüs im Papierkorb gefunden."
+
+#: admin/src/Pages/MenuBuilder.php:305
+msgid "Post type used for the uixpresss menus"
+msgstr "Für die uixpresss-Menüs verwendeter Beitragstyp"
+
+#: admin/src/Pages/RoleEditorPage.php:44
+msgid "Role Editor"
+msgstr "Rolle Editor"
+
+#: admin/src/Pages/Settings.php:46 app/src/pages/settings/index.vue:613
+#: app/src/pages/posts/src/table-filters.vue:163
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: admin/src/Rest/ActivityLog.php:154 admin/src/Rest/MediaBulk.php:104
+msgid "You do not have permission to access this endpoint."
+msgstr "Sie haben keine Berechtigung, auf diesen Endpunkt zuzugreifen."
+
+#: admin/src/Rest/ActivityLog.php:159
+msgid "Activity logger is not enabled."
+msgstr "Aktivitätsprotokollierung ist nicht aktiviert."
+
+#: admin/src/Rest/ActivityLog.php:165 admin/src/Rest/DatabaseExplorer.php:209
+#: admin/src/Rest/MediaBulk.php:113 admin/src/Rest/MediaReplace.php:55
+#: admin/src/Rest/PluginManager.php:215 admin/src/Rest/RoleEditor.php:99
+#: admin/src/Rest/UserCapabilities.php:64 admin/src/Rest/UserRoles.php:63
+msgid "Invalid nonce"
+msgstr "Ungültiger Nonce"
+
+#: admin/src/Rest/ActivityLog.php:202 admin/src/Rest/ActivityLog.php:236
+#: admin/src/Rest/ActivityLog.php:266
+msgid "Unknown"
+msgstr "Unbekannt"
+
+#: admin/src/Rest/ActivityLog.php:228
+msgid "Log entry not found."
+msgstr "Log-Eintrag nicht gefunden."
+
+#: admin/src/Rest/ActivityLog.php:288
+msgid "Cleaned up %d old log entries."
+msgstr "%d alte Protokolleinträge bereinigt."
+
+#: admin/src/Rest/AdminNotices.php:43
+msgid "Add New Admin Notice"
+msgstr "Neue Admin-Mitteilung hinzufügen"
+
+#: admin/src/Rest/AdminNotices.php:44
+msgid "Edit Admin Notice"
+msgstr "Admin-Mitteilung bearbeiten"
+
+#: admin/src/Rest/AdminNotices.php:45
+msgid "View Admin Notice"
+msgstr "Administrator-Mitteilung anzeigen"
+
+#: admin/src/Rest/AdminNotices.php:46
+msgid "All Admin Notices"
+msgstr "Alle Admin-Mitteilungen"
+
+#: admin/src/Rest/AdminNotices.php:47
+msgid "Search Admin Notices"
+msgstr "Suche Admin-Mitteilungen"
+
+#: admin/src/Rest/AdminNotices.php:48
+msgid "No Admin Notices found."
+msgstr "Keine Admin-Mitteilungen gefunden."
+
+#: admin/src/Rest/AdminNotices.php:52
+msgid "Persistent admin notices for uiXpress."
+msgstr "Anhaltende Admin-Meldungen für uiXpress."
+
+#: admin/src/Rest/AdminNotices.php:183
+msgid "Admin Notices"
+msgstr "Admin-Hinweise"
+
+#: admin/src/Rest/DatabaseExplorer.php:122
+#: admin/src/Rest/DatabaseExplorer.php:559
+msgid "Only SELECT queries are allowed for safety."
+msgstr "Aus Sicherheitsgründen sind nur SELECT-Abfragen zulässig."
+
+#: admin/src/Rest/DatabaseExplorer.php:203
+msgid "You do not have permission to access the database explorer."
+msgstr "Sie haben keine Berechtigung, auf den Datenbank-Explorer zuzugreifen."
+
+#: admin/src/Rest/DatabaseExplorer.php:383
+#: admin/src/Rest/DatabaseExplorer.php:447
+#: admin/src/Rest/DatabaseExplorer.php:628
+#: admin/src/Rest/DatabaseExplorer.php:720
+msgid "Invalid table name."
+msgstr "Ungültiger Tabellenname."
+
+#: admin/src/Rest/DatabaseExplorer.php:388
+#: admin/src/Rest/DatabaseExplorer.php:452
+#: admin/src/Rest/DatabaseExplorer.php:633
+#: admin/src/Rest/DatabaseExplorer.php:743
+msgid "Table not found."
+msgstr "Tabelle nicht gefunden."
+
+#: admin/src/Rest/DatabaseExplorer.php:461
+msgid "Unable to retrieve table structure."
+msgstr "Tabellenstruktur kann nicht abgerufen werden."
+
+#: admin/src/Rest/DatabaseExplorer.php:566
+msgid "Query contains prohibited SQL keywords."
+msgstr "Die Abfrage enthält unzulässige SQL-Schlüsselwörter."
+
+#: admin/src/Rest/DatabaseExplorer.php:577
+msgid "Multiple statements are not allowed."
+msgstr "Mehrere Aussagen sind nicht zulässig."
+
+#: admin/src/Rest/DatabaseExplorer.php:601
+msgid "Query execution failed. Please check your SQL syntax."
+msgstr ""
+"Die Abfrageausführung ist fehlgeschlagen. Bitte überprüfen Sie Ihre SQL-"
+"Syntax."
+
+#: admin/src/Rest/DatabaseExplorer.php:655
+msgid "Password is required."
+msgstr "Passwort ist erforderlich."
+
+#: admin/src/Rest/DatabaseExplorer.php:662
+#: admin/src/Rest/DatabaseExplorer.php:732
+msgid "Invalid password."
+msgstr "Ungültiges Passwort."
+
+#: admin/src/Rest/DatabaseExplorer.php:667
+msgid "Password verification failed."
+msgstr "Passwortüberprüfung fehlgeschlagen."
+
+#: admin/src/Rest/DatabaseExplorer.php:686
+msgid "WordPress core tables cannot be deleted."
+msgstr "WordPress-Kerntabellen können nicht gelöscht werden."
+
+#: admin/src/Rest/DatabaseExplorer.php:696
+msgid "System tables cannot be deleted."
+msgstr "Systemtabellen können nicht gelöscht werden."
+
+#: admin/src/Rest/DatabaseExplorer.php:725
+msgid "Password is required for this operation."
+msgstr "Für diesen Vorgang ist ein Passwort erforderlich."
+
+#: admin/src/Rest/DatabaseExplorer.php:761
+msgid "Failed to delete table."
+msgstr "Tabelle konnte nicht gelöscht werden."
+
+#: admin/src/Rest/DatabaseExplorer.php:767
+msgid "Table '%s' has been deleted."
+msgstr "Tabelle '%s' wurde gelöscht."
+
+#: admin/src/Rest/Media.php:42
+msgid ""
+"Return only unused media items (unattached and not used as featured image)."
+msgstr ""
+"Nur unbenutzte Medienelemente zurückgeben (nicht angehängt und nicht als "
+"Featured Image verwendet)."
+
+#: admin/src/Rest/Media.php:48
+msgid "Unused detection mode: shallow (default) or deep (scans post_content)."
+msgstr ""
+"Unbenutzter Erkennungsmodus: oberflächlich (Standard) oder tief (scannt "
+"post_content)."
+
+#: admin/src/Rest/MediaBulk.php:133
+msgid "Invalid media IDs provided."
+msgstr "Ungültige Medien-IDs angegeben."
+
+#: admin/src/Rest/MediaBulk.php:142
+msgid "Maximum 100 items can be downloaded at once."
+msgstr "Es können maximal 100 Artikel gleichzeitig heruntergeladen werden."
+
+#: admin/src/Rest/MediaBulk.php:151
+msgid "ZIP functionality is not available on this server."
+msgstr "Die ZIP-Funktion ist auf diesem Server nicht verfügbar."
+
+#: admin/src/Rest/MediaBulk.php:164
+msgid "Failed to create ZIP file."
+msgstr "Fehler beim Erstellen der ZIP-Datei."
+
+#: admin/src/Rest/MediaBulk.php:191
+msgid "No valid files found to download."
+msgstr "Es wurden keine gültigen Dateien zum Herunterladen gefunden."
+
+#: admin/src/Rest/MediaBulk.php:331 admin/src/Rest/MediaBulk.php:451
+#: admin/src/Rest/MediaBulk.php:468
+msgid "(Untitled)"
+msgstr "(Ohne Titel)"
+
+#: admin/src/Rest/MediaReplace.php:46
+msgid "You do not have permission to upload files."
+msgstr "Sie haben keine Berechtigung zum Dateiupload."
+
+#: admin/src/Rest/MediaReplace.php:79
+msgid "Media ID is required."
+msgstr "Medien-ID ist erforderlich."
+
+#: admin/src/Rest/MediaReplace.php:89
+msgid "Media item not found."
+msgstr "Medienelement nicht gefunden."
+
+#: admin/src/Rest/MediaReplace.php:98
+msgid "You do not have permission to edit this media item."
+msgstr "Sie haben keine Berechtigung, dieses Medienelement zu bearbeiten."
+
+#: admin/src/Rest/MediaReplace.php:108
+msgid "No file was uploaded."
+msgstr "Es wurde keine Datei hochgeladen."
+
+#: admin/src/Rest/MediaReplace.php:121
+msgid "File upload failed. Please try again."
+msgstr "Datei-Upload fehlgeschlagen. Bitte versuchen Sie es erneut."
+
+#: admin/src/Rest/MediaReplace.php:154
+msgid "File type not allowed."
+msgstr "Dateityp nicht erlaubt."
+
+#: admin/src/Rest/MediaReplace.php:174
+msgid "File content does not match file type."
+msgstr "Der Inhalt der Datei stimmt nicht mit dem Dateityp überein."
+
+#: admin/src/Rest/MediaReplace.php:186
+msgid "File name contains invalid characters."
+msgstr "Der Dateiname enthält ungültige Zeichen."
+
+#: admin/src/Rest/MediaReplace.php:196
+msgid "Original file not found."
+msgstr "Originaldatei nicht gefunden."
+
+#: admin/src/Rest/MediaReplace.php:216
+msgid "Invalid file path."
+msgstr "Ungültiger Dateipfad."
+
+#: admin/src/Rest/MediaReplace.php:233
+msgid "Failed to move uploaded file."
+msgstr "Verschieben der hochgeladenen Datei ist fehlgeschlagen."
+
+#: admin/src/Rest/MediaReplace.php:296
+msgid "File replaced successfully."
+msgstr "Datei erfolgreich ersetzt."
+
+#: admin/src/Rest/MediaTags.php:66
+msgid "Filter media items by tag IDs."
+msgstr "Filter Medienelemente nach Tag-IDs."
+
+#: admin/src/Rest/MediaTags.php:138
+msgid "Media Tags"
+msgstr "Medien -Schlagworte"
+
+#: admin/src/Rest/MediaTags.php:139
+msgid "Media Tag"
+msgstr "Medien-Tag"
+
+#: admin/src/Rest/MediaTags.php:140 app/src/pages/posts/src/batch-edit.vue:147
+#: app/src/pages/posts/src/post-preview.vue:428
+#: app/src/pages/posts/src/tag-select.vue:362
+msgid "Tags"
+msgstr "Schlagwörter"
+
+#: admin/src/Rest/MediaTags.php:141
+msgid "All Tags"
+msgstr "Alle Tags"
+
+#: admin/src/Rest/MediaTags.php:142
+msgid "Edit Tag"
+msgstr "Schlagwort bearbeiten"
+
+#: admin/src/Rest/MediaTags.php:143
+msgid "View Tag"
+msgstr "Schlagwort anzeigen"
+
+#: admin/src/Rest/MediaTags.php:144
+msgid "Update Tag"
+msgstr "Schlagwort aktualisieren"
+
+#: admin/src/Rest/MediaTags.php:145
+msgid "Add New Tag"
+msgstr "Neues Schlagwort hinzufügen"
+
+#: admin/src/Rest/MediaTags.php:146
+msgid "New Tag Name"
+msgstr "Neuer Schlagwort-Name"
+
+#: admin/src/Rest/MediaTags.php:147
+msgid "Search Tags"
+msgstr "Schlagworte durchsuchen"
+
+#: admin/src/Rest/MediaTags.php:148
+msgid "Popular Tags"
+msgstr "Beliebte Schlagwörter"
+
+#: admin/src/Rest/MediaTags.php:149
+msgid "Separate tags with commas"
+msgstr "Schlagwörter mit Komma trennen"
+
+#: admin/src/Rest/MediaTags.php:150
+msgid "Add or remove tags"
+msgstr "Schlagwörter hinzufügen oder entfernen"
+
+#: admin/src/Rest/MediaTags.php:151
+msgid "Choose from the most used tags"
+msgstr "Wählen Sie aus den am häufigsten verwendeten Schlagwörtern"
+
+#: admin/src/Rest/MediaTags.php:152
+msgid "No tags found"
+msgstr "Keine Schlagwörter gefunden"
+
+#: admin/src/Rest/MediaTags.php:324
+msgid "Tag name is required"
+msgstr "Der Tag-Name ist erforderlich."
+
+#: admin/src/Rest/MediaTags.php:372
+msgid "Invalid media item"
+msgstr "Ungültiges Medienelement"
+
+#: admin/src/Rest/MediaTags.php:468 admin/src/Rest/UserCapabilities.php:58
+msgid "You must be logged in to access this endpoint."
+msgstr ""
+"Sie müssen eingeloggt sein, um auf diesen Endpunkt zugreifen zu können."
+
+#: admin/src/Rest/MediaTags.php:477
+msgid "You do not have permission to manage media tags."
+msgstr "Sie haben keine Berechtigung, Medien-Tags zu verwalten."
+
+#: admin/src/Rest/PluginManager.php:208
+msgid "You do not have permission to perform this action."
+msgstr "Du hast keine Berechtigung, um diese Aktion durchzuführen."
+
+#: admin/src/Rest/PostsTables.php:354
+#: app/src/pages/posts/src/batch-edit.vue:158
+#: app/src/pages/posts/src/post-preview.vue:391
+msgid "Status"
+msgstr "Status"
+
+#: admin/src/Rest/PostsTables.php:373
+#: app/src/components/app/search/index.vue:548
+msgid "Published"
+msgstr "Veröffentlicht"
+
+#: admin/src/Rest/PostsTables.php:374 app/src/pages/settings/index.vue:180
+msgid "Comments"
+msgstr "Kommentare"
+
+#: admin/src/Rest/PostsTables.php:584
+msgid "(No title)"
+msgstr "(kein Titel)"
+
+#: admin/src/Rest/PostsTables.php:602
+msgid "Scheduled for %s from now"
+msgstr "Geplant für %s ab jetzt"
+
+#: admin/src/Rest/PostsTables.php:605
+msgid "%s ago"
+msgstr "vor %s"
+
+#: admin/src/Rest/RoleEditor.php:93 admin/src/Rest/ServerHealth.php:57
+#: admin/src/Rest/UserRoles.php:57
+msgid "You do not have permissions to view this data."
+msgstr "Sie haben keine Berechtigung, diese Daten anzuzeigen."
+
+#: admin/src/Rest/RoleEditor.php:117 admin/src/Rest/RoleEditor.php:163
+#: admin/src/Rest/RoleEditor.php:241 admin/src/Rest/RoleEditor.php:449
+msgid "Invalid role format."
+msgstr "Ungültiges Rollenformat."
+
+#: admin/src/Rest/RoleEditor.php:123 admin/src/Rest/RoleEditor.php:169
+#: admin/src/Rest/RoleEditor.php:247 admin/src/Rest/RoleEditor.php:455
+msgid "Invalid role."
+msgstr "Ungültige Rolle."
+
+#: admin/src/Rest/RoleEditor.php:176
+msgid "Capabilities must be an array."
+msgstr "Die Fähigkeiten müssen ein Array sein."
+
+#: admin/src/Rest/RoleEditor.php:181
+msgid "Role not found."
+msgstr "Rolle nicht gefunden."
+
+#: admin/src/Rest/RoleEditor.php:225
+msgid "Role capabilities updated successfully."
+msgstr "Rollenfunktionen erfolgreich aktualisiert."
+
+#: admin/src/Rest/RoleEditor.php:258 admin/src/Rest/RoleEditor.php:368
+msgid "Role name cannot be empty."
+msgstr "Der Rollenname darf nicht leer sein."
+
+#: admin/src/Rest/RoleEditor.php:263 admin/src/Rest/RoleEditor.php:373
+msgid "Role name is too long."
+msgstr "Der Name der Rolle ist zu lang."
+
+#: admin/src/Rest/RoleEditor.php:275
+msgid "Role name updated successfully."
+msgstr "Rollenname erfolgreich aktualisiert."
+
+#: admin/src/Rest/RoleEditor.php:383
+msgid ""
+"Role slug can only contain lowercase letters, numbers, hyphens, and "
+"underscores."
+msgstr ""
+"Der Rollenname darf nur Kleinbuchstaben, Zahlen, Bindestriche und "
+"Unterstriche enthalten."
+
+#: admin/src/Rest/RoleEditor.php:388
+msgid "Role slug is too long."
+msgstr "Der Rollenname ist zu lang."
+
+#: admin/src/Rest/RoleEditor.php:395
+msgid "A role with this slug already exists."
+msgstr "Eine Rolle mit diesem Slug existiert bereits."
+
+#: admin/src/Rest/RoleEditor.php:418
+msgid "Failed to create role."
+msgstr "Die Rolle konnte nicht erstellt werden."
+
+#: admin/src/Rest/RoleEditor.php:433
+msgid "Role created successfully."
+msgstr "Rolle erfolgreich erstellt."
+
+#: admin/src/Rest/RoleEditor.php:461
+msgid "Cannot delete default WordPress roles."
+msgstr "Standard-WordPress-Rollen können nicht gelöscht werden."
+
+#: admin/src/Rest/RoleEditor.php:469
+msgid ""
+"Cannot delete role. There are %d user(s) with this role. Please reassign "
+"users to another role first."
+msgstr ""
+"Die Rolle kann nicht gelöscht werden. Es gibt %d Benutzer mit dieser Rolle. "
+"Bitte weisen Sie den Benutzern zunächst eine andere Rolle zu."
+
+#: admin/src/Rest/RoleEditor.php:477
+msgid "Role deleted successfully."
+msgstr "Rolle erfolgreich gelöscht."
+
+#: admin/src/Rest/UserAnalytics.php:211
+msgid "New Users"
+msgstr "Neue Benutzer"
+
+#: app/src/pages/posts/index.vue:642 app/src/pages/posts/index.vue:812
+#: app/src/pages/settings/index.vue:141
+msgid "Posts"
+msgstr "Beiträge"
+
+#: app/src/pages/posts/index.vue:650 app/src/pages/posts/index.vue:834
+msgid "Table View"
+msgstr "Tabellenansicht"
+
+#: app/src/pages/posts/index.vue:659 app/src/pages/posts/index.vue:773
+#: app/src/pages/posts/index.vue:873 app/src/pages/posts/index.vue:901
+msgid "New post"
+msgstr "Neuer Beitrag"
+
+#: app/src/pages/posts/index.vue:692
+msgid "Search posts..."
+msgstr "Suche Einträge..."
+
+#: app/src/pages/posts/index.vue:718
+msgid "item"
+msgstr "Artikel"
+
+#: app/src/pages/posts/index.vue:719
+msgid "items"
+msgstr "Artikel"
+
+#: app/src/pages/posts/index.vue:722
+msgid "Page"
+msgstr "Seite"
+
+#: app/src/pages/posts/index.vue:731
+msgid "Previous"
+msgstr "Zurück"
+
+#: app/src/pages/posts/index.vue:742
+msgid "Next"
+msgstr "Weiter"
+
+#: app/src/pages/posts/index.vue:760
+msgid "Loading posts..."
+msgstr "Beiträge werden geladen ..."
+
+#: app/src/pages/posts/index.vue:770
+msgid "No posts found"
+msgstr "Keine Beiträge gefunden"
+
+#: app/src/pages/posts/index.vue:781 app/src/pages/posts/index.vue:881
+#: app/src/pages/posts/index.vue:909
+#: app/src/pages/settings/src/custom-renders/external-stylesheets.vue:91
+msgid "Add new"
+msgstr "Neu hinzufügen"
+
+#: app/src/pages/posts/index.vue:833
+msgid "Sidebar View"
+msgstr "Seitenleiste Anzeige"
+
+#: app/src/pages/posts/index.vue:851
+#: app/src/components/app/search/index.vue:1011
+msgid "Search posts"
+msgstr "Berichte duchsuchen"
+
+#: app/src/pages/posts/index.vue:894
+msgid "Nothing found"
+msgstr "Nichts gefunden"
+
+#: app/src/pages/posts/index.vue:895
+msgid "When you create new items they will show up here."
+msgstr "Wenn Sie neue Elemente erstellen, werden diese hier angezeigt."
+
+#: app/src/pages/posts/index.vue:1003
+msgid "%s child items"
+msgstr "%s untergeordnete Elemente"
+
+#: app/src/pages/posts/index.vue:1009
+msgid "%s child item"
+msgstr "%s untergeordnetes Element"
+
+#: app/src/pages/posts/index.vue:1067
+msgid "item selected"
+msgstr "Eintrag ausgewählt"
+
+#: app/src/pages/posts/index.vue:1068
+msgid "items selected"
+msgstr "ausgewählte Objekte"
+
+#: app/src/pages/posts/index.vue:1075
+msgid "Publish items"
+msgstr "Artikel veröffentlichen"
+
+#: app/src/pages/posts/index.vue:1089
+msgid "Duplicate items"
+msgstr "Doppelte Artikel"
+
+#: app/src/pages/posts/index.vue:1103
+msgid "Delete items"
+msgstr "Elemente löschen"
+
+#: app/src/pages/settings/index.vue:108
+msgid "General"
+msgstr "Allgemein"
+
+#: app/src/pages/settings/index.vue:110
+msgid "Core plugin settings and license management"
+msgstr "Kern-Plugin-Einstellungen und Lizenzverwaltung"
+
+#: app/src/pages/settings/index.vue:114
+msgid "Login"
+msgstr "Anmelden"
+
+#: app/src/pages/settings/index.vue:116
+msgid "Customize login page appearance and security"
+msgstr "Anpassen des Erscheinungsbilds und der Sicherheit der Anmeldeseite"
+
+#: app/src/pages/settings/index.vue:120
+#: app/src/components/app/toolbar/index.vue:294
+#: app/src/components/app/menu/src/user-details.vue:235
+msgid "Theme"
+msgstr "Theme"
+
+#: app/src/pages/settings/index.vue:122
+msgid "Colors, styling, and visual customization"
+msgstr "Farben, Design und visuelle Anpassung"
+
+#: app/src/pages/settings/index.vue:126
+msgid "White Label"
+msgstr "White Label"
+
+#: app/src/pages/settings/index.vue:128
+msgid "Rebrand and customize interface text and icons"
+msgstr "Branding und Anpassung von Schnittstellentext und Symbolen"
+
+#: app/src/pages/settings/index.vue:135
+msgid "Menu"
+msgstr "Menü"
+
+#: app/src/pages/settings/index.vue:137
+msgid "Admin menu behavior and interaction settings"
+msgstr "Einstellungen für das Verhalten und die Interaktion des Admin-Menüs"
+
+#: app/src/pages/settings/index.vue:143
+msgid "Post management and display preferences"
+msgstr "Beitragsverwaltung und Anzeigeeinstellungen"
+
+#: app/src/pages/settings/index.vue:149
+msgid "Plugin management interface options"
+msgstr "Optionen der Plugin-Verwaltungsschnittstelle"
+
+#: app/src/pages/settings/index.vue:153
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: app/src/pages/settings/index.vue:155
+msgid "Custom dashboard and admin interface settings"
+msgstr "Benutzerdefinierte Einstellungen für Dashboard und Admin-Oberfläche"
+
+#: app/src/pages/settings/index.vue:162
+msgid "Analytics"
+msgstr "Analytics"
+
+#: app/src/pages/settings/index.vue:164
+msgid "Built-in analytics and tracking settings"
+msgstr "Integrierte Analyse- und Tracking-Einstellungen"
+
+#: app/src/pages/settings/index.vue:168
+msgid "Media"
+msgstr "Medien"
+
+#: app/src/pages/settings/index.vue:170
+msgid "Media library and upload management settings"
+msgstr "Einstellungen für Medienbibliothek und Upload-Verwaltung"
+
+#: app/src/pages/settings/index.vue:174
+#: app/src/pages/posts/src/inline-user-select.vue:61
+#: app/src/components/utility/multiselect-roles-and-users/index.vue:66
+msgid "Users"
+msgstr "Benutzer"
+
+#: app/src/pages/settings/index.vue:176
+msgid "User management and administration settings"
+msgstr "Benutzerverwaltung und Administrationseinstellungen"
+
+#: app/src/pages/settings/index.vue:182
+msgid "Comment management and administration settings"
+msgstr "Kommentarverwaltung und Administrationseinstellungen"
+
+#: app/src/pages/settings/index.vue:189
+msgid "Security"
+msgstr "Sicherheit"
+
+#: app/src/pages/settings/index.vue:191
+msgid "Security settings and administration"
+msgstr "Sicherheitseinstellungen und Verwaltung"
+
+#: app/src/pages/settings/index.vue:195
+msgid "Database"
+msgstr "Datenbank"
+
+#: app/src/pages/settings/index.vue:197
+msgid "Database explorer and management settings"
+msgstr "Datenbank-Explorer und Verwaltungseinstellungen"
+
+#: app/src/pages/settings/index.vue:427
+#: app/src/pages/settings/src/settings-panel.vue:140
+msgid "Settings updated!"
+msgstr "Einstellungen gespeichert!"
+
+#: app/src/pages/settings/index.vue:458
+msgid "Settings imported"
+msgstr "Einstellungen importiert"
+
+#: app/src/pages/settings/index.vue:460
+msgid "Import failed"
+msgstr "Import fehlgeschlagen"
+
+#: app/src/pages/settings/index.vue:469
+msgid "Please provide a valid JSON file"
+msgstr "Bitte geben Sie eine gültige JSON-Datei an."
+
+#: app/src/pages/settings/index.vue:480 app/src/pages/settings/index.vue:491
+msgid "Invalid settings: must be an object"
+msgstr "Ungültige Einstellungen: muss ein Objekt sein"
+
+#: app/src/pages/settings/index.vue:504
+msgid "Error uploading settings"
+msgstr "Fehler beim Hochladen der Einstellungen"
+
+#: app/src/pages/settings/index.vue:661
+msgid "Search settings..."
+msgstr "Sucheinstellungen..."
+
+#: app/src/pages/settings/index.vue:689
+msgid "Loading settings..."
+msgstr "Einstellungen werden geladen..."
+
+#: app/src/pages/settings/index.vue:700
+#: app/src/pages/settings/src/settings-panel.vue:528
+msgid "No settings found"
+msgstr "Keine Einstellungen gefunden"
+
+#: app/src/pages/settings/index.vue:701
+msgid "Try a different search term"
+msgstr "Versuchen Sie es mit einem anderen Suchbegriff."
+
+#: app/src/pages/settings/index.vue:767
+msgid "Loading Settings..."
+msgstr "Loading Settings..."
+
+#: app/src/pages/settings/index.vue:779
+msgid "Settings Panel"
+msgstr "Panel für Einstellungen"
+
+#: app/src/pages/settings/index.vue:780
+msgid "Select a category from the list to configure your settings."
+msgstr ""
+"Wählen Sie eine Kategorie aus der Liste aus, um Ihre Einstellungen zu "
+"konfigurieren."
+
+#: app/src/pages/settings/src/settings-config.js:25
+#: app/src/pages/settings/src/settings-panel.vue:87
+msgid "Click"
+msgstr "Klick"
+
+#: app/src/pages/settings/src/settings-config.js:26
+#: app/src/pages/settings/src/settings-panel.vue:88
+msgid "Hover"
+msgstr "Hover"
+
+#: app/src/pages/settings/src/settings-config.js:34
+#: app/src/pages/settings/src/settings-panel.vue:91
+msgid "Off"
+msgstr "Aus"
+
+#: app/src/pages/settings/src/settings-config.js:35
+#: app/src/pages/settings/src/settings-panel.vue:92
+#: app/src/components/app/toolbar/index.vue:312
+msgid "Light"
+msgstr "Hell"
+
+#: app/src/pages/settings/src/settings-config.js:36
+#: app/src/pages/settings/src/settings-panel.vue:93
+#: app/src/components/app/toolbar/index.vue:321
+msgid "Dark"
+msgstr "Dunkel"
+
+#: app/src/pages/settings/src/settings-config.js:53
+msgid "Licence key"
+msgstr "Lizenzschlüssel"
+
+#: app/src/pages/settings/src/settings-config.js:54
+msgid "Activating uiXpress enables updates and features"
+msgstr ""
+"Durch die Aktivierung von uiXpress werden Updates und Funktionen "
+"freigeschaltet."
+
+#: app/src/pages/settings/src/settings-config.js:66
+msgid "Logo"
+msgstr "Logo"
+
+#: app/src/pages/settings/src/settings-config.js:67
+msgid "Optional logo for to be displayed in the menu"
+msgstr "Optionales Logo, das im Menü angezeigt werden soll"
+
+#: app/src/pages/settings/src/settings-config.js:73
+msgid "Logo url"
+msgstr "Logo-URL"
+
+#: app/src/pages/settings/src/settings-config.js:81
+msgid "Dark mode logo"
+msgstr "Logo im Dunkelmodus"
+
+#: app/src/pages/settings/src/settings-config.js:82
+msgid ""
+"Set an alternative logo to use in dark mode. If one isn't set it will fall "
+"back to the standard logo."
+msgstr ""
+"Legen Sie ein alternatives Logo für den Dunkelmodus fest. Wenn kein "
+"alternatives Logo festgelegt ist, wird das Standardlogo verwendet."
+
+#: app/src/pages/settings/src/settings-config.js:88
+msgid "Dark Logo url"
+msgstr "Dunkles Logo URL"
+
+#: app/src/pages/settings/src/settings-config.js:96
+msgid "Disable theme"
+msgstr "Thema deaktivieren"
+
+#: app/src/pages/settings/src/settings-config.js:97
+msgid "Choose roles or usersnames to disable the theme for."
+msgstr ""
+"Wählen Sie Rollen oder Benutzernamen aus, für die das Design deaktiviert "
+"werden soll."
+
+#: app/src/pages/settings/src/settings-config.js:111
+msgid "Search post types"
+msgstr "Suche nach Beitrags-Typen"
+
+#: app/src/pages/settings/src/settings-config.js:112
+msgid "Choose which post types are available in the global search"
+msgstr ""
+"Wählen Sie aus, welche Beitragstypen in der globalen Suche verfügbar sein "
+"sollen."
+
+#: app/src/pages/settings/src/settings-config.js:126
+msgid "Disable global search"
+msgstr "Globale Suche deaktivieren"
+
+#: app/src/pages/settings/src/settings-config.js:127
+msgid "Disable global search for all users."
+msgstr "Globale Suche für alle Benutzer deaktivieren."
+
+#: app/src/pages/settings/src/settings-config.js:138
+msgid "Admin layout"
+msgstr "Admin-Layout"
+
+#: app/src/pages/settings/src/settings-config.js:139
+msgid "Choose your prefered admin layout"
+msgstr "Wählen Sie Ihr bevorzugtes Admin-Layout"
+
+#: app/src/pages/settings/src/settings-config.js:152
+msgid "Modernise login page"
+msgstr "Anmeldeseite modernisieren"
+
+#: app/src/pages/settings/src/settings-config.js:153
+msgid "When enabled, uiXpress will modernise the default login page."
+msgstr ""
+"Wenn diese Option aktiviert ist, modernisiert uiXpress die Standard-"
+"Anmeldeseite."
+
+#: app/src/pages/settings/src/settings-config.js:167
+msgid "Login image"
+msgstr "Anmeldebild"
+
+#: app/src/pages/settings/src/settings-config.js:168
+msgid "Optional image that will be added to the empty panel in the login page"
+msgstr ""
+"Optionales Bild, das zum leeren Feld auf der Anmeldeseite hinzugefügt wird"
+
+#: app/src/pages/settings/src/settings-config.js:174
+msgid "Image url"
+msgstr "Bild-URL"
+
+#: app/src/pages/settings/src/settings-config.js:182
+msgid "Login path"
+msgstr "Anmeldepfad"
+
+#: app/src/pages/settings/src/settings-config.js:183
+msgid ""
+"Change the login url from wp-login.php to a custom slug. Ensure you remember "
+"what you change this to."
+msgstr ""
+"Ändern Sie die Anmelde-URL von wp-login.php in einen benutzerdefinierten "
+"Slug. Merken Sie sich unbedingt, wie Sie diese geändert haben."
+
+#: app/src/pages/settings/src/settings-config.js:199
+msgid "Hide language selector"
+msgstr "Sprachauswahl ausblenden"
+
+#: app/src/pages/settings/src/settings-config.js:200
+msgid ""
+"When hidden the language selector on the login page will not be displayed"
+msgstr ""
+"Wenn die Sprachauswahl auf der Anmeldeseite ausgeblendet ist, wird sie nicht "
+"angezeigt."
+
+#: app/src/pages/settings/src/settings-config.js:214
+msgid "Enable TurnStyle"
+msgstr "TurnStyle aktivieren"
+
+#: app/src/pages/settings/src/settings-config.js:215
+msgid ""
+"When enabled, a cloudflare turnstyle challenge will be displayed on the "
+"login page to enhance security. Cloudflare account is required"
+msgstr ""
+"Wenn diese Option aktiviert ist, wird auf der Anmeldeseite eine Cloudflare-"
+"Turnstile-Challenge angezeigt, um die Sicherheit zu erhöhen. Ein Cloudflare-"
+"Konto ist erforderlich."
+
+#: app/src/pages/settings/src/settings-config.js:229
+msgid "Turnstyle site key"
+msgstr "Drehkreuz-Standortschlüssel"
+
+#: app/src/pages/settings/src/settings-config.js:230
+msgid ""
+"This is the site key for your turnstyle which can be created from your "
+"cloudflare dashboard."
+msgstr ""
+"Dies ist der Site-Schlüssel für Ihr Drehkreuz, der über Ihr Cloudflare-"
+"Dashboard erstellt werden kann."
+
+#: app/src/pages/settings/src/settings-config.js:247
+msgid "Turnstyle secret key"
+msgstr "Drehkreuz-Geheimschlüssel"
+
+#: app/src/pages/settings/src/settings-config.js:248
+msgid ""
+"This is the secret key for your turnstyle which can be created from your "
+"cloudflare dashboard."
+msgstr ""
+"Dies ist der geheime Schlüssel für Ihr Drehkreuz, der über Ihr Cloudflare-"
+"Dashboard erstellt werden kann."
+
+#: app/src/pages/settings/src/settings-config.js:269
+msgid "Force global theme"
+msgstr "Globales Thema erzwingen"
+
+#: app/src/pages/settings/src/settings-config.js:270
+msgid ""
+"When enabled, the light / dark toggle will be removed and the selected theme "
+"set for all users."
+msgstr ""
+"Wenn diese Option aktiviert ist, wird die Umschaltfunktion für Hell/Dunkel "
+"entfernt und das ausgewählte Design für alle Benutzer festgelegt."
+
+#: app/src/pages/settings/src/settings-config.js:285
+msgid "Hide screen options"
+msgstr "Bildschirmoptionen ausblenden"
+
+#: app/src/pages/settings/src/settings-config.js:286
+msgid "Hide the screen options toggle in the toolbar"
+msgstr "Die Bildschirmoptionen in der Symbolleiste ausblenden"
+
+#: app/src/pages/settings/src/settings-config.js:300
+msgid "Hide help toggle"
+msgstr "Hilfe ausblenden"
+
+#: app/src/pages/settings/src/settings-config.js:301
+msgid "Hide the help toggle in the toolbar"
+msgstr "Die Hilfe-Umschaltfläche in der Symbolleiste ausblenden"
+
+#: app/src/pages/settings/src/settings-config.js:312
+msgid "Base theme colors"
+msgstr "Grundfarben des Themas"
+
+#: app/src/pages/settings/src/settings-config.js:313
+msgid ""
+"Set a base color and uiXpress will automatically create a color scale for "
+"you."
+msgstr ""
+"Legen Sie eine Grundfarbe fest, und uiXpress erstellt automatisch eine "
+"Farbskala für Sie."
+
+#: app/src/pages/settings/src/settings-config.js:322
+msgid "Base"
+msgstr "Basis"
+
+#: app/src/pages/settings/src/settings-config.js:330
+msgid "Accent theme colors"
+msgstr "Akzentfarben des Themas"
+
+#: app/src/pages/settings/src/settings-config.js:331
+msgid ""
+"Set a accent color and uiXpress will automatically create a color scale for "
+"you."
+msgstr ""
+"Legen Sie eine Akzentfarbe fest, und uiXpress erstellt automatisch eine "
+"Farbskala für Sie."
+
+#: app/src/pages/settings/src/settings-config.js:340
+msgid "Accent base"
+msgstr "Akzentbasis"
+
+#: app/src/pages/settings/src/settings-config.js:348
+msgid "Custom css"
+msgstr "Benutzerdefiniertes CSS"
+
+#: app/src/pages/settings/src/settings-config.js:349
+msgid ""
+"Custom css added here will only be added in the admin area and login page."
+msgstr ""
+"Hier hinzugefügtes benutzerdefiniertes CSS wird nur im Admin-Bereich und auf "
+"der Anmeldeseite hinzugefügt."
+
+#: app/src/pages/settings/src/settings-config.js:361
+msgid "External stylesheets"
+msgstr "Externe Stylesheets"
+
+#: app/src/pages/settings/src/settings-config.js:362
+msgid ""
+"Add URLs to any external stylesheets you want uiXpress to load into the admin"
+msgstr ""
+"Fügen Sie URLs zu allen externen Stylesheets hinzu, die uiXpress in den "
+"Admin laden soll."
+
+#: app/src/pages/settings/src/settings-config.js:378
+msgid "Admin favicon"
+msgstr "Admin-Favicon"
+
+#: app/src/pages/settings/src/settings-config.js:379
+msgid "Optional favicon to replace the WordPress favicon in the admin."
+msgstr ""
+"Optionales Favicon, um das WordPress-Favicon im Admin-Bereich zu ersetzen."
+
+#: app/src/pages/settings/src/settings-config.js:385
+msgid "Favicon url"
+msgstr "Favicon url"
+
+#: app/src/pages/settings/src/settings-config.js:393
+msgid "Rename uiXpress"
+msgstr "uiXpress umbenennen"
+
+#: app/src/pages/settings/src/settings-config.js:394
+msgid ""
+"This will rename uiXpress in the plugins list as well as renaming it's "
+"settings link."
+msgstr ""
+"Dadurch wird uiXpress in der Plugin-Liste umbenannt und der Link zu den "
+"Einstellungen ebenfalls geändert."
+
+#: app/src/pages/settings/src/settings-config.js:410
+msgid "Text Replacement"
+msgstr "Text Ersetzung"
+
+#: app/src/pages/settings/src/settings-config.js:411
+msgid ""
+"Customize the text displayed in the WordPress admin area. Enter original "
+"words or phrases and their replacements to white-label the admin interface."
+msgstr ""
+"Passen Sie den im WordPress-Adminbereich angezeigten Text an. Geben Sie "
+"Originalwörter oder -phrasen und deren Ersetzungen ein, um die Admin-"
+"Oberfläche mit Ihrem eigenen Branding zu versehen."
+
+#: app/src/pages/settings/src/settings-config.js:427
+msgid "Submenu style"
+msgstr "Untermenü-Stil"
+
+#: app/src/pages/settings/src/settings-config.js:428
+msgid "Choose from whether the submenu opens on click or hover."
+msgstr ""
+"Wählen Sie aus, ob das Untermenü beim Klicken oder beim Bewegen des "
+"Mauszeigers geöffnet werden soll."
+
+#: app/src/pages/settings/src/settings-config.js:447
+msgid "Classic Post List View"
+msgstr "Klassische Beitragsübersicht"
+
+#: app/src/pages/settings/src/settings-config.js:448
+msgid ""
+"Switch to WordPress's traditional table layout for posts, removing the "
+"modern interface."
+msgstr ""
+"Wechseln Sie zum traditionellen Tabellenlayout von WordPress für Beiträge "
+"und entfernen Sie die moderne Benutzeroberfläche."
+
+#: app/src/pages/settings/src/settings-config.js:466
+msgid "Modern Plugin Manager"
+msgstr "Moderner Plugin-Manager"
+
+#: app/src/pages/settings/src/settings-config.js:467
+msgid ""
+"Replace the classic plugins page with a modern plugin manager with plugin "
+"profiling and improved features."
+msgstr ""
+"Ersetzen Sie die klassische Plugin-Seite durch einen modernen Plugin-Manager "
+"mit Plugin-Profiling und verbesserten Funktionen."
+
+#: app/src/pages/settings/src/settings-config.js:485
+msgid "Modern Media Library"
+msgstr "Moderne Mediathek"
+
+#: app/src/pages/settings/src/settings-config.js:486
+msgid ""
+"Replace the classic WordPress media library with a modern, responsive media "
+"manager with improved upload and organization features."
+msgstr ""
+"Ersetzen Sie die klassische WordPress-Medienbibliothek durch einen modernen, "
+"reaktionsschnellen Medienmanager mit verbesserten Upload- und "
+"Organisationsfunktionen."
+
+#: app/src/pages/settings/src/settings-config.js:500
+msgid "Enable SVG Uploads"
+msgstr "SVG-Uploads aktivieren"
+
+#: app/src/pages/settings/src/settings-config.js:501
+msgid ""
+"Allow SVG (Scalable Vector Graphics) files to be uploaded to the media "
+"library. All SVG files are automatically sanitized before upload to remove "
+"potentially malicious code, ensuring safe handling of SVG files."
+msgstr ""
+"Erlauben Sie das Hochladen von SVG-Dateien (Scalable Vector Graphics) in die "
+"Medienbibliothek. Alle SVG-Dateien werden vor dem Hochladen automatisch "
+"bereinigt, um potenziell schädlichen Code zu entfernen und eine sichere "
+"Verarbeitung der SVG-Dateien zu gewährleisten."
+
+#: app/src/pages/settings/src/settings-config.js:519
+msgid "Modern Users Page"
+msgstr "Moderne Benutzerseite"
+
+#: app/src/pages/settings/src/settings-config.js:520
+msgid ""
+"Replace the classic WordPress users page with a modern, responsive user "
+"manager with improved features and better organization."
+msgstr ""
+"Ersetzen Sie die klassische WordPress-Benutzerseite durch einen modernen, "
+"responsiven Benutzermanager mit verbesserten Funktionen und besserer "
+"Organisation."
+
+#: app/src/pages/settings/src/settings-config.js:534
+msgid "Modern Comments Page"
+msgstr "Moderne Kommentare Seite"
+
+#: app/src/pages/settings/src/settings-config.js:535
+msgid ""
+"Replace the classic WordPress comments page with a modern, responsive "
+"comment manager with improved features and better organization."
+msgstr ""
+"Ersetzen Sie die klassische WordPress-Kommentarseite durch einen modernen, "
+"responsiven Kommentar-Manager mit verbesserten Funktionen und besserer "
+"Organisation."
+
+#: app/src/pages/settings/src/settings-config.js:553
+msgid "Custom Dashboard"
+msgstr "Benutzerdefiniertes Dashboard"
+
+#: app/src/pages/settings/src/settings-config.js:554
+msgid ""
+"Replace the default WordPress dashboard with a modern, customizable "
+"dashboard interface."
+msgstr ""
+"Ersetzen Sie das Standard-WordPress-Dashboard durch eine moderne, anpassbare "
+"Dashboard-Oberfläche."
+
+#: app/src/pages/settings/src/settings-config.js:572
+msgid "Enable uiXpress Analytics"
+msgstr "uiXpress Analytics aktivieren"
+
+#: app/src/pages/settings/src/settings-config.js:573
+msgid ""
+"Enable built-in analytics to track user behavior, page views, and "
+"performance metrics within your WordPress admin."
+msgstr ""
+"Aktivieren Sie die integrierten Analysefunktionen, um das Nutzerverhalten, "
+"die Seitenaufrufe und die Leistungskennzahlen in Ihrem WordPress-"
+"Adminbereich zu verfolgen."
+
+#: app/src/pages/settings/src/settings-config.js:591
+msgid "Enable Database Explorer"
+msgstr "Datenbank-Explorer aktivieren"
+
+#: app/src/pages/settings/src/settings-config.js:592
+msgid ""
+"Enable the modern database explorer interface to browse tables, view data, "
+"and execute SQL queries safely."
+msgstr ""
+"Aktivieren Sie die moderne Datenbank-Explorer-Oberfläche, um Tabellen zu "
+"durchsuchen, Daten anzuzeigen und SQL-Abfragen sicher auszuführen."
+
+#: app/src/pages/settings/src/settings-config.js:610
+msgid "Enable Role Editor"
+msgstr "Rollen-Editor aktivieren"
+
+#: app/src/pages/settings/src/settings-config.js:611
+msgid ""
+"Enable the modern role editor interface to manage WordPress user roles and "
+"capabilities."
+msgstr ""
+"Aktivieren Sie die moderne Benutzeroberfläche des Rollen-Editors, um "
+"WordPress-Benutzerrollen und -Berechtigungen zu verwalten."
+
+#: app/src/pages/settings/src/settings-config.js:629
+msgid "Enable Activity Logger"
+msgstr "Aktivitätsprotokollierer aktivieren"
+
+#: app/src/pages/settings/src/settings-config.js:630
+msgid ""
+"Track and log all admin actions including post changes, user updates, plugin "
+"activations, and more."
+msgstr ""
+"Verfolgen und protokollieren Sie alle Administratoraktionen, einschließlich "
+"Beitragsänderungen, Benutzeraktualisierungen, Plugin-Aktivierungen und mehr."
+
+#: app/src/pages/settings/src/settings-config.js:644
+msgid "Retention Period (Days)"
+msgstr "Aufbewahrungsfrist (Tage)"
+
+#: app/src/pages/settings/src/settings-config.js:645
+msgid ""
+"How many days to keep activity logs before automatic cleanup. Default is 90 "
+"days."
+msgstr ""
+"Wie viele Tage sollen Aktivitätsprotokolle vor der automatischen Bereinigung "
+"aufbewahrt werden? Der Standardwert beträgt 90 Tage."
+
+#: app/src/pages/settings/src/settings-config.js:664
+msgid "Log Level"
+msgstr "Protokoll-Ebene"
+
+#: app/src/pages/settings/src/settings-config.js:665
+msgid ""
+"Choose which actions to log. \"All Actions\" logs everything, \"Important "
+"Only\" logs only critical actions like deletions and role changes."
+msgstr ""
+"Wählen Sie aus, welche Aktionen protokolliert werden sollen. „Alle Aktionen“ "
+"protokolliert alles, „Nur wichtige“ protokolliert nur kritische Aktionen wie "
+"Löschungen und Rollenänderungen."
+
+#: app/src/pages/settings/src/settings-config.js:673
+msgid "All Actions"
+msgstr "Kaufen / Mieten"
+
+#: app/src/pages/settings/src/settings-config.js:674
+msgid "Important Only"
+msgstr "Wichtig Nur"
+
+#: app/src/pages/settings/src/settings-config.js:684
+msgid "Auto Cleanup"
+msgstr "Automatische Bereinigung"
+
+#: app/src/pages/settings/src/settings-config.js:685
+msgid ""
+"Automatically delete logs older than the retention period. Disable to keep "
+"logs indefinitely."
+msgstr ""
+"Löschen Sie automatisch Protokolle, die älter als die Aufbewahrungsfrist "
+"sind. Deaktivieren Sie diese Option, um Protokolle unbegrenzt aufzubewahren."
+
+#: app/src/pages/settings/src/settings-panel.vue:201
+#: app/src/pages/settings/src/settings-panel.vue:213
+msgid "Failed to activate key"
+msgstr "Schlüssel konnte nicht aktiviert werden"
+
+#: app/src/pages/settings/src/settings-panel.vue:222
+msgid "Key already activated for this site"
+msgstr "Schlüssel für diese Website bereits aktiviert"
+
+#: app/src/pages/settings/src/settings-panel.vue:223
+msgid "Key successfully activated"
+msgstr "Schlüssel erfolgreich aktiviert"
+
+#: app/src/pages/settings/src/settings-panel.vue:237
+msgid "Network error during activation"
+msgstr "Netzwerkfehler während der Aktivierung"
+
+#: app/src/pages/settings/src/settings-panel.vue:342
+#: app/src/pages/settings/src/settings-panel.vue:395
+msgid "Instance removed"
+msgstr "Instanz entfernt"
+
+#: app/src/pages/settings/src/settings-panel.vue:377
+#: app/src/pages/settings/src/settings-panel.vue:391
+msgid "Failed to remove activation"
+msgstr "Aktivierung konnte nicht entfernt werden"
+
+#: app/src/pages/settings/src/settings-panel.vue:411
+msgid "Network error during removal"
+msgstr "Netzwerkfehler beim Entfernen"
+
+#: app/src/pages/settings/src/settings-panel.vue:499
+#: app/src/components/app/menu/index.vue:1167
+#, fuzzy
+msgid "Save"
+msgstr "Speichern"
+
+#: app/src/pages/settings/src/settings-panel.vue:506
+msgid "Please add your licence key to unlock the plugin settings"
+msgstr ""
+"Bitte fügen Sie Ihren Lizenzschlüssel hinzu, um die Plugin-Einstellungen "
+"freizuschalten."
+
+#: app/src/pages/settings/src/settings-panel.vue:514
+msgid "Found"
+msgstr "Gefunden"
+
+#: app/src/pages/settings/src/settings-panel.vue:516
+msgid "matching setting(s)"
+msgstr "passende Einstellung(en)"
+
+#: app/src/pages/settings/src/settings-panel.vue:529
+msgid "No settings match your search in this category."
+msgstr ""
+"In dieser Kategorie gibt es keine Einstellungen, die Ihrer Suche entsprechen."
+
+#: app/src/pages/settings/src/settings-panel.vue:530
+msgid "Try a different search term or check another category."
+msgstr ""
+"Versuchen Sie es mit einem anderen Suchbegriff oder schauen Sie in einer "
+"anderen Kategorie nach."
+
+#: app/src/pages/posts/src/batchDuplicatePosts.js:47
+msgid "Items duplicated"
+msgstr "Duplizierte Artikel"
+
+#: app/src/pages/posts/src/updatePostAuthor.js:20
+msgid "Item author updated"
+msgstr "Artikelautor aktualisiert"
+
+#: app/src/pages/posts/src/inlineTitleUpdate.js:27
+msgid "Item title updated"
+msgstr "Artikelüberschrift aktualisiert"
+
+#: app/src/pages/posts/src/batchPublishPosts.js:21
+#: app/src/pages/posts/src/post-actions.vue:162
+#: app/src/pages/posts/src/batchDeletePosts.js:21
+#: app/src/components/utility/media-library/index.vue:377
+#: app/src/components/utility/media-library/index.vue:467
+msgid "Are you sure?"
+msgstr "Sind Sie sicher?"
+
+#: app/src/pages/posts/src/batchPublishPosts.js:22
+msgid "Are you sure you want to publish these items?"
+msgstr "Sind Sie sicher, dass Sie diese Artikel veröffentlichen möchten?"
+
+#: app/src/pages/posts/src/batchPublishPosts.js:23
+msgid "Yes publish them"
+msgstr "Ja, veröffentlichen Sie sie."
+
+#: app/src/pages/posts/src/batchPublishPosts.js:45
+msgid "Items published"
+msgstr "Veröffentlichte Artikel"
+
+#: app/src/pages/posts/src/updatePostStatus.js:18
+msgid "Item status updated"
+msgstr "Artikelstatus aktualisiert"
+
+#: app/src/pages/posts/src/post-actions.vue:40
+#: app/src/pages/posts/src/post-preview.vue:365
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: app/src/pages/posts/src/post-actions.vue:50
+#: app/src/pages/posts/src/post-preview.vue:382
+msgid "View"
+msgstr "Anzeigen"
+
+#: app/src/pages/posts/src/post-actions.vue:57
+msgid "Duplicate"
+msgstr "Duplizieren"
+
+#: app/src/pages/posts/src/post-actions.vue:66
+msgid "Restore"
+msgstr "Wiederherstellen"
+
+#: app/src/pages/posts/src/post-actions.vue:82
+#: app/src/components/app/menu/index.vue:1190
+msgid "Delete"
+msgstr "Löschen"
+
+#: app/src/pages/posts/src/post-actions.vue:155
+msgid "Item duplicated"
+msgstr "Artikel doppelt vorhanden"
+
+#: app/src/pages/posts/src/post-actions.vue:163
+#: app/src/components/utility/media-library/index.vue:378
+msgid ""
+"Are you sure you want to delete this item? This action cannot be undone."
+msgstr ""
+"Sind Sie sicher, dass Sie diesen Artikel löschen möchten? Diese Aktion kann "
+"nicht rückgängig gemacht werden."
+
+#: app/src/pages/posts/src/post-actions.vue:167
+#: app/src/components/utility/media-library/index.vue:379
+msgid "Yes delete it"
+msgstr "Ja, löschen Sie es"
+
+#: app/src/pages/posts/src/post-actions.vue:185
+msgid "Item deleted"
+msgstr "Element gelöscht"
+
+#: app/src/pages/posts/src/post-actions.vue:201
+msgid "Item restored"
+msgstr "Bild wiederhergestellt"
+
+#: app/src/pages/posts/src/inline-user-select.vue:61
+#: app/src/components/utility/multiselect-roles-and-users/index.vue:66
+msgid "Roles"
+msgstr "Rollen"
+
+#: app/src/pages/posts/src/inline-user-select.vue:142
+msgid "Unknown user"
+msgstr "Unbekannter Benutzer"
+
+#: app/src/pages/posts/src/inline-user-select.vue:151
+msgid "Update author"
+msgstr "Autor des Updates"
+
+#: app/src/pages/posts/src/inline-user-select.vue:156
+#: app/src/pages/posts/src/inline-status-select.vue:98
+#: app/src/pages/posts/src/table-filters.vue:185
+#: app/src/components/utility/media-library/index.vue:751
+#: app/src/components/utility/multiselect-roles-and-users/index.vue:203
+msgid "Search"
+msgstr "Suche"
+
+#: app/src/pages/posts/src/inline-image-select.vue:57
+msgid "Featured image updated"
+msgstr "Ausgewähltes Bild aktualisiert"
+
+#: app/src/pages/posts/src/inline-status-select.vue:93
+msgid "Update status"
+msgstr "Status aktualisieren"
+
+#: app/src/pages/posts/src/batchDeletePosts.js:22
+msgid ""
+"Are you sure you want to delete these items? This action cannot be undone."
+msgstr ""
+"Möchten Sie diese Elemente wirklich löschen? Diese Aktion kann nicht "
+"rückgängig gemacht werden."
+
+#: app/src/pages/posts/src/batchDeletePosts.js:23
+#: app/src/components/utility/media-library/index.vue:469
+msgid "Yes delete them"
+msgstr "Ja, löschen Sie sie."
+
+#: app/src/pages/posts/src/batchDeletePosts.js:45
+msgid "Items deleted"
+msgstr "Elemente gelöscht"
+
+#: app/src/pages/posts/src/batch-edit.vue:57
+msgid "Publish changes?"
+msgstr "Änderungen veröffentlichen?"
+
+#: app/src/pages/posts/src/batch-edit.vue:58
+msgid "Are you sure you want to batch update these items?"
+msgstr "Möchten Sie diese Elemente wirklich stapelweise aktualisieren?"
+
+#: app/src/pages/posts/src/batch-edit.vue:59
+msgid "Yes update them"
+msgstr "Ja, aktualisieren Sie sie."
+
+#: app/src/pages/posts/src/batch-edit.vue:89
+msgid "Items updated"
+msgstr "Aktualisierte Artikel"
+
+#: app/src/pages/posts/src/batch-edit.vue:118
+#: app/src/pages/posts/src/batch-edit.vue:129
+msgid "Batch edit"
+msgstr "Stapelbearbeitung"
+
+#: app/src/pages/posts/src/batch-edit.vue:134
+#: app/src/pages/posts/src/table-filters.vue:179
+#: app/src/pages/posts/src/post-preview.vue:413
+#: app/src/pages/posts/src/category-select.vue:362
+msgid "Categories"
+msgstr "Kategorien"
+
+#: app/src/pages/posts/src/batch-edit.vue:168
+#: app/src/pages/posts/src/post-preview.vue:402
+msgid "Author"
+msgstr "Autor"
+
+#: app/src/pages/posts/src/batch-edit.vue:185
+#: app/src/components/app/menu/index.vue:1177
+#: app/src/components/utility/media-library/index.vue:1201
+#: app/src/components/utility/date-range-picker/index.vue:140
+#, fuzzy
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: app/src/pages/posts/src/batch-edit.vue:196
+msgid "Update"
+msgstr "Aktualisieren"
+
+#: app/src/pages/posts/src/table-filters.vue:174
+msgid "Filters"
+msgstr "Filter"
+
+#: app/src/pages/posts/src/table-filters.vue:190
+msgid "Date range"
+msgstr "Zeitraum"
+
+#: app/src/pages/posts/src/table-filters.vue:198
+msgid "Table settings"
+msgstr "Tabellen-Einstellungen"
+
+#: app/src/pages/posts/src/table-filters.vue:201
+msgid "Per page"
+msgstr "Pro Seite"
+
+#: app/src/pages/posts/src/table-filters.vue:212
+msgid "Order"
+msgstr "Bestellung"
+
+#: app/src/pages/posts/src/table-filters.vue:221
+msgid "Order by"
+msgstr "Sortieren nach"
+
+#: app/src/pages/posts/src/table-filters.vue:230
+msgid "Expand all posts"
+msgstr "Alle Beiträge erweitern"
+
+#: app/src/pages/posts/src/table-filters.vue:239
+msgid "Columns"
+msgstr "Spalten"
+
+#: app/src/pages/posts/src/posts-list.vue:239
+#: app/src/pages/posts/src/post-preview.vue:324
+msgid "Untitled"
+msgstr "Ohne Titel"
+
+#: app/src/pages/posts/src/posts-list.vue:259
+msgid "child"
+msgstr "Kind"
+
+#: app/src/pages/posts/src/posts-list.vue:260
+msgid "children"
+msgstr "Kinder"
+
+#: app/src/pages/posts/src/constants.js:18
+msgid "All"
+msgstr "Alle"
+
+#: app/src/pages/posts/src/constants.js:19
+msgid "Drafts"
+msgstr "Entwürfe"
+
+#: app/src/pages/posts/src/post-preview.vue:305
+msgid "Post Details"
+msgstr "Beitrag Details"
+
+#: app/src/pages/posts/src/post-preview.vue:306
+msgid "Select a post from the list to view details and edit properties."
+msgstr ""
+"Wählen Sie einen Beitrag aus der Liste aus, um Details anzuzeigen und "
+"Eigenschaften zu bearbeiten."
+
+#: app/src/pages/posts/src/post-preview.vue:443
+#: app/src/components/app/menu/index.vue:1133
+#: app/src/components/utility/media-library/index.vue:1071
+msgid "URL"
+msgstr "URL"
+
+#: app/src/pages/posts/src/post-preview.vue:454
+msgid "Preview"
+msgstr "Vorschau"
+
+#: app/src/components/app/menu/index.vue:845
+msgid "Minify menu"
+msgstr "Menü minimieren"
+
+#: app/src/components/app/menu/index.vue:883
+msgid "Search menu"
+msgstr "Suchmenü"
+
+#: app/src/components/app/menu/index.vue:1094
+msgid "Shortcuts"
+msgstr "Shortcuts"
+
+#: app/src/components/app/menu/index.vue:1123
+#, fuzzy
+msgid "Name"
+msgstr "Name"
+
+#: app/src/components/app/menu/index.vue:1129
+msgid "Shortcut name"
+msgstr "Verknüpfungsname"
+
+#: app/src/components/app/menu/index.vue:1139
+msgid "https://example.com"
+msgstr "https://example.com"
+
+#: app/src/components/app/menu/index.vue:1143
+msgid "Icon"
+msgstr "Icon"
+
+#: app/src/components/app/menu/index.vue:1156
+msgid "icon name"
+msgstr "Symbolname"
+
+#: app/src/components/app/toolbar/index.vue:163
+#: app/src/components/app/toolbar/index.vue:193
+msgid "Toggle menu"
+msgstr "Aufklappmenü"
+
+#: app/src/components/app/toolbar/index.vue:303
+#: app/src/components/app/menu/src/user-details.vue:272
+msgid "System"
+msgstr "System"
+
+#: app/src/components/app/toolbar/index.vue:332
+#: app/src/components/app/toolbar/index.vue:336
+msgid "Logout"
+msgstr "Abmelden"
+
+#: app/src/pages/settings/src/custom-renders/color-scale.vue:101
+msgid "Clear custom properties"
+msgstr "Benutzerdefinierte Eigenschaften löschen"
+
+#: app/src/pages/settings/src/custom-renders/layout-selector.vue:39
+msgid "Default"
+msgstr "Standard"
+
+#: app/src/pages/settings/src/custom-renders/layout-selector.vue:43
+msgid "Rounded"
+msgstr "Abgerundet"
+
+#: app/src/pages/settings/src/custom-renders/layout-selector.vue:47
+msgid "Bubble"
+msgstr "Sprechblase"
+
+#: app/src/pages/settings/src/custom-renders/code-editor.vue:89
+msgid "Update settings"
+msgstr "Einstellungen aktualisieren"
+
+#: app/src/pages/settings/src/custom-renders/code-editor.vue:100
+msgid "Loading editor..."
+msgstr "Editor laden..."
+
+#: app/src/pages/settings/src/custom-renders/license-key.vue:57
+msgid "Licence Active"
+msgstr "Lizenz aktiv"
+
+#: app/src/pages/settings/src/custom-renders/license-key.vue:66
+msgid "Remove key"
+msgstr "API Key entfernen"
+
+#: app/src/pages/settings/src/custom-renders/license-key.vue:79
+msgid "uiXpress licence key"
+msgstr "uiXpress-Lizenzschlüssel"
+
+#: app/src/pages/settings/src/custom-renders/license-key.vue:88
+msgid "Activate"
+msgstr "Aktivieren"
+
+#: app/src/pages/settings/src/custom-renders/license-key.vue:94
+msgid "Development server detected, no need to activate your licence key."
+msgstr ""
+"Entwicklungsserver erkannt, keine Aktivierung Ihres Lizenzschlüssels "
+"erforderlich."
+
+#: app/src/components/utility/media-library/index.vue:142
+msgid "Date"
+msgstr "Datum"
+
+#: app/src/components/utility/media-library/index.vue:143
+msgid "ID"
+msgstr "ID"
+
+#: app/src/components/utility/media-library/index.vue:144
+msgid "Modified"
+msgstr "Geändert"
+
+#: app/src/components/utility/media-library/index.vue:145
+msgid "Slug"
+msgstr "Slug"
+
+#: app/src/components/utility/media-library/index.vue:146
+#: app/src/components/utility/media-library/index.vue:1027
+msgid "Title"
+msgstr "Titel"
+
+#: app/src/components/utility/media-library/index.vue:366
+msgid "File updated"
+msgstr "Datei aktualisiert"
+
+#: app/src/components/utility/media-library/index.vue:391
+msgid "File deleted"
+msgstr "Datei gelöscht"
+
+#: app/src/components/utility/media-library/index.vue:456
+msgid "Files duplicated"
+msgstr "Dateien dupliziert"
+
+#: app/src/components/utility/media-library/index.vue:468
+msgid ""
+"Are you sure you want to delete these files? This action cannot be undone."
+msgstr ""
+"Möchten Sie diese Dateien wirklich löschen? Diese Aktion kann nicht "
+"rückgängig gemacht werden."
+
+#: app/src/components/utility/media-library/index.vue:485
+msgid "Files deleted"
+msgstr "Dateien gelöscht"
+
+#: app/src/components/utility/media-library/index.vue:585
+msgid "File uploaded"
+msgstr "Datei hochgeladen"
+
+#: app/src/components/utility/media-library/index.vue:733
+msgid "Media Library"
+msgstr "Medienbibliothek"
+
+#: app/src/components/utility/media-library/index.vue:762
+msgid "File type"
+msgstr "Dateityp"
+
+#: app/src/components/utility/media-library/index.vue:864
+msgid "Upload"
+msgstr "Hochladen"
+
+#: app/src/components/utility/media-library/index.vue:997
+#: app/src/components/app/search/index.vue:1297
+msgid "No results found"
+msgstr "Keine Ergebnisse gefunden"
+
+#: app/src/components/utility/media-library/index.vue:998
+msgid "Edit your search criteria, or upload a new file."
+msgstr "Bearbeiten Sie Ihre Suchkriterien oder laden Sie eine neue Datei hoch."
+
+#: app/src/components/utility/media-library/index.vue:1038
+msgid "Alt text"
+msgstr "ALT-Text"
+
+#: app/src/components/utility/media-library/index.vue:1049
+msgid "Caption"
+msgstr "Bildunterschrift"
+
+#: app/src/components/utility/media-library/index.vue:1060
+msgid "Description"
+msgstr "Beschreibung"
+
+#: app/src/components/utility/media-library/index.vue:1090
+msgid "Delete file"
+msgstr "Datei löschen"
+
+#: app/src/components/utility/media-library/index.vue:1161
+msgid "Delete selected"
+msgstr "Auswahl löschen"
+
+#: app/src/components/utility/media-library/index.vue:1174
+msgid "Duplicate selected"
+msgstr "Ausgewählte duplizieren"
+
+#: app/src/components/utility/media-library/index.vue:1186
+msgid "Clear selection"
+msgstr "Auswahl löschen"
+
+#: app/src/components/utility/media-library/index.vue:1210
+msgid "Done"
+msgstr "Erledigt"
+
+#: app/src/pages/posts/src/category-select.vue:411
+#: app/src/pages/posts/src/category-select.vue:414
+#: app/src/pages/posts/src/tag-select.vue:411
+#: app/src/pages/posts/src/tag-select.vue:414
+msgid "No products found"
+msgstr "Keine Produkte gefunden"
+
+#: app/src/components/utility/date-range-picker/index.vue:108
+msgid "Select date"
+msgstr "Datum wählen"
+
+#: app/src/components/utility/date-range-picker/index.vue:154
+msgid "Set date"
+msgstr "Datum einstellen"
+
+#: app/src/components/app/search/index.vue:311
+msgid "Magic dark mode enabled for this page"
+msgstr "Magischer Dunkelmodus für diese Seite aktiviert"
+
+#: app/src/components/app/search/index.vue:323
+msgid "Failed to enable magic dark mode"
+msgstr "Der magische Dunkelmodus konnte nicht aktiviert werden."
+
+#: app/src/components/app/search/index.vue:363
+msgid "Magic dark mode disabled for this page"
+msgstr "Magischer Dunkelmodus für diese Seite deaktiviert"
+
+#: app/src/components/app/search/index.vue:375
+msgid "Failed to disable magic dark mode"
+msgstr "Der magische Dunkelmodus konnte nicht deaktiviert werden."
+
+#: app/src/components/app/search/index.vue:384
+msgid "New Post"
+msgstr "Neuer Beitrag"
+
+#: app/src/components/app/search/index.vue:390
+msgid "New Page"
+msgstr "Neue Seite"
+
+#: app/src/components/app/search/index.vue:396
+#: app/src/components/app/toolbar/src/buttons/view-site/component.vue:52
+msgid "View dashboard"
+msgstr "Dashboard anzeigen"
+
+#: app/src/components/app/search/index.vue:402
+#: app/src/components/app/toolbar/src/buttons/view-site/component.vue:33
+msgid "View site"
+msgstr "Seite ansehen"
+
+#: app/src/components/app/search/index.vue:408
+msgid "Site settings"
+msgstr "Website-Einstellungen"
+
+#: app/src/components/app/search/index.vue:415
+msgid "Dark mode"
+msgstr "Dunkler Modus"
+
+#: app/src/components/app/search/index.vue:422
+msgid "Light mode"
+msgstr "Heller Modus"
+
+#: app/src/components/app/search/index.vue:429
+msgid "Enable magic dark mode for this page"
+msgstr "Magischen Dunkelmodus für diese Seite aktivieren"
+
+#: app/src/components/app/search/index.vue:436
+msgid "Disable magic dark mode for this page"
+msgstr "Magischen Dunkelmodus für diese Seite deaktivieren"
+
+#: app/src/components/app/search/index.vue:503
+msgid "Just now"
+msgstr "Gerade eben"
+
+#: app/src/components/app/search/index.vue:506
+msgid "minute"
+msgstr "Minute"
+
+#: app/src/components/app/search/index.vue:506
+msgid "minutes"
+msgstr "Minuten"
+
+#: app/src/components/app/search/index.vue:507
+#: app/src/components/app/search/index.vue:511
+#: app/src/components/app/search/index.vue:515
+msgid "ago"
+msgstr "vor"
+
+#: app/src/components/app/search/index.vue:510
+msgid "hour"
+msgstr "Stunde"
+
+#: app/src/components/app/search/index.vue:510
+msgid "hours"
+msgstr "Stunden"
+
+#: app/src/components/app/search/index.vue:514
+msgid "day"
+msgstr "Tag"
+
+#: app/src/components/app/search/index.vue:514
+msgid "days"
+msgstr "Tage"
+
+#: app/src/components/app/search/index.vue:549
+msgid "Draft"
+msgstr "Entwurf"
+
+#: app/src/components/app/search/index.vue:550
+msgid "Pending"
+msgstr "Ausstehend"
+
+#: app/src/components/app/search/index.vue:551
+msgid "Private"
+msgstr "Privat"
+
+#: app/src/components/app/search/index.vue:552
+msgid "Scheduled"
+msgstr "Geplant"
+
+#: app/src/components/app/search/index.vue:1014
+msgid "Find users"
+msgstr "Suchen von Benutzern"
+
+#: app/src/components/app/search/index.vue:1015
+msgid "Quick actions"
+msgstr "Schnellaktionen"
+
+#: app/src/components/app/search/index.vue:1016
+msgid "View commands"
+msgstr "Befehle anzeigen"
+
+#: app/src/components/app/search/index.vue:1157
+msgid "Search posts, pages, categories, users..."
+msgstr "Beiträge, Seiten, Kategorien, Benutzer suchen..."
+
+#: app/src/components/app/search/index.vue:1221
+msgid "Welcome to Global Search"
+msgstr "Willkommen bei Global Search"
+
+#: app/src/components/app/search/index.vue:1222
+msgid ""
+"Quickly find posts, pages, users, and more. Here are some tips to get "
+"started:"
+msgstr ""
+"Finden Sie schnell Beiträge, Seiten, Benutzer und mehr. Hier sind einige "
+"Tipps für den Einstieg:"
+
+#: app/src/components/app/search/index.vue:1267
+msgid "Press"
+msgstr "Presse"
+
+#: app/src/components/app/search/index.vue:1269
+msgid "to open search"
+msgstr "Suche öffnen"
+
+#: app/src/components/app/search/index.vue:1276
+msgid "Got it, thanks!"
+msgstr "Verstanden, danke!"
+
+#: app/src/components/app/search/index.vue:1298
+msgid "Try a different search term or use command syntax to filter results."
+msgstr ""
+"Versuchen Sie es mit einem anderen Suchbegriff oder verwenden Sie die "
+"Befehlssyntax, um die Ergebnisse zu filtern."
+
+#: app/src/components/app/search/index.vue:1306
+msgid "View Commands"
+msgstr "Befehle anzeigen"
+
+#: app/src/components/app/search/index.vue:1310
+msgid "Clear Search"
+msgstr "Suche leeren"
+
+#: app/src/components/app/search/index.vue:1332
+msgid "Start searching"
+msgstr "Suche starten"
+
+#: app/src/components/app/search/index.vue:1333
+msgid "Search for posts, pages, users, categories, or use quick actions."
+msgstr ""
+"Suchen Sie nach Beiträgen, Seiten, Benutzern, Kategorien oder verwenden Sie "
+"Schnellaktionen."
+
+#: app/src/components/app/search/index.vue:1338
+msgid "Try these:"
+msgstr "Probieren Sie diese aus:"
+
+#: app/src/components/app/search/index.vue:1361
+msgid "Keyboard Shortcuts"
+msgstr "Tastenkürzel"
+
+#: app/src/components/app/search/index.vue:1365
+msgid "Navigate"
+msgstr "Navigieren"
+
+#: app/src/components/app/search/index.vue:1369
+msgid "Select"
+msgstr "Auswählen"
+
+#: app/src/components/app/search/index.vue:1373
+#: app/src/components/app/wp-notifications/index.vue:171
+msgid "Close"
+msgstr "Schließen"
+
+#: app/src/components/app/search/index.vue:1377
+msgid "Open"
+msgstr "Offen"
+
+#: app/src/components/app/search/index.vue:1386
+msgid "Show tutorial again"
+msgstr "Tutorial erneut anzeigen"
+
+#: app/src/components/app/search/index.vue:1395
+msgid "Command Syntax"
+msgstr "Befehlssyntax"
+
+#: app/src/components/app/search/index.vue:1399
+msgid "Search only posts"
+msgstr "Nur Beiträge suchen"
+
+#: app/src/components/app/search/index.vue:1403
+msgid "Search only pages"
+msgstr "Nur Seiten durchsuchen"
+
+#: app/src/components/app/search/index.vue:1407
+msgid "Search only users"
+msgstr "Nur Benutzer suchen"
+
+#: app/src/components/app/search/index.vue:1411
+msgid "Search only categories"
+msgstr "Nur Kategorien durchsuchen"
+
+#: app/src/components/app/search/index.vue:1415
+msgid "Show only quick actions"
+msgstr "Nur Schnellaktionen anzeigen"
+
+#: app/src/components/app/search/index.vue:1427
+msgid "Recent Searches"
+msgstr "Aktuelle Suchanfragen"
+
+#: app/src/components/app/search/index.vue:1431
+msgid "Clear"
+msgstr "Zurücksetzen"
+
+#: app/src/components/app/search/index.vue:1457
+msgid "Recently Accessed"
+msgstr "Zuletzt aufgerufen"
+
+#: app/src/components/app/search/index.vue:1501
+msgid "Frequently Used"
+msgstr "Häufig benutzt"
+
+#: app/src/components/app/search/index.vue:1540
+#: app/src/components/app/menu/src/user-details.vue:282
+msgid "Quick Actions"
+msgstr "Schnell-Auswahl"
+
+#: app/src/components/app/search/index.vue:1759
+msgid "to navigate"
+msgstr "Navigieren"
+
+#: app/src/components/app/search/index.vue:1765
+msgid "to select"
+msgstr "zur Auswahl"
+
+#: app/src/components/app/search/index.vue:1769
+msgid "to close"
+msgstr "zu schließen"
+
+#: app/src/components/app/wp-notifications/index.vue:127
+#: app/src/components/app/wp-notifications/index.vue:168
+#: app/src/components/app/admin-notices/index.vue:198
+#: app/src/components/app/admin-notices/index.vue:225
+msgid "Notifications"
+msgstr "Benachrichtigungen"
+
+#: app/src/components/app/wp-notifications/index.vue:181
+msgid "No notifications"
+msgstr "Keine Benachrichtigungen"
+
+#: app/src/components/app/menu/src/user-details.vue:89
+msgid "Edit Profile"
+msgstr "Profil bearbeiten"
+
+#: app/src/components/app/menu/src/user-details.vue:96
+msgid "Visit site"
+msgstr "Seite besuchen"
+
+#: app/src/components/app/menu/src/user-details.vue:103
+msgid "Site Settings"
+msgstr "Seiten Einstellungen"
+
+#: app/src/components/app/menu/src/user-details.vue:110
+msgid "Sign Out"
+msgstr "Abmelden"
+
+#: app/src/components/app/menu/src/user-details.vue:244
+msgid "Light Mode"
+msgstr "Heller Modus"
+
+#: app/src/components/app/menu/src/user-details.vue:258
+msgid "Dark Mode"
+msgstr "Dunkel Modus"
+
+#: app/src/components/app/menu/src/user-details.vue:291
+msgid "Focus Search"
+msgstr "Fokus-Suche"
+
+#: app/src/components/app/admin-notices/index.vue:254
+msgid "You're all caught up"
+msgstr "Du bist auf dem neuesten Stand."
+
+#: app/src/components/app/admin-notices/index.vue:255
+msgid "No new notifications"
+msgstr "Keine neuen Benachrichtigungen"
+
+#: app/src/components/utility/icon-select/index.vue:143
+msgid "Search icons"
+msgstr "Icons suchen"
+
+#: app/src/pages/settings/src/text-pairs.vue:41
+msgid "Find"
+msgstr "Suchen"
+
+#: app/src/pages/settings/src/text-pairs.vue:47
+msgid "Replace"
+msgstr "Ersetzen"
+
+#: app/src/pages/settings/src/text-pairs.vue:67
+msgid "New item"
+msgstr "Neues Element"
+
+#: app/src/components/utility/code-editor/index.vue:222
+msgid "Edit CSS"
+msgstr "CSS bearbeiten"
+
+#: app/src/components/utility/code-editor/index.vue:265
+msgid "Finished"
+msgstr "Beendet"
+
+#: app/src/components/app/toolbar/src/buttons/screen-options/component.vue:64
+msgid "Screen options"
+msgstr "Bildschirmoptionen"
+
+#: app/src/components/app/toolbar/src/buttons/help/component.vue:63
+msgid "Help"
+msgstr "Hilfe"
+
+#: app/src/components/utility/multiselect-roles-and-users/index.vue:171
+#: app/src/components/utility/post-type-select/index.vue:114
+msgid "Items selected"
+msgstr "Ausgewählte Artikel"
+
+#: app/src/components/utility/multiselect-roles-and-users/index.vue:172
+msgid "Select users or roles"
+msgstr "Benutzer oder Rollen auswählen"
+
+#: app/src/components/utility/post-type-select/index.vue:115
+msgid "Select post types"
+msgstr "Post Types auswählen"
+
+#: app/src/components/utility/image-select/index.vue:56
+msgid "Select or Upload Media"
+msgstr "Medien auswählen oder hochladen"
+
+#: app/src/components/utility/image-select/index.vue:58
+msgid "Use this media"
+msgstr "Dieses Medium verwenden"
+
+#: app/src/components/utility/image-select/index.vue:115
+msgid "url"
+msgstr "URL"
+
+#: admin/src/Rest/PostsTables.php:85
+msgid "You must be logged in to access this page."
+msgstr "Du musst angemeldet sein, um diese Seite zugreifen zu können."
+
+#: admin/src/Rest/PostsTables.php:104
+msgid "Invalid request. Please refresh the page and try again."
+msgstr ""
+"Ungültige Anfrage. Bitte aktualisieren Sie die Seite und versuchen Sie es "
+"erneut."
+
+#: app/src/pages/posts/src/table-filters.vue:54
+msgid "Ascending"
+msgstr "Aufsteigend"
+
+#: app/src/pages/posts/src/table-filters.vue:55
+msgid "Descending"
+msgstr "Absteigend"
